@@ -1,0 +1,564 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Allocating Consignments | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Allocating Consignments | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link rel="stylesheet" href="../../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" src="../../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="pro-api-help-allocating-consignments">
+<h1 id="allocating-consignments-to-carriers">Allocating Consignments to Carriers</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            02/06/2020
+        </li>
+        <li class="li-time-to-read">
+             ~8 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            02/06/2020
+        </li>
+        <li class="li-time-to-read">
+             ~8 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">v1</li>
+        <li class="tag-search">allocation</li>
+        <li class="tag-search">pro</li>
+        <li class="tag-search">api</li>
+        <li class="tag-search">consignments</li>
+    </ul>
+</div>
+
+<p>Once you've created a consignment, you'll need to allocate it to a carrier service. This section explains how to configure allocation rules that PRO can use when selecting carrier services, and the various methods you can use to allocate consignments to those services.</p>
+<hr>
+<h2 id="what-is-allocation">What Is Allocation?</h2>
+<p>In the context of SortedPRO, <strong>allocation</strong> is the process of selecting the carrier service that will be used to deliver a consignment. Allocation is a key part of all PRO workflows, as a consignment cannot be shipped if it has not previously been allocated to a suitable carrier service.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>You can only allocate consignments that are in a consignment state of either <em>Unallocated</em> or <em>Allocation Failed</em>. If you attempt to allocate a consignment that is not in one of those states, PRO returns an error.</p>
+</div>
+<p>To allocate a consignment in PRO, you'll need to call one of PRO's allocation endpoints. You can specify a carrier service to allocate to, allocate based on a quote you received, or have PRO select the cheapest eligible carrier service for you. Whichever endpoint you use, PRO uses pre-defined allocation rules to ensure that your consignment is allocated to a suitable carrier service.</p>
+<p>PRO offers the following allocation endpoints:</p>
+<table class="endpointTable">
+    <tr>
+        <th width="55%">Endpoint</th>
+        <th width="33%">Description</th>
+        <th width="12%">API Reference</th>
+    </tr>
+    <tr>
+        <td>
+            <p><a href="allocating_using_default_allocation_rules.html">Allocate Using Default Rules</a></p>
+            <p><pre>PUT https://api.electioapp.com/allocation/allocate</pre></p>
+        </td>
+        <td>Allocates one or more consignments based on your organisation's custom allocation rules</td>
+        <td><a href="https://docs.electioapp.com/#/api/AllocateUsingDefaultRules">Link</a></td>                
+    </tr>
+    <tr>
+        <td width="55%">
+            <p><a href="allocating_using_default_allocation_rules.html">Allocate Consignment</a></p> 
+            <p><pre>PUT https://api.electioapp.com/allocation/{consignmentReference}/allocatewithcheapestquote</pre></p>
+        </td>
+        <td width="33%">Allocates a single consignment to the cheapest available carrier service</td>
+        <td width="12%"><a href="https://docs.electioapp.com/#/api/AllocateConsignment">Link</a></td>                
+    </tr>        
+    <tr>
+        <td>
+            <p><a href="allocating_via_service_group.html">Allocate Consignment With Service Group</a></p>
+            <p><pre>PUT https://api.electioapp.com/allocation/{consignmentReference}/allocatewithservicegroup/{mpdCarrierServiceGroupReference}</pre></p>
+        </td>
+        <td>Allocates a consignment to the cheapest available carrier service in a particular carrier service group</td>
+        <td><a href="https://docs.electioapp.com/#/api/AllocateConsignmentWithServiceGroup">Link</a></td>               
+    </tr>
+    <tr>
+        <td>
+            <p><a href="allocating_to_a_specific_carrier_service.html">Allocate With Carrier Service</a></p>
+            <p><pre>PUT https://api.electioapp.com/allocation/allocatewithcarrierservice</pre></p>
+        </td>
+        <td>Allocates one or more consignments to a specific carrier service</td>
+        <td><a href="https://docs.electioapp.com/#/api/AllocateWithCarrierService">Link</a></td>            
+    </tr>
+    <tr>
+        <td>
+            <p><a href="allocating_to_a_specific_quote.html">Allocate With Quote</a></p>
+            <p><pre>PUT https://api.electioapp.com/allocation/{consignmentReference}/allocatewithquote/{quoteReference}</pre></p>
+        </td>
+        <td>Allocates an individual consignment based on a specific delivery quote from a carrier</td>
+        <td><a href="https://docs.electioapp.com/#/api/AllocateConsignmentWithServiceGroup">Link</a></td>                
+    </tr>            
+</table>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For detailed information on using each of PRO's allocation endpoints, click the endpoint names in the table above.</p>
+</div>
+<p>When a consignment is allocated to a carrier service, its status changes to <em>Allocated</em>, enabling you to retrieve its package labels and (where applicable) customs documentation. PRO also returns an Allocation Summary, confirming the service that the consignment was allocated to and (where applicable) providing tracking details.</p>
+<h2 id="what-is-an-allocation-rule">What Is an Allocation Rule?</h2>
+<p>When you make an allocation request for a consignment, PRO uses its allocation rules to ascertain which carrier services are eligible to ship that consignment and which are not. Allocation rules are optional criteria that define the consignments that a particular carrier service is eligible to take. You can specify the following:</p>
+<ul>
+<li>Maximum and minimum dimensions and weight</li>
+<li>Maximum monetary value</li>
+<li>Excluded UK postcode areas</li>
+<li>Excluded countries</li>
+<li>Allocation tags.</li>
+</ul>
+<p>For example, you could specify that a particular carrier service should only be allocated consignments that weigh between 1-25 Kg. Subsequently, PRO would not consider this service when allocating a consignment with a weight of 30Kg.</p>
+<h3 id="configuring-allocation-rules">Configuring Allocation Rules</h3>
+<p>Allocation rules must be configured in the PRO UI. To configure allocation rules:</p>
+<ol>
+<li><p>Log in to the PRO UI and open the <a href="https://www.electioapp.com/Configuration/carrierservices/">Carrier Services</a> page (<strong>Settings</strong> &gt; <strong>Carrier Services</strong>) to display a list of available carrier services.</p>
+<p><img src="../../images/carrier-services-screen.png" alt="carrier-services-screen"></p>
+</li>
+<li><p>Select the carrier service you want to configure rules for and then click <strong>Allocation Rules</strong> to display the <strong>Manage Carrier Service Rules</strong> page.</p>
+<p><img src="../../images/carrier-service-rules-page.png" alt="carrier-service-rules-page"></p>
+</li>
+<li><p>If required, enter maximum dimensions or weights. To do so:</p>
+<ol>
+<li><p>In the <strong>Dimensions</strong> panel, click <strong>Add</strong> on the rule you want to set up (one of <strong>Allowed Weight</strong>, <strong>Allowed Girth</strong>, or <strong>Allowed Length</strong>). PRO displays editable range fields.</p>
+<p><img src="../../images/dimensions-fields.png" alt="dimensions-fields"></p>
+</li>
+<li><p>Enter the range values for the rule.</p>
+</li>
+<li><p>Click <strong>Save</strong> to confirm your changes. PRO displays your new rule under the relevant field.</p>
+<p><img src="../../images/dimensions-rule.png" alt="dimensions-rule"></p>
+<p>You can edit your new rule using the range boxes, or click <strong>Remove</strong> to remove it altogether.</p>
+</li>
+</ol>
+</li>
+<li><p>If required, enter an <strong>Allowed Compensation Value</strong>. This is the maximum monetary consignment value that the service can take.</p>
+</li>
+<li><p>If required, add an allocation tag by entering the tag name into the <strong>Allocation Filtering Tags</strong> field and clicking <strong>Add</strong>. PRO will only allocate those consignments that have a corresponding value in their <code>tags</code> property to the carrier service.</p>
+<p><img src="../../images/tags.png" alt="tags"></p>
+<p>To remove a tag from a carrier service, click the <strong>x</strong> on its icon.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on how allocation tags work, see <a href="#what-is-an-allocation-tag">What Is an Allocation Tag?</a>.</p>
+</div>
+</li>
+<li><p>If required, enter a UK postcode restriction. To do so, enter the postcode <strong>area</strong>, <strong>district</strong>, <strong>sector</strong>, and/or <strong>unit</strong> you want to restrict delivery to into the fields on the <strong>Geographic Availability</strong> panel and then click the <strong>Add</strong> button. PRO displays the restricted postcode area in the panel.</p>
+<p><img src="../../images/postcodes.png" alt="postcodes"></p>
+<p>To remove a restriction, click <strong>Remove</strong>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Geographic Availability</strong> fields enable you to be flexible when restricting postcodes for a carrier service. For example, if you wanted to prevent a carrier service from being allocated to any consignments bound for the specific postcode <em>M2 6LW</em>, you would enter the following:</p>
+<ul>
+<li><strong>area</strong> - <em>M</em></li>
+<li><strong>district</strong> - <em>2</em></li>
+<li><strong>sector</strong> - <em>6</em></li>
+<li><strong>unit</strong> - <em>LW</em></li>
+</ul>
+<p>However, if you wanted to prevent the service from being allocated to any consignments bound for the entire <em>M2</em> postcode area, you could simple enter <em>M</em> into the <strong>area</strong> field and <em>2</em> into the <strong>district</strong> field, and leave the more specific fields blank.</p>
+<p>For more information on UK postcode structures, see <a href="https://en.wikipedia.org/wiki/Postcodes_in_the_United_Kingdom#Formatting">this article</a>.</p>
+</div>
+</li>
+<li><p>If required, enter international delivery restrictions. To do so, start typing the name of the country you want to restrict delivery to into the <strong>Add Another Country</strong> field, and then click <strong>Add</strong> on the relevant country.</p>
+<p><img src="../../images/lux.png" alt="lux"></p>
+<p>To remove a country from the list, click its <strong>remove</strong> button.</p>
+</li>
+<li><p>Click <strong>Save</strong> to save your changes and finish setting up allocation rules.</p>
+</li>
+</ol>
+<h2 id="what-is-an-allocation-tag">What Is an Allocation Tag?</h2>
+<p>Allocation tags are a type of allocation rule that enables you to filter the list of available carrier services on a per-consignment basis, no matter which allocation endpoint you use in your integration. They are generally used as a flexible means of excluding carrier services that would not be suitable for a particular consignment.</p>
+<p>Tagged consignments can only be allocated to those carrier services that have a matching tag. You can still allocate untagged shipments to a carrier service that has tags.</p>
+<p>For example, a retailer might use the UI to add a <code>Flammables</code> tag to all the carrier services that they wanted to use for flammable products. They would then add the <code>Flammables</code> tag to all consignments containing flammable products. PRO would only allocate those consignments tagged as <code>Flammables</code> to a consignment in the pre-approved <code>Flammables</code> list.</p>
+<h3 id="configuring-allocation-tags">Configuring Allocation Tags</h3>
+<p>To associate tags with carrier services, use the <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/carrierservices/">Carrier Services</a> &gt; [select carrier service] &gt; Allocation Rules &gt; Allocation Filtering Tags</strong> panel of the PRO UI, as detailed in <a href="#configuring-allocation-rules">Configuring Allocation Rules</a>.</p>
+<p>To tag a consignment, add the required tag into the shipment's <code>tags</code> property, either at creation or via the <a href="https://docs.electioapp.com/#/api/UpdateConsignment">Update Consignment</a> endpoint. The <code>tags</code> property is a simple array listing all the tags that apply to the shipment.</p>
+<p>The code sample below shows a <code>tags</code> property for a consignment that contains flammable materials, oil and alcohol.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_tags" role="tab" aria-controls="tabpanel_bHGHmlrG6S_tags" data-tab="tags" tabindex="0" aria-selected="true">Tags</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_tags" role="tabpanel" data-tab="tags">
+
+<pre><code class="lang-json">&quot;Tags&quot;: [
+   &quot;Flammables&quot;,
+   &quot;Oil&quot;,
+   &quot;Alcohol&quot;
+]
+</code></pre>
+</section>
+</div>
+<h3 id="tags-example">Tags Example</h3>
+<p>Suppose that you set your carrier services up in the following way:</p>
+<ul>
+<li>You tag Carrier Service A with <code>Alcohol</code></li>
+<li>You tag Carrier Service B with <code>Flammables</code></li>
+<li>You tag Carrier Service C with <code>Alcohol</code> and <code>Flammables</code></li>
+<li>You tag Carrier Service D with <code>Oil</code></li>
+<li>You don't add any tags to Carrier Service E</li>
+</ul>
+<p>This configuration would produce the following results:</p>
+<ul>
+<li><strong>Consignment with no tags</strong> - A B C D and E are returned</li>
+<li><strong>Consignment tagged with</strong> <code>Alcohol</code> - A and C are returned</li>
+<li><strong>Consignment tagged with</strong> <code>Flammables</code> - B and C are returned</li>
+<li><strong>Consignment tagged with</strong> <code>Alcohol</code> <strong>and</strong> <code>Flammables</code> - C is returned</li>
+<li><strong>Consignment tagged with</strong> <code>Alcohol</code><strong>,</strong> <code>Flammables</code><strong>, and</strong> <code>Oil</code> - No services are returned</li>
+</ul>
+<h2 id="after-allocation">After Allocation</h2>
+<p>Once allocated to a suitable carrier service, the consignment's status changes to <em>Allocated</em>, enabling you to retrieve its package labels and (where applicable) customs documentation. All allocation endpoints also return an Allocation Summary, either singularly or (where multiple consignments have been allocated at once) in an array.</p>
+<p>The Allocation Summary contains links to the consignment resource that was allocated, a summary of the carrier service that the consignment was allocated to, a link to the relevant package labels, and a <code>ConsignmentLegs</code> array indicating how many legs the shipment will need. Where a shipment would need multiple legs to complete, the <code>ConsignmentLegs</code> array shows tracking details for each individual leg.</p>
+<p>In the example, a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em> has been allocated to a (dummy) carrier service called <em>Carrier X Next Day Super</em>.</p>
+<h3 id="allocation-summary-example">Allocation Summary Example</h3>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_allocation-summary" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_allocation-summary" data-tab="allocation-summary" tabindex="0" aria-selected="true">Allocation Summary</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_allocation-summary" role="tabpanel" data-tab="allocation-summary">
+
+<pre><code class="lang-json">[
+    {
+        &quot;StatusCode&quot;: 200,
+        &quot;ApiLinks&quot;: [
+            {
+                &quot;Rel&quot;: &quot;detail&quot;,
+                &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-05B-MMA&quot;
+            },
+            {
+                &quot;Rel&quot;: &quot;label&quot;,
+                &quot;Href&quot;: &quot;https://api.electioapp.com/labels/EC-000-05B-MMA&quot;
+            }
+        ],
+        &quot;Description&quot;: &quot;Consignment EC-000-05B-MMA has been successfully allocated with Carrier X Next Day Super for shipping on 14/06/2019 17:00:00 +00:00&quot;,
+        &quot;ConsignmentLegs&quot;: [
+            {
+                &quot;Leg&quot;: 1,
+                &quot;TrackingReferences&quot;: [
+                    &quot;TRK00009823&quot;
+                ],
+                &quot;CarrierReference&quot;: &quot;CARRIER_X&quot;,
+                &quot;CarrierServiceReference&quot;: null,
+                &quot;CarrierName&quot;: &quot;Carrier X&quot;
+            }
+        ],
+        &quot;CarrierReference&quot;: &quot;CARRIER_X&quot;,
+        &quot;CarrierName&quot;: &quot;Carrier X&quot;,
+        &quot;CarrierServiceReference&quot;: &quot;CX_NDS&quot;,
+        &quot;CarrierServiceName&quot;: &quot;Next Day Super&quot;
+    }
+]
+</code></pre>
+</section>
+</div>
+<h2 id="allocation-section-contents">Allocation Section Contents</h2>
+<ul>
+<li><a href="allocating_to_a_specific_carrier_service.html">Allocating to a Specific Carrier Service</a> - Explains how to allocate a consignment to a specific carrier service.</li>
+<li><a href="allocating_via_service_group.html">Allocating Via Service Group</a> - Explains how to allocate a consignment to the cheapest available service in the specific carrier service group.</li>
+<li><a href="allocating_using_default_allocation_rules.html">Allocating Using Default Rules</a> - Explains how to allocate a consignment based on custom business rules.</li>
+<li><a href="allocating_to_a_specific_quote.html">Allocating to a Specific Quote</a> - Explains how to allocate a consignment based on a specific delivery quote from a carrier.</li>
+<li><a href="deallocating_consignments.html">Deallocating Consignments</a> - Explains how to return a consignment to a deallocated state.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All of the URLs and examples given in this documentation relate to PRO's live production environment. To call APIs in the sandbox environment, substitute the <code>api.electioapp.com</code> portion of the API's base URL with <code>apisandbox.electioapp.com</code>. Don't forget to use your sandbox API key (as opposed to your production API key) when making the call.</p>
+<p>For more information on PRO's sandbox, see <a href="introduction.html#using-the-sandbox-environment">Using the Sandbox Environment</a>.</p>
+</div>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

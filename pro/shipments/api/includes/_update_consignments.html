@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Update Consignments Example | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Update Consignments Example | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link rel="stylesheet" href="../../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../toc.html">
+    <meta id="docfx-style:rel" content="../../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" src="../../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="">
+
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            
+        </li>
+        <li class="li-time-to-read">
+             ~3 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            
+        </li>
+        <li class="li-time-to-read">
+             ~3 minutes  to read
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="tab">
+    <button class="staticTabButton">Update Consignment Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard(this, 'updateConsEndpoint')"><span class='glyphicon glyphicon-copy'></span><span class='copy'>Copy</span></div>
+</div>
+<div id="updateConsEndpoint" class="staticTabContent" onclick="CopyToClipboard(this, 'updateConsEndpoint')">
+<pre><code>PUT https://api.electioapp.com/consignments/
+</code></pre>
+</div>
+<p>The <strong>Update Consignment</strong> endpoint enables you to update an existing consignment. When you make an <strong>Update Consignment</strong> request for a particular consignment, SortedPRO overwrites the existing consignment's details with new details provided in the body of the request.</p>
+<p>The structure of the <strong>Update Consignment</strong> request is identical to that of the <strong>Create Consignment</strong> request. PRO uses the following rules when updating consignment properties:</p>
+<ul>
+<li><code>{Reference}</code> - Required property. Cannot be updated.</li>
+<li><code>{Source}</code> - Ignored. Cannot be updated.</li>
+<li><code>{ShippingDate}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{RequestedDeliveryDate}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{ConsignmentReferenceProvidedByCustomer}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{CustomsDocumentation}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{MetaData}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{Addresses}</code>	- PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted. You cannot update addresses after a consignment has been allocated.</li>
+<li><code>{Packages}</code> - If any values are provided, then PRO attempts to replace the entire property with the updated values. You cannot update packages after a consignment has been allocated. If no values are provided, PRO makes no changes to the consignment.</li>
+<li><code>{Tags}</code> - If any values are provided, then PRO replaces the entire property with the updated values. If no values are provided, PRO makes no changes to the consignment.</li>
+</ul>
+<aside class="note">
+  For full reference information on the <strong>Update Consignment</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/UpdateConsignment">Update Consignment</a></strong> page of the API reference.
+</aside>
+<h3 id="update-consignments-example">Update Consignments Example</h3>
+<p>The example shows an  <strong>Update Consignment</strong> request for a single shipment that has a <code>{ConsignmentReference}</code> of <em>EC-000-087-01A</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Update Consignment Request</button>
+    <div class="copybutton" onclick="CopyToClipboard(this, 'updateConsRequest')"><span class='glyphicon glyphicon-copy'></span><span class='copy'>Copy</span></div>
+</div>
+<div id="updateConsRequest" class="staticTabContent" onclick="CopyToClipboard(this, 'updateConsRequest')">
+<pre><code class="lang-json">{
+  &quot;ShippingDate&quot;: &quot;2019-06-02T00:00:00+01:00&quot;,
+  &quot;Reference&quot;: &quot;EC-000-087-01A&quot;,
+  &quot;RequestedDeliveryDate&quot;: {
+    &quot;Date&quot;: &quot;2019-06-05T00:00:00+01:00&quot;,
+    &quot;IsToBeExactlyOnTheDateSpecified&quot;: false
+  },
+  &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;Your Reference&quot;,
+  &quot;CustomsDocumentation&quot;: {
+    &quot;DesignatedPersonResponsible&quot;: &quot;Peter McPetersson&quot;,
+    &quot;ImportersVatNumber&quot;: &quot;02345555&quot;,
+    &quot;CategoryType&quot;: &quot;Other&quot;,
+    &quot;ShipperCustomsReference&quot;: &quot;CREF0001&quot;,
+    &quot;ImportersTaxCode&quot;: &quot;TC001&quot;,
+    &quot;ImportersTelephone&quot;: &quot;0161123456&quot;,
+    &quot;ImportersFax&quot;: &quot;01611124547&quot;,
+    &quot;ImportersEmail&quot;: &quot;peter.mcpetersson@test.com&quot;,
+    &quot;CN23Comments&quot;: &quot;Comments&quot;,
+    &quot;ReferencesOfAttachedInvoices&quot;: [
+      &quot;INV001&quot;
+    ],
+    &quot;ReferencesOfAttachedCertificates&quot;: [
+      &quot;CERT001&quot;
+    ],
+    &quot;ReferencesOfAttachedLicences&quot;: [
+      &quot;LIC001&quot;
+    ],
+    &quot;CategoryTypeExplanation&quot;: &quot;Explanation&quot;,
+    &quot;DeclarationDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;,
+    &quot;OfficeOfPosting&quot;: &quot;Manchester&quot;,
+    &quot;ReasonForExport&quot;: &quot;Sale&quot;,
+    &quot;ShippingTerms&quot;: &quot;CFR&quot;,
+    &quot;ShippersVatNumber&quot;: &quot;874541414&quot;,
+    &quot;ReceiversTaxCode&quot;: &quot;TC5454&quot;,
+    &quot;ReceiversVatNumber&quot;: &quot;8745474&quot;,
+    &quot;InvoiceDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;
+  },
+  &quot;Addresses&quot;: [
+    {
+      &quot;AddressType&quot;: &quot;Origin&quot;,
+      &quot;ShippingLocationReference&quot;: &quot;Shipping_Location_Reference&quot;,
+      &quot;IsCached&quot;: false
+    },
+    {
+      &quot;AddressType&quot;: &quot;Destination&quot;,
+      &quot;Contact&quot;: {
+        &quot;Title&quot;: &quot;Mr&quot;,
+        &quot;FirstName&quot;: &quot;Peter&quot;,
+        &quot;LastName&quot;: &quot;McPetersson&quot;,
+        &quot;Telephone&quot;: &quot;07702123456&quot;,
+        &quot;Mobile&quot;: &quot;07702123456&quot;,
+        &quot;LandLine&quot;: &quot;0161544123&quot;,
+        &quot;Email&quot;: &quot;peter.mcpetersson@test.com&quot;
+      },
+      &quot;CompanyName&quot;: &quot;Test Company (UK) Ltd.&quot;,
+      &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+      &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+      &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+      &quot;Town&quot;: &quot;Manchester&quot;,
+      &quot;Region&quot;: &quot;Greater Manchester&quot;,
+      &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+      &quot;Country&quot;: {
+        &quot;Name&quot;: &quot;Great Britain&quot;,
+        &quot;IsoCode&quot;: {
+          &quot;TwoLetterCode&quot;: &quot;GB&quot;
+        }
+      },
+      &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+      &quot;LatLong&quot;: {
+        &quot;Latitude&quot;: 53.474220,
+        &quot;Longitude&quot;: -2.246049
+      },
+      &quot;IsCached&quot;: false
+    }
+  ],
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;Updated_Key&quot;,
+      &quot;StringValue&quot;: &quot;Updated_Value&quot;
+    }
+  ],
+  &quot;Packages&quot;: [
+    {
+      &quot;Items&quot;: [
+        {
+          &quot;Reference&quot;: &quot;3385728cb8594c739dccb2cf63454101&quot;,
+          &quot;Sku&quot;: &quot;SKU_Updated&quot;,
+          &quot;Model&quot;: &quot;Updated Model&quot;,
+          &quot;Description&quot;: &quot;Updated Description&quot;,
+          &quot;CountryOfOrigin&quot;: {
+            &quot;IsoCode&quot;: {
+              &quot;TwoLetterCode&quot;: &quot;GB&quot;
+            }
+          },
+          &quot;HarmonisationCode&quot;: &quot;NewCode&quot;,
+          &quot;Weight&quot;: {
+            &quot;Value&quot;: 0.5,
+            &quot;Unit&quot;: &quot;Kg&quot;
+          },
+          &quot;Dimensions&quot;: {
+            &quot;Unit&quot;: &quot;Cm&quot;,
+            &quot;Width&quot;: 10.0,
+            &quot;Length&quot;: 10.0,
+            &quot;Height&quot;: 10.0
+          },
+          &quot;Value&quot;: {
+            &quot;Amount&quot;: 5.99,
+            &quot;Currency&quot;: {
+              &quot;IsoCode&quot;: &quot;GBP&quot;
+            }
+          },
+          &quot;ItemReferenceProvidedByCustomer&quot;: &quot;UpdatedItemReference&quot;,
+          &quot;Barcode&quot;: {
+            &quot;Code&quot;: &quot;09887-091221&quot;,
+            &quot;BarcodeType&quot;: &quot;Code39&quot;
+          },
+          &quot;MetaData&quot;: [
+            {
+              &quot;KeyValue&quot;: &quot;NewMetadata&quot;,
+              &quot;StringValue&quot;: &quot;NewValue&quot;
+            }
+          ],
+          &quot;Quantity&quot;: 1,
+          &quot;Unit&quot;: &quot;Box&quot;,
+          &quot;HarmonisationKeyWords&quot;: [
+            &quot;Keyword1&quot;,
+            &quot;Keyword2&quot;
+          ]
+        }
+      ],
+      &quot;Reference&quot;: &quot;EP-000-045-9FD&quot;,
+      &quot;PackageReferenceProvidedByCustomer&quot;: &quot;UpdatedReference&quot;,
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 0.5,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 10.0,
+        &quot;Length&quot;: 10.0,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Description&quot;: &quot;Updated Description&quot;,
+      &quot;Value&quot;: {
+        &quot;Amount&quot;: 5.99,
+        &quot;Currency&quot;: {
+          &quot;IsoCode&quot;: &quot;GBP&quot;
+        }
+      },
+      &quot;Barcode&quot;: {
+        &quot;Code&quot;: &quot;09887-091221&quot;,
+        &quot;BarcodeType&quot;: &quot;Code39&quot;
+      },
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;New_Metadata&quot;,
+          &quot;StringValue&quot;: &quot;New Value&quot;
+        }
+      ]
+    }
+  ],
+  &quot;Tags&quot;: [
+    &quot;TagC&quot;
+  ]
+}
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Update Consignment Response</button>
+    <div class="copybutton" onclick="CopyToClipboard(this, 'updateConsResponse')"><span class='glyphicon glyphicon-copy'></span><span class='copy'>Copy</span></div>
+</div>
+<div id="updateConsResponse" class="staticTabContent" onclick="CopyToClipboard(this, 'updateConsResponse')">
+<pre><code class="lang-json">[
+  {
+    &quot;Rel&quot;: &quot;Link&quot;,
+    &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-087-01A&quot;
+  }
+]
+</code></pre>
+</div>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

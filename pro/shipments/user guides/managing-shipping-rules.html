@@ -1,0 +1,1010 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Managing Shipping Rules | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Managing Shipping Rules | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="guide-managing-shipping-rules">
+<h1 id="managing-shipping-rules">Managing Shipping Rules</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            19/01/2020
+        </li>
+        <li class="li-time-to-read">
+             ~10 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            19/01/2020
+        </li>
+        <li class="li-time-to-read">
+             ~10 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/7d40af995c39ae5ed43c7e834bc10dae.jpg?d=robohash" class="img-circle img-contributor" title="martin.box@sorted.com"/>
+            <span class="tooltip-text">martin.box@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/b76a122b0a4c72b170aa7f268278ebc4.jpg?d=robohash" class="img-circle img-contributor" title="stephen.mckenzie@sorted.com"/>
+            <span class="tooltip-text">stephen.mckenzie@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">administration</li>
+        <li class="tag-search">guide</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">gui</li>
+        <li class="tag-search">portal</li>
+        <li class="tag-search">v2</li>
+        <li class="tag-search">shipping rules</li>
+        <li class="tag-search">settings</li>
+    </ul>
+</div>
+
+<p>The Sorted Portal's <strong>shipping rules</strong> feature enables you to specify business logic to be used when the system allocates a shipment to a carrier service. This page explains how to configure and maintain shipping rules for carrier services and locations.</p>
+[!include[_development_statement](../pro/api/includes/_development_statement.md)]<hr>
+<h2 id="what-is-a-shipping-rule">What Is a Shipping Rule?</h2>
+[!include[_what_is_a_shipping_rule](../pro/api/includes/_what_is_a_shipping_rule.md)]
+<p>See the <a href="#worked-examples">Worked Examples</a> section for detailed examples on how PRO takes rules into account when allocating shipments.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on the shipment allocation process as a whole, see the <a href="../pro/api/shipments/allocating_shipments.md">Allocating Shipments</a> section of the API User Guide.</p>
+</div>
+<h2 id="viewing-existing-shipping-rules">Viewing Existing Shipping Rules</h2>
+<p>To view your existing shipping rules, select the <strong>Settings &gt; Shipping &gt; Shipping Rules</strong> page.</p>
+<p><img src="images/pro_manage_shipping_rules.png" alt="pro_manage_shipping_rules"></p>
+<p>The <strong>Shipping Rules</strong> page displays the following information about each rule:</p>
+<ul>
+<li><strong>Name</strong></li>
+<li><strong>Description</strong></li>
+<li><strong>Valid From / To</strong> - Shipping rules have set start and end dates, defined during the configuration process</li>
+<li><strong>Enabled</strong> - Use the toggle to enable or disable existing shipping rules. PRO does not take disabled shipping rules into account.</li>
+</ul>
+<p>To edit an existing rule, click <strong>Edit</strong>. The process of editing an existing rule is the same as that used to set up a new rule, as explained in the <a href="#adding-new-shipping-rules">Adding New Shipping Rules</a> section.</p>
+<p>To export details of the rule as a JSON object, click <strong>Export</strong>.</p>
+<h2 id="adding-new-shipping-rules">Adding New Shipping Rules</h2>
+<p>To add a new shipping rule, select the <strong>Settings &gt; Shipping &gt; Shipping Rules</strong> page and click <strong>Add New Shipping Rule</strong>. The Portal displays the <strong>Add New Shipping Rule</strong> page.</p>
+<h3 id="step-1-adding-shipping-rule-details">Step 1: Adding Shipping Rule Details</h3>
+<p>The <strong>Add Shipping Rule Details</strong> card enables you to enter identifying information about your new rule:</p>
+<p><img src="images/pro_manage_shipping_rules_add_rule.png" alt="pro_manage_shipping_rules_add_rule"></p>
+<p>To add shipping rule details:</p>
+<ol>
+<li>Optionally, enter <strong>Valid From</strong> and <strong>Valid To</strong> dates. The rule only applies during the specified time period.</li>
+<li>Enter a unique <strong>Name</strong> of between five and 100 characters for the rule.</li>
+<li>Optionally, enter a <strong>Description</strong> of up to 150 characters for the rule.</li>
+<li>Click <strong>Next</strong> to display the <strong>Set Countries, Regions and Postcodes</strong> card.</li>
+</ol>
+<h3 id="step-2-setting-countries-regions-and-postcodes">Step 2: Setting Countries, Regions and Postcodes</h3>
+<p>The <strong>Set Countries, Regions and Postcodes</strong> card enables you to set geographic restrictions that may apply to the rule. For example, you might specify that the rule applies only to those shipments destined for the UK, or that the rule applies to all shipments except those bound for the USA.</p>
+<p><img src="images/pro_manage_shipping_rules_add_location.png" alt="pro_manage_shipping_rules_add_location"></p>
+<p>To explicitly include or exclude countries from the shipping rule:</p>
+<ol>
+<li>Select the <strong>Country</strong> that the rule applies to. The country is added to the <strong>My Selected Countries</strong> list.</li>
+<li>Use the <strong>Include countries</strong> and <strong>Exclude countries</strong> radio buttons to select whether the countries in the list should be included or excluded from the rule.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You cannot specify both include and exclude destination criteria in the same rule.</p>
+</div>
+<h4 id="regional-rules">Regional Rules</h4>
+<p>For certain countries, the system enables you to create rules at a regional or postcode level. For example, you might specify that the rule applies only to those shipments destined for an <em>M2</em> postcode, or that the rule applies to all shipments except those destined for the state of Florida, USA.</p>
+<p>Currently, Sorted supports regional rules for the following countries:</p>
+<ul>
+<li>United States (states)</li>
+<li>United Kingdom (counties)</li>
+<li>Australia (states)</li>
+<li>Canada (provinces)</li>
+<li>Ireland (counties)</li>
+</ul>
+<p>To configure regional rules:</p>
+<ol>
+<li>Select the relevant country from the <strong>Country</strong> list and ensure that the <strong>Include regions and postcodes</strong> radio button is selected.</li>
+<li>Select the <strong>Set regions and/or postcodes</strong> check box. The Portal displays additional fields relating to region selection.</li>
+<li>Use the radio buttons to select whether you want to <strong>Include regions and postcodes</strong> or <strong>Exclude</strong> regions and postcodes.</li>
+<li>Select an entire region to include or exclude from the rule (e.g. a US state or British county) by selecting that region from the <strong>Regions</strong> drop-down menu.</li>
+<li>Enter a postcode into the <strong>Postcodes</strong> field to add that postcode to the rule.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For UK shipments, you can enter either a whole postcode (e.g. M2 6LW) or a postcode area (e.g. M2) into the <strong>Postcodes</strong> field. If you enter a postcode area then the Portal selects all shipments in that area.</p>
+</div>
+<p>To add additional regions or postcodes, select <strong>Add New Region</strong> or <strong>Add New Postcode</strong>.</p>
+<p>To remove a region or postcode, click its trash icon. Alternatively, select <strong>Remove all regions</strong> or <strong>Remove all postcodes</strong>.</p>
+<p>Once you have finished setting up geographic restrictions, click <strong>Next</strong> to display the <strong>Set Values, Weight, and Dimensions</strong> card.</p>
+<h3 id="step-3-setting-values-weight-and-dimensions">Step 3: Setting Values, Weight and Dimensions</h3>
+<p>The <strong>Set Values, Weight, and Dimensions</strong> card enables you to specify minimum and maximum values, weights and dimensions for the rule.</p>
+<p><img src="images/pro_manage_shipping_rules_add_dims.png" alt="pro_manage_shipping_rules_add_dims"></p>
+<p>All values on this card are optional and &quot;open-ended&quot;. That is, you can specify a minimum value or weight without specifying a maximum, or vice versa.</p>
+<p>To configure values, weights and dimensions:</p>
+<ol>
+<li>Enter a minimum and / or maximum <strong>Shipment Value</strong> as a numerical value, and select the relevant <strong>Currency</strong>.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can add up to five shipment value ranges. To add a new value range, click <strong>Add new value</strong>. To remove a value range, click the trash icon.</p>
+</div>
+<ol start="2">
+<li>Enter a minimum and / or maximum <strong>Shipment Dead Weight</strong> as a numerical value, and use the radio buttons to select whether the value is in <strong>kg</strong> or <strong>lbs</strong>.</li>
+<li>Enter a minimum and / or maximum <strong>Package Volumetric Weight</strong> as a numerical value. The <strong>Package Volumetric Weight</strong> uses the weight units selected in the <strong>Shipment Dead Weight</strong> field.</li>
+<li>Enter a minimum and / or maximum <strong>Package Length</strong> as a numerical value, and use the radio buttons to select whether the value is in <strong>cm</strong> or <strong>in</strong>.</li>
+<li>Enter a minimum and / or maximum <strong>Package Girth</strong> as a numerical value. The <strong>Package Girth</strong> uses the dimension units selected in the <strong>Package Length</strong> field.</li>
+</ol>
+<p>When you have configured values, weights, and dimensions, click <strong>Next</strong> to display the <strong>Link Tenants and Channels card</strong> card.</p>
+<h3 id="step-4-linking-tenants-and-channels">Step 4: Linking Tenants and Channels</h3>
+<p>The <strong>Link Tenants and Channels</strong> card enables you to select the tenants and channels that your rule applies to, where applicable.</p>
+<p><img src="images/pro_manage_shipping_rules_add_tenant_channel.png" alt="pro_manage_shipping_rules_add_tenant_channel"></p>
+<p>You can link tenants and channels to your rule in the following ways:</p>
+<ul>
+<li>To link your new rule to a tenant and all of its associated channels, select that tenant from the list.</li>
+<li>To link your new rule to selected channels within a tenant, click the <strong>+</strong> icon by the tenant's name to display all of that tenant's channels, and then select the channel or channels you require.</li>
+<li>To search for a specific tenant or channel, type a name into the search bar.</li>
+<li>To select all tenants and channels that you have available, click <strong>Select all tenants and channels</strong>.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on configuring tenants and channels within the Sorted platform, see the <a href="managing-tenants-and-channels.html">Managing Tenants and Channels</a> page.</p>
+</div>
+<p>If a rule has tenants and channels selected then it only applies to shipments created as part of that tenant or channel. Likewise, if you do not select any tenants of channels on this card then your rule applies to all of your tenants and channels. <!--is that right?--></p>
+<p>Once you have selected the tenants and channels you require, click <strong>Next</strong> to display the <strong>Link Carrier Services</strong> card.</p>
+<h3 id="step-5-linking-carrier-services">Step 5: Linking Carrier Services</h3>
+<p>The <strong>Link Carrier Services</strong> card enables you to select the carrier services that your shipping rule applies to.</p>
+<p><img src="images/pro_manage_shipping_rules_link_carrier_services.png" alt="pro_manage_shipping_rules_link_carrier_services"></p>
+<p>Select the carrier services that you want the new rule to apply to. To search for a specific carrier service, type a name into the search bar.</p>
+<p>Once you have selected the required carrier services, click <strong>Next</strong> to display the <strong>Link Shipping Locations</strong> card.</p>
+<h3 id="step-6-linking-shipping-locations">Step 6: Linking Shipping Locations</h3>
+<p>The <strong>Link Shipping Locations</strong> card enables you to select the shipping locations that your shipping rule applies to. You can either <em>include</em> shipping locations (i.e. &quot;the rule applies to all shipments originating from these shipping locations&quot;) or <em>exclude</em> shipping locations (i.e. &quot;the rule applies to all shipments <strong>except</strong> those originating from these shipping locations&quot;).</p>
+<p><img src="images/pro_manage_shipping_rules_link_shipping_locations.png" alt="pro_manage_shipping_rules_link_shipping_locations"></p>
+<p>You can link shipping locations to your rule in the following ways:</p>
+<ul>
+<li>To link a specific location or locations to your rule, use the radio buttons to select whether you want to <strong>Include shipping locations</strong> or <strong>Exclude shipping locations</strong> and then select the shipping locations you want to link from the list.</li>
+<li>To search for a specific carrier service, type a name into the search bar.</li>
+<li>To select all available shipping locations, click <strong>Select All</strong>.</li>
+</ul>
+<p>Once you have finished linking shipping locations, click <strong>Add Shipping Rule</strong> to save your changes and close the <strong>Add Shipping Rule</strong> page.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>This section gives worked examples for how combinations of rules can affect the carrier services that are eligible to take a shipment.</p>
+<p>In these examples we have four carrier services: <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, and <strong>D</strong>. Each of these carrier services has its own linked ruleset that defines whether or not it is eligible to take the shipments in that example.</p>
+<h3 id="scenario-1---geographic-rulesets">Scenario 1 - Geographic Rulesets</h3>
+<p>In this scenario, we have the following rules defined:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Geographic Rules</th>
+<th style="text-align: center;">Value Rules</th>
+<th style="text-align: center;">Weight/Dimension Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Include: Country <strong>US</strong>, postal code =~ <strong>322xx</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">Include: Country <strong>US</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Exclude: Country <strong>US</strong>, Postal Code =~ <strong>809xx</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p>We have the following shipment:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US, 32202</td>
+<td style="text-align: center;">20GBP</td>
+<td style="text-align: center;">1.2kg</td>
+</tr>
+</tbody>
+</table>
+<p>The results of processing the shipping rules are as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">✔️</td>
+<td>Geographic rule matches country and postcode</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">✔️</td>
+<td>Geographic rule matches country</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by geographic rules</td>
+</tr>
+</tbody>
+</table>
+<p>However, given the following shipment the results differ:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US, 80922</td>
+<td style="text-align: center;">20GBP</td>
+<td style="text-align: center;">1.2kg</td>
+</tr>
+</tbody>
+</table>
+<p>Results:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">❌</td>
+<td>Geographic rule postcode mismatch - service is not included</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">✔️</td>
+<td>Geographic rule matches country</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">❌</td>
+<td>Excluded by geographic rules</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scenario-2---value-rulesets">Scenario 2 - Value Rulesets</h3>
+<p>In this scenario, we have the following rules defined:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Geographic Rules</th>
+<th style="text-align: center;">Value Rules</th>
+<th style="text-align: center;">Weight/Dimension Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Include: <strong>&gt; 10GBP</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Include: <strong>&gt;= 10GBP</strong>, <strong>&lt; 50GBP</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Exclude: <strong>&gt; 15GBP</strong></td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<p>We have the following shipment:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US, 32202</td>
+<td style="text-align: center;">20GBP</td>
+<td style="text-align: center;">1.2kg</td>
+</tr>
+</tbody>
+</table>
+<p>The results of processing the shipping rules are as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">✔️</td>
+<td>Value rule includes this service</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">✔️</td>
+<td>Value rule includes this service</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">❌</td>
+<td>Excluded by value rule</td>
+</tr>
+</tbody>
+</table>
+<p>However, given the following shipment the results differ:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US, 32202</td>
+<td style="text-align: center;">8.55GBP</td>
+<td style="text-align: center;">1.2kg</td>
+</tr>
+</tbody>
+</table>
+<p>Results:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">❌</td>
+<td>Value rule not matched - service is not included</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">❌</td>
+<td>Value rule not matched - service is not included</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by value rule</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scenario-3---weights-and-dimensions-rulesets">Scenario 3 - Weights and Dimensions Rulesets</h3>
+<p>In this scenario, we have the following rules defined:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Geographic Rules</th>
+<th style="text-align: center;">Value Rules</th>
+<th style="text-align: center;">Weight/Dimension Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Include: <strong>&lt; 10kg</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Include: <strong>&gt; 1kg</strong>, <strong>&lt;= 15kg</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Exclude: <strong>&gt; 8.5kg</strong></td>
+</tr>
+</tbody>
+</table>
+<p>We have the following shipment:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US, 32202</td>
+<td style="text-align: center;">20GBP</td>
+<td style="text-align: center;">9.0kg</td>
+</tr>
+</tbody>
+</table>
+<p>The results of processing the shipping rules are as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">✔️</td>
+<td>Weight rule includes this service</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">✔️</td>
+<td>Weight rule includes this service</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">❌</td>
+<td>Excluded by weight rule</td>
+</tr>
+</tbody>
+</table>
+<p>However, given the following shipment the results differ:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">US, 32202</td>
+<td style="text-align: center;">8.55GBP</td>
+<td style="text-align: center;">5.25kg</td>
+</tr>
+</tbody>
+</table>
+<p>Results:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">✔️</td>
+<td>Weight rule includes this service</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">✔️</td>
+<td>Weight rule includes this service</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by weight rule</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scenario-4---mixed-rulesets">Scenario 4 - Mixed Rulesets</h3>
+<p>This scenario is more complex and involves multiple types of rules:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Geographic Rules</th>
+<th style="text-align: center;">Value Rules</th>
+<th style="text-align: center;">Weight/Dimension Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">Include: Country <strong>DE</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Include: <strong>&lt; 10kg</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Include: <strong>&gt; 10GBP</strong>, <strong>&lt;= 20GBP</strong></td>
+<td style="text-align: center;">Include: <strong>&gt; 1kg</strong>, <strong>&lt;= 15kg</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">Exclude: Country <strong>DE</strong>, Postal Code =~ <strong>554xx</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">Exclude: <strong>&gt; 8.5kg</strong></td>
+</tr>
+</tbody>
+</table>
+<p>We have the following shipment:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">DE, 55482</td>
+<td style="text-align: center;">9.65GBP</td>
+<td style="text-align: center;">5.45kg</td>
+</tr>
+</tbody>
+</table>
+<p>The results of processing the shipping rules are as follows:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">✔️</td>
+<td>Matches both geographic include rule and weight include rule</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">❌</td>
+<td>Does not match value rule; matches weight rule</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">❌</td>
+<td>Excluded by geographic rule. Not excluded by weight rule.</td>
+</tr>
+</tbody>
+</table>
+<p>However, given the following shipment the results differ:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Destination</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">DE, 20054</td>
+<td style="text-align: center;">19.25GBP</td>
+<td style="text-align: center;">9.5kg</td>
+</tr>
+</tbody>
+</table>
+<p>Results:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Carrier Service</th>
+<th style="text-align: center;">Included</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">✔️</td>
+<td>Matches both geographic and weight/dimension rule includes</td>
+</tr>
+<tr>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">✔️</td>
+<td>Matches both value and weight/dimension rule includes</td>
+</tr>
+<tr>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">✔️</td>
+<td>Not excluded by any rules</td>
+</tr>
+<tr>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">❌</td>
+<td>Not excluded by geographic rule. Excluded by weight/dimension rule</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

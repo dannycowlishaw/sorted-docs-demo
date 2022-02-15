@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Managing Allocation Windows | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Managing Allocation Windows | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="guide-managing-allocation-windows">
+<h1 id="managing-allocation-windows">Managing Allocation Windows</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            15/06/2021
+        </li>
+        <li class="li-time-to-read">
+             ~6 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            15/06/2021
+        </li>
+        <li class="li-time-to-read">
+             ~6 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">administration</li>
+        <li class="tag-search">guide</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">gui</li>
+        <li class="tag-search">portal</li>
+        <li class="tag-search">v2</li>
+        <li class="tag-search">allocation</li>
+        <li class="tag-search">window</li>
+        <li class="tag-search">exception</li>
+        <li class="tag-search">post-midnight</li>
+    </ul>
+</div>
+
+<p>In PRO, an allocation window is a recurring time period in which a carrier service is available for quotes. This page explains how to configure allocation windows for your carrier services, including specifying bespoke cut-off times for same-day delivery.</p>
+[!include[_development_statement](../pro/api/includes/_development_statement.md)]<hr>
+<h2 id="allocation-window-overview">Allocation Window Overview</h2>
+<p>Allocation windows enable you to limit the time periods in which PRO can return a quote for a particular carrier service. This can help you to set up &quot;real-time&quot; shipping workflows (i.e. a workflow in which shipments are allocated to a carrier service as they are about to leave the warehouse).</p>
+<p>In PRO, allocation windows are configured as exclusions (that is, you configure days and times during which PRO <em>cannot</em> return quotes for a particular carrier service, with the system able to return quotes for that service at all other times). Allocation window exclusions are comprised of the following information:</p>
+<ul>
+<li>One or more associated carrier services.</li>
+<li>One or more associated shipping locations.</li>
+<li>For organisations using multi-tenancy, a selected scope (i.e. a list of your organisation's tenants and channels to which the window exclusion applies).</li>
+<li>Start and end times for the window exclusion.</li>
+</ul>
+<p>Once the window is configured, PRO can only return the selected carrier services in quotes requested from the selected shipping locations by the selected tenants and channels outside the times specified. You can configured multiple window exclusions for each carrier service if required.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Allocation windows define whether or not a particular carrier service is available for consideration when generating quotes. They do not define the availability of the carrier service to take the shipment in question. Even if a service is &quot;available&quot; outside an allocation window exclusion, that is not a guarantee that the service will be able to actually quote.</p>
+</div>
+<h3 id="allocation-window-worked-example">Allocation Window Worked Example</h3>
+<p>The following example shows window exclusions set up for three carrier services:</p>
+<table>
+<thead>
+<tr>
+<th>Carrier Service</th>
+<th>Scope(s)</th>
+<th>Window Start</th>
+<th>Window End</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>HMSUK</code></td>
+<td>Location: <code>SLOC001</code>, Tenant: <code>*</code>, Channel: <code>*</code></td>
+<td><code>00:00:00 (UTC)</code></td>
+<td><code>03:29:59 (UTC)</code></td>
+</tr>
+<tr>
+<td><code>HMSBFPO</code></td>
+<td>Location: <code>*</code>, Tenant: <code>TEN_01</code>, Channel: <code>*</code></td>
+<td><code>00:00:00 (UTC)</code></td>
+<td><code>03:29:59 (UTC)</code></td>
+</tr>
+<tr>
+<td><code>DPD_ND</code></td>
+<td>Location: <code>*</code>, Tenant: <code>TEN_01</code>, Channel: <code>*</code></td>
+<td><code>00:00:00 (UTC)</code></td>
+<td><code>13:59:59 (UTC)</code></td>
+</tr>
+<tr>
+<td><code>DPD_ND</code></td>
+<td>Location: <code>*</code>, Tenant: <code>TEN_01</code>, Channel: <code>*</code></td>
+<td><code>19:00:01 (UTC)</code></td>
+<td><code>23:59:59 (UTC)</code></td>
+</tr>
+<tr>
+<td><code>DPD_ND</code></td>
+<td>Location: <code>*</code>, Tenant: <code>*</code>, Channel: <code>*</code></td>
+<td><code>03:30:01 (UTC)</code></td>
+<td><code>23:59:59 (UTC)</code></td>
+</tr>
+</tbody>
+</table>
+<p>With this configuration:</p>
+<ul>
+<li>Service <code>HMSUK</code> can only be returned in quotes from shipping location <code>SLOC001</code> between 03:30:00 and 23:59:59.</li>
+<li>Service <code>HMSBFPO</code> can only be returned in quotes requested by tenant <code>TEN_01</code> between 03:30:00 and 23:59:59.</li>
+<li>Service <code>DPD_ND</code> can only be returned in quotes requested by tenant <code>TEN_01</code> between 14:00:00 and 19:00:00.</li>
+<li>Service <code>DPD_ND</code> can only be returned in quotes requested by tenants other than <code>TEN_01</code> between 00:00:00 and 03:30:00.</li>
+</ul>
+<h3 id="creating-allocation-window-exclusions">Creating Allocation Window Exclusions</h3>
+<p>To create an allocation window exclusion:</p>
+<ol>
+<li><p>From the side menu, select <strong>Settings</strong> &gt; <strong>Allocation Windows</strong> &gt; <strong>Allocation Window Exclusions</strong> to display the <strong>Allocation Window Exclusions</strong> page.
+<img src="images/awe_screen.png" alt="awe_screen"></p>
+</li>
+<li><p>Click the <strong>Create Allocation Window Exclusion</strong> button to display the <strong>Shipping Location</strong> tile.
+<img src="images/awe_create_step1.png" alt="awe_create_step1"></p>
+</li>
+<li><p>Select the shipping locations to which the allocation window exclusion should apply and then click <strong>Next</strong> to display the <strong>Tenants and Channels</strong> tile.
+<img src="images/awe_create_step2.png" alt="awe_create_step2"></p>
+</li>
+<li><p>Select the scope for the allocation window exclusion:</p>
+</li>
+</ol>
+<ul>
+<li>To select all available tenants and channels, click the <strong>Select All</strong> check box at the top of the list.</li>
+<li>To select a particular tenant and all of its channels, click that tenant's <strong>Select All</strong> check box.</li>
+<li>To select a particular channel within a tenant, click the tenant's <strong>+</strong> icon and then select the channel from the list.</li>
+</ul>
+<ol start="5">
+<li><p>Click <strong>Next</strong> to display the <strong>Carrier Services</strong> tile.
+<img src="images/awe_create_step3.png" alt="awe_create_step3"></p>
+</li>
+<li><p>Select the carrier services to which the allocation window exception should apply and then click <strong>Next</strong> to display the <strong>Exclusion Details</strong> tab.
+<img src="images/awe_create_step4.png" alt="awe_create_step4"></p>
+</li>
+<li><p>Configure the days and times that the exclusion applies to.</p>
+<ol>
+<li>Select the <strong>Exclusion Days</strong> of the week to which the exclusion applies.</li>
+<li>Enter the start time of the exclusion into the <strong>Window Start</strong> field, and the end time into the <strong>Window End</strong> field.</li>
+<li>Enter a brief <strong>Description</strong> of the exclusion window.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Allocation exclusion windows repeat weekly based on the days and times selected.</p>
+</div>
+</li>
+<li><p>Click <strong>Create Allocation Exclusion</strong> to finish creating the window. The system no longer returns the selected services in quotes from the selected tenants, channels, and/or locations within the specified timeframe.</p>
+</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can configure multiple windows for services, tenants/channels, and locations if required. For example, if you wanted to exclude a particular service between 09:00:00 and 10:00:00 in the morning, and then again between 21:00:00 and 22:00:00 at night, you could set up two separate windows with the same service, tenant/channel, and location details.</p>
+</div>
+<h3 id="editing-existing-allocation-window-exclusions">Editing Existing Allocation Window Exclusions</h3>
+<p>To edit an existing allocation window exclusion, select <strong>Settings</strong> &gt; <strong>Allocation Windows</strong> &gt; <strong>Allocation Window Exclusions</strong> to display the <strong>Allocation Window Exclusions</strong> page and then click <strong>Edit</strong> on the window that you want to edit. The process of editing an existing window exclusion is the same as that used to set up a new window exclusion.</p>
+<p>To delete an existing allocation window exclusion, select <strong>Settings</strong> &gt; <strong>Allocation Windows</strong> &gt; <strong>Allocation Window Exclusions</strong> to display the <strong>Allocation Window Exclusions</strong> page and then click <strong>Delete</strong> on the window that you want to delete. Select <strong>Delect Exclusion</strong> on the confirmation dialog to confirm the deletion.</p>
+<p><img src="images/awe_edit.png" alt="awe_edit"></p>
+<h2 id="post-midnight-allocation-overview">Post-Midnight Allocation Overview</h2>
+<p>Post-midnight allocation enables a next-day service to operate as a same-day service for a specified period of time.</p>
+<p>Ordinarily, a next-day service would have an allocation cutoff of 23:59:59 on any given day. Once that time has passed then a new day has started, and any shipments allocated would be scheduled for the day after.</p>
+<p>For example, Shipment 1 allocating to next-day service <code>Example1</code> at 23:59:00 on a Monday would be delivered on the Tuesday, while Shipment 2 allocating to the same service five minutes later (i.e. 00:04:00 on the Tuesday) would be scheduled for delivery on the Wednesday.</p>
+<p>Post-midnight allocation enables you to push this cut-off time back. Continuing from the previous example, if you were to specify a post-midnight allocation time of 01:30 for the <code>Example1</code> carrier service, then both shipments would be delivered on the Tuesday, even though Shipment 2 was technically not created until that same day.</p>
+<p>From a configuration standpoint, as a next day service <code>Example1</code> would ordinarily have a transit time of one day. By creating a post-midnight allocation window, you effectively change the transit time of the service to zero days when allocating between 00:00 and 01:30 in the morning.</p>
+<h3 id="configuring-post-midnight-allocation-windows">Configuring Post-Midnight Allocation Windows</h3>
+<p>To create a post-midnight allocation window:</p>
+<ol>
+<li><p>From the side menu, select <strong>Settings</strong> &gt; <strong>Allocation Windows</strong> &gt; <strong>Post-Midnight Allocations</strong> to display the <strong>Post-Midnight Allocation Windows</strong> page.
+<img src="images/pma_screen.png" alt="pma"></p>
+</li>
+<li><p>Click <strong>Create New Allocation Window</strong> to display the <strong>Shipping Location</strong> tile.
+<img src="images/pma_create_step1.png" alt="pma_create_step1"></p>
+</li>
+<li><p>Select the shipping locations to which the post-midnight allocation window should apply and then click <strong>Next</strong> to display the <strong>Tenants and Channels</strong> tile.
+<img src="images/pma_create_step2.png" alt="pma_create_step2"></p>
+</li>
+<li><p>Select the scope for the post-midnight allocation window:</p>
+</li>
+</ol>
+<ul>
+<li>To select all available tenants and channels, click the <strong>Select All</strong> check box at the top of the list.</li>
+<li>To select a particular tenant and all of its channels, click that tenant's <strong>Select All</strong> check box.</li>
+<li>To select a particular channel within a tenant, click the tenant's <strong>+</strong> icon and then select the channel from the list.</li>
+</ul>
+<ol start="5">
+<li><p>Click <strong>Next</strong> to display the <strong>Carrier Services</strong> tile.
+<img src="images/pma_create_step3.png" alt="pma_create_step3"></p>
+</li>
+<li><p>Select the carrier services to which the post-midnight allocation window should apply and then click <strong>Next</strong> to display the <strong>Exclusion Details</strong> tab.
+<img src="images/pma_create_step4.png" alt="pma_create_step4"></p>
+</li>
+<li><p>Select the <strong>Allocation Cut-Off</strong> time that you want to apply to the selected combination of services, tenants/channels, and locations, and then click <strong>Create Allocation Exclusion</strong> to create the allocation window.</p>
+</li>
+</ol>
+<h3 id="deleting-existing-post-midnight-allocation-windows">Deleting Existing Post-Midnight Allocation Windows</h3>
+<p>To delete an existing post-midnight allocation window, select <strong>Settings</strong> &gt; <strong>Allocation Windows</strong> &gt; <strong>Post-Midnight Allocation Windows</strong> to display the <strong>Post-Midnight Allocation Windows</strong> page and click <strong>Delete</strong> on the window that you want to delete. Select <strong>Delete Window</strong> on the confirmation dialog to confirm the deletion.</p>
+<p><img src="images/pma_edit.png" alt="pma_edit"></p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

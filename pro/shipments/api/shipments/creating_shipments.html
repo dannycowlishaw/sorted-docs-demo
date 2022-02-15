@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating Shipments | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating Shipments | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link rel="stylesheet" href="../../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" src="../../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="pro-api-help-shipments-creating-shipments">
+<h1 id="creating-shipments">Creating Shipments</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            05/10/2020
+        </li>
+        <li class="li-time-to-read">
+             ~9 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            05/10/2020
+        </li>
+        <li class="li-time-to-read">
+             ~9 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">v2</li>
+        <li class="tag-search">shipments</li>
+        <li class="tag-search">pro</li>
+        <li class="tag-search">api</li>
+    </ul>
+</div>
+
+<p>In order for SortedPRO to manage a shipment, you'll need to record the details of that shipment on the system. This page explains how to use the <strong>Create Shipment</strong> endpoint to create a new shipment record<!--, how to clone existing shipments using the **Clone Shipment** endpoint, and how to update existing shipments using the **Update Shipment** endpoint-->.</p>
+<hr>
+<h2 id="sending-a-create-shipment-request">Sending a Create Shipment Request</h2>
+<p>The <strong>Create Shipment</strong> endpoint enables you to create new shipment records within PRO. When you send a valid <strong>Create Shipment</strong> request, PRO generates a new shipment record and returns a unique <code>{reference}</code> for that shipment. Many of PRO's endpoints take this shipment <code>{reference}</code> as a parameter.</p>
+<p>To create a shipment, send a <code>POST</code> request to <code>https://api.sorted.com/pro/shipments</code>. The body of the request should contain the shipment details, structured as per the PRO data contract.</p>
+<h3 id="required-shipment-properties">Required Shipment Properties</h3>
+<p>As a minimum, the <strong>Create Shipments</strong> endpoint requires you to send:</p>
+<ul>
+<li><code>shipment_type</code> - Specifies whether the shipment is <code>on_demand</code> (i.e. will require an ad-hoc carrier collection to be booked) or <code>scheduled</code> (i.e. will be picked up as part of a regularly scheduled carrier collection).</li>
+<li><code>contents</code> - The contents of the shipment itself.</li>
+<li><code>addresses</code> - All shipments require both <code>origin</code> and <code>destination</code> addresses.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>PRO handles collection booking for <code>on_demand</code> shipments as a background process when the shipment is allocated to a carrier service. You do not need to specify <code>on_demand</code> booking details manually.</p>
+</div>
+<h3 id="specifying-shipment-contents">Specifying Shipment Contents</h3>
+<p>The <code>contents</code> object replaces the <code>package</code> and <code>item</code> objects used in PRO's version 1 consignments-based implementation. <code>Contents</code> objects are designed to nest within each other, and can be used at both package and item level.</p>
+<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, and a coat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. The resulting shipment would contain:</p>
+<ul>
+<li>One <code>contents</code> object containing details of the coat and its accompanying package.</li>
+<li>One <code>contents</code> object containing details of the package that the necklace and bracelet are shipping in.</li>
+<li>One <code>contents</code> object containing details of the necklace, nested inside the object representing its package.</li>
+<li>One <code>contents</code> object containing details of the bracelet, nested inside the object representing its package.</li>
+</ul>
+<p>The example below shows how this shipment would be represented in JSON. This is a highly simplified example, with only the minimum properties given for each <code>contents</code> object. In practice, you would probably look to provide additional detail on the shipment contents by specifying optional properties.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_contents-example" role="tab" aria-controls="tabpanel_bHGHmlrG6S_contents-example" data-tab="contents-example" tabindex="0" aria-selected="true">Contents Example</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_contents-example" role="tabpanel" data-tab="contents-example">
+
+<pre><code class="lang-json">&quot;contents&quot;: [
+    {
+        &quot;description&quot;: &quot;Coat&quot;,
+        &quot;value&quot;: {
+            &quot;amount&quot;: 30,
+            &quot;currency&quot;: &quot;GBP&quot;
+        },
+        &quot;shipping_terms&quot;: &quot;fca&quot;,
+        &quot;contents&quot;: null
+    },
+    {
+        &quot;description&quot;: &quot;Package&quot;,
+        &quot;value&quot;: {
+            &quot;amount&quot;: 40,
+            &quot;currency&quot;: &quot;GBP&quot;
+        },
+        &quot;shipping_terms&quot;: &quot;fca&quot;,            
+        &quot;contents&quot;: [
+            {
+                &quot;description&quot;: &quot;Necklace&quot;,
+                &quot;value&quot;: {
+                    &quot;amount&quot;: 20,
+                    &quot;currency&quot;: &quot;GBP&quot;
+                },
+                &quot;shipping_terms&quot;: &quot;fca&quot;,                    
+                &quot;contents&quot;: null
+            },
+            {
+                &quot;description&quot;: &quot;Bracelet&quot;,
+                &quot;value&quot;: {
+                    &quot;amount&quot;: 20,
+                    &quot;currency&quot;: &quot;GBP&quot;
+                },
+                &quot;shipping_terms&quot;: &quot;fca&quot;,                        
+                &quot;contents&quot;: null
+            }
+        ]    
+    }
+]
+</code></pre>
+</section>
+</div>
+<h3 id="specifying-addresses">Specifying Addresses</h3>
+<p>All shipments require both <code>origin</code> and <code>destination</code> addresses. In PRO, addresses are represented by <code>address</code> objects, which must be specified as a list inside the <code>shipments.addresses</code> property. As a minimum, each address must include the following:</p>
+<ul>
+<li><p><code>address_type</code> - As well as <code>origin</code> and <code>destination</code> address types, PRO enables you to specify <code>return</code>, <code>sender</code>, <code>recipient</code>, <code>importer</code>,	and <code>billing</code> addresses.</p>
+</li>
+<li><p><code>shipping_location_reference</code> - Each shipping location that you run scheduled shipments from should have a unique shipping location reference. The <code>shipping_location_reference</code> property is optional for <code>on_demand</code> shipments but required for <code>scheduled</code> shipments. Where provided, the value must be a valid shipping location reference for your organisation.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>PRO shipping locations are configured in the UI. For information on managing your shipping locations, see the <a href="../../../guide/managing-shipping-locations.md">Managing Shipping Locations</a> page of the Sorted Admin Portal Guide.</p>
+</div>
+</li>
+<li><p><code>contact</code>- Details of the contact at the address (for example, the name of the recipient). This property is only required where a <code>shipping_location_reference</code> is not provided.</p>
+</li>
+<li><p><code>address_line_1</code> - All addresses must have at least one line.</p>
+</li>
+<li><p><code>region</code> - The state, county, or equivalent. This property is required for certain countries, such as the US, Australia, and Canada.</p>
+</li>
+<li><p><code>postal_code</code> - Required for countries with official postcode systems, such as the UK.</p>
+</li>
+<li><p><code>country_iso_code</code> - The ISO 3166 Alpha 2 code for the country.</p>
+</li>
+</ul>
+<p>In addition, PRO supports several optional address properties, including custom references, company details, and latitude / longitude. See the <a href="/pro/api/reference/shipments.html#tag/Shipments/paths/%7E1shipments/post">PRO v2 API reference</a> for details.</p>
+<h3 id="optional-shipment-properties">Optional Shipment Properties</h3>
+<p>There are lots of optional properties you can send when creating a shipment, including:</p>
+<ul>
+<li>Your own custom reference for the shipment.</li>
+<li>Required shipping and delivery dates.</li>
+<li>The order date.</li>
+<li>Customs documentation for international shipments. For more information on using customs documentation in PRO, see the <a href="getting_shipment_documents.html">Getting Shipment Documents</a> page.</li>
+<li>Shipment direction.</li>
+<li>Custom label properties.</li>
+<li>Tenant and channel.</li>
+<li>Metadata. PRO metadata enables you to use custom fields to record additional data about a shipment.</li>
+<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular shipment could be allocated to. For more information on allocation tags, see the <a href="using_shipment_tags.html">Using Shipment Tags</a> page.</li>
+</ul>
+<p>Adding optional properties when you create a shipment can help you to ensure that your shipment is allocated to the most appropriate carrier service.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>You should exercise caution when using the <code>required_delivery_date</code> and <code>required_shipping_date</code> parameters to specify dates for your shipment. These parameters limit delivery options for the shipment, meaning that it can only be allocated to those carrier services that would be able to ship it within the specified <code>required_shipping_date</code> range and / or deliver it by the specified <code>required_delivery_date</code> range.</p>
+<p>If the dates you specify are too restrictive, there may not be any carrier services available to take the shipment, which would result in a failed allocation. As such, you should only specify shipping and delivery dates where it is necessary to do so.</p>
+</div>
+<h3 id="example-create-shipment-request">Example Create Shipment Request</h3>
+<p>The example below shows a simple <strong>Create Shipment</strong> request containing only a <code>shipment_type</code>, <code>contents</code>, and <code>addresses</code>. For an example of a full <strong>Create Shipment</strong> request, see the <a href="/pro/api/reference/shipments.html#tag/Shipments/paths/%7E1shipments/post">PRO v2 API reference</a>.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_create-shipment-request" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_create-shipment-request" data-tab="create-shipment-request" tabindex="0" aria-selected="true">Create Shipment Request</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_create-shipment-request" role="tabpanel" data-tab="create-shipment-request">
+
+<p><code>POST https://api.sorted.com/pro/shipments</code></p>
+<pre><code class="lang-json">
+
+{
+    &quot;shipment_type&quot;: &quot;on_demand&quot;,
+    &quot;contents&quot;: [
+        {
+            &quot;custom_reference&quot;: &quot;b9fa91b0-0dd0-4dd5-986f-363fa8cb2386&quot;,
+            &quot;package_size_reference&quot;: null,
+            &quot;weight&quot;: {
+                &quot;value&quot;: 2.40,
+                &quot;unit&quot;: &quot;Kg&quot;
+            },
+            &quot;dimensions&quot;: {
+                &quot;unit&quot;: &quot;Cm&quot;,
+                &quot;width&quot;: 15.0,
+                &quot;height&quot;: 15.5,
+                &quot;length&quot;: 20.0
+            },
+            &quot;description&quot;: &quot;Jeans&quot;,
+            &quot;value&quot;: {
+                &quot;amount&quot;: 8.99,
+                &quot;currency&quot;: &quot;GBP&quot;
+            },
+            &quot;sku&quot;: &quot;SKU09876&quot;,
+            &quot;model&quot;: &quot;MOD-009&quot;,
+            &quot;country_of_origin&quot;: &quot;PT&quot;,
+            &quot;harmonisation_code&quot;: &quot;09021000&quot;,
+            &quot;shipping_terms&quot;: &quot;fca&quot;,
+            &quot;quantity&quot;: 2,
+            &quot;unit&quot;: &quot;Box&quot;,
+            &quot;metadata&quot;: [
+                {
+                    &quot;key&quot;: &quot;Category&quot;,
+                    &quot;value&quot;: &quot;Menswear&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                }
+            ],
+            &quot;label_properties&quot;: null,
+            &quot;Contents&quot;: null
+        }
+    ],
+    &quot;addresses&quot;: [
+        {
+            &quot;address_type&quot;: &quot;Origin&quot;,
+            &quot;contact&quot;: {
+                &quot;reference&quot;: &quot;co_9953035290535460864&quot;,
+                &quot;title&quot;: &quot;Mr&quot;,
+                &quot;first_name&quot;: &quot;Mark&quot;,
+                &quot;last_name&quot;: &quot;Brunell&quot;,
+                &quot;contact_details&quot;: {
+                    &quot;mobile&quot;: &quot;+447495747987&quot;,
+                    &quot;email&quot;: &quot;mark@62-7.com&quot;
+                }
+            },
+            &quot;property_number&quot;: &quot;1&quot;,
+            &quot;property_name&quot;: &quot;Frank's Place&quot;,
+            &quot;address_line1&quot;: &quot;Zappa Avenue&quot;,
+            &quot;address_line2&quot;: &quot;Off Rock Road&quot;,
+            &quot;address_line3&quot;: &quot;Off Heavy Crescent&quot;,
+            &quot;locality&quot;: &quot;Manchester&quot;,
+            &quot;region&quot;: &quot;Greater Manchester&quot;,
+            &quot;postal_code&quot;: &quot;M2 6LW&quot;,
+            &quot;country_iso_code&quot;: &quot;GB&quot;
+        },
+        {
+            &quot;address_type&quot;: &quot;destination&quot;,
+            &quot;custom_reference&quot;: &quot;21bbd58a-6dec-4097-9106-17501ddca38d&quot;,
+            &quot;contact&quot;: {
+                &quot;reference&quot;: &quot;co_9953035290535460865&quot;,
+                &quot;title&quot;: &quot;Mr&quot;,
+                &quot;first_name&quot;: &quot;Gardner&quot;,
+                &quot;last_name&quot;: &quot;Minshew&quot;,
+                &quot;middle_name&quot;: null,
+                &quot;position&quot;: null,
+                &quot;contact_details&quot;: {
+                    &quot;landline&quot;: null,
+                    &quot;mobile&quot;: &quot;+447495747987&quot;,
+                    &quot;email&quot;: &quot;gminshew@test.com&quot;
+                }
+            },
+            &quot;property_number&quot;: &quot;8&quot;,
+            &quot;property_name&quot;: null,
+            &quot;address_line1&quot;: &quot;Norbert Road&quot;,
+            &quot;address_line2&quot;: &quot;Bertwistle&quot;,
+            &quot;address_line3&quot;: null,
+            &quot;locality&quot;: &quot;Preston&quot;,
+            &quot;region&quot;: &quot;Lancashire&quot;,
+            &quot;postal_code&quot;: &quot;PR4 5LE&quot;,
+            &quot;country_iso_code&quot;: &quot;GB&quot;,
+            &quot;lat_long&quot;: null
+        }
+    ]
+}
+
+</code></pre>
+</section>
+</div>
+<h2 id="the-create-shipments-response">The Create Shipments Response</h2>
+<p>Once it has received the shipment information, PRO creates the shipment record and returns a link to the newly-created shipment, including its <code>{reference}</code>.</p>
+<p>The <code>{reference}</code> is a unique identifier for that shipment within PRO, and is a required parameter for many of PRO's API requests. Each PRO shipment <code>{reference}</code> takes the format <code>sp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>, where <code>x</code> is a numerical digit.</p>
+<p>In the example below, PRO has returned a shipment <code>{reference}</code> of <em>sp_00595452779180472847666078547968</em>.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_create-shipment-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_create-shipment-response" data-tab="create-shipment-response" tabindex="0" aria-selected="true">Create Shipment Response</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_create-shipment-response" role="tabpanel" data-tab="create-shipment-response">
+
+<pre><code class="lang-json">{
+  &quot;reference&quot;: &quot;sp_00595452779180472847666078547968&quot;,
+  &quot;message&quot;: &quot;Shipment created successfully&quot;,
+  &quot;_links&quot;: [
+    {
+      &quot;href&quot;: &quot;https://api.sorted.com/pro/shipments/sp_00595452779180472847666078547968&quot;,
+      &quot;rel&quot;: &quot;shipment&quot;,
+      &quot;reference&quot;: &quot;sp_00595452779180472847666078547968&quot;,
+      &quot;type&quot;: &quot;shipment&quot;
+    }
+  ]
+}
+</code></pre>
+</section>
+</div>
+
+<p>All PRO shipments have a <code>{state}</code>, indicating the point in the delivery process that that particular shipment is at. Newly-created shipments have an initial state of <code>Unallocated</code>. For more information on PRO shipment states, see the <a href="shipment_states.html">Shipment States</a> page.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For full reference information on the <strong>Create Shipments</strong> endpoint, including the properties accepted and the structure required, see the <a href="/pro/api/reference/shipments.html#tag/Shipments/paths/%7E1shipments/post">PRO v2 API reference</a>.</p>
+</div>
+<!--## Cloning Shipments
+
+<span class="commented-out">CLONE SHIPMENTS IS IN DRAFT AT THE TIME OF WRITING - THIS ALL NEEDS FULLY REVIEWING BEFORE GO-LIVE</span>
+
+As well as creating entirely new shipments through the **Create Shipment** endpoint, you can also clone existing shipments via the **Clone Shipment** endpoint. **Clone Shipment** takes the basic properties of a given shipment, creates a new shipment with identical properties, and returns that new shipment's `{reference}`. 
+
+> [!NOTE]
+>
+> **Clone Shipment** only clones those shipment properties that can be specified via the **Create Shipment** endpoint. For example, it will copy `address` and `contents` details to the new shipment, but not allocation details.
+
+To call **Clone Shipment**, send a `POST` request to `https://api.sorted.com/pro/shipments/{reference}/clone`, where `{reference}` refers to the shipment you want to clone. Once it has received the request, PRO creates the new shipment record and returns a link to the newly-created shipment.
+
+### Clone Shipment Example 
+
+The example below shows a request to clone a shipment <span class="commented-out">NEED TO PUT IN EXAMPLE ONCE THE ENDPOINT STUB IS UP AND RUNNING</span>
+
+> [!NOTE]
+>
+> For full reference information on the **Clone Shipment** endpoint, see the Shipments data contract -->
+<h2 id="updating-shipments">Updating Shipments</h2>
+<p>You can update an existing unallocated shipment via the <strong>Update Shipment</strong> endpoint. When you make an <strong>Update Shipment</strong> request, PRO overwrites the specified shipment's details with new details provided in the body of the request.</p>
+<p>To call <strong>Update Shipment</strong>, send a <code>PUT</code> request to <code>https://api.sorted.com/pro/shipments</code>. You will need to specify the shipment <code>reference</code> in the body of the request, but the request should otherwise be structured in the same way as a <strong>Create Shipment</strong> request.</p>
+<p>The <strong>Update Shipment</strong> endpoint uses the same validation as <strong>Create Shipment</strong> (that is, <code>shipment_type</code>, <code>contents</code>, and <code>addresses</code> are required and all other valid properties are optional).</p>
+<p>When it has received the request, PRO replaces the <em>entire</em> shipment object for the specified shipment with the new details you provided, and returns a confirmation message.</p>
+<p>You cannot update a shipment that has already been allocated, because PRO uses a shipment's current details to decide the carrier services that that shipment can be allocated to.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>If you do not pass a value for an optional property when making an <strong>Update Shipment</strong> request then PRO will not store any value for that property, even if that property had a value before you updated the shipment.</p>
+<p>You can only pass properties that would be accepted by a <strong>Create Shipment</strong>  request when using <strong>Update Shipment</strong>. For example, you can update a shipment's <code>contents</code> and <code>custom_reference</code>, but not its <code>allocation</code> details or <code>state</code>.</p>
+</div>
+<h3 id="update-shipment-example">Update Shipment Example</h3>
+<p>The example shows a simple <strong>Update Shipment</strong> request for a shipment with a <code>{reference}</code> of  <em>sp_00595452779180472847666078547968</em>. The request is successful, meaning that PRO has any previous details for that shipment with the details in the request.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-3">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_example-update-shipment-request" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_example-update-shipment-request" data-tab="example-update-shipment-request" tabindex="0" aria-selected="true">Example Update Shipment Request</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-3_example-update-shipment-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S-3_example-update-shipment-response" data-tab="example-update-shipment-response" tabindex="-1">Example Update Shipment Response</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-3_example-update-shipment-request" role="tabpanel" data-tab="example-update-shipment-request">
+
+<p><code>PUT https://api.sorted.com/pro/shipments</code></p>
+<pre><code class="lang-json">{
+  &quot;reference&quot;: &quot;sp_00595452779180472847666078547968&quot;,
+  &quot;custom_reference&quot;: &quot;MyCustomRef002&quot;,
+  &quot;shipment_type&quot;: &quot;on_demand&quot;,
+  &quot;direction&quot;: &quot;outbound&quot;,
+  &quot;contents&quot;: [
+    {
+	  &quot;value&quot;: {
+	    &quot;amount&quot;: 2.99,
+		&quot;currency&quot;: &quot;GBP&quot;
+	  }
+	}
+  ],
+  &quot;addresses&quot;: [
+    {
+	  &quot;address_type&quot;: &quot;origin&quot;,
+	  &quot;shipping_location_reference&quot;: &quot;myref&quot;
+	},
+	{
+	  &quot;address_type&quot;: &quot;destination&quot;,
+	  &quot;shipping_location_reference&quot;: &quot;myref002&quot;
+    }
+  ]
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-3_example-update-shipment-response" role="tabpanel" data-tab="example-update-shipment-response" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+  &quot;reference&quot;: &quot;sp_00595452779180472847666078547968&quot;,
+  &quot;custom_reference&quot;: &quot;MyCustomRef002&quot;,
+  &quot;message&quot;: &quot;Shipment sp_00595452779180472847666078547968 has been updated successfully&quot;,
+  &quot;_links&quot;: [
+    {
+      &quot;href&quot;: &quot;https://api.sorted.com/pro/shipments/sp_00595452779180472847666078547968&quot;,
+      &quot;rel&quot;: &quot;shipment&quot;,
+      &quot;reference&quot;: &quot;sp_00595452779180472847666078547968&quot;,
+      &quot;type&quot;: &quot;shipment&quot;
+    }
+  ]
+}
+</code></pre>
+</section>
+</div>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>For full reference information on the <strong>Update Shipment</strong> endpoint, see the <a href="/pro/api/reference/shipments.html#tag/Shipments/paths/%7E1shipments/put">PRO v2 API reference</a>.</p>
+</div>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li>Learn how to retrieve shipment data: <a href="getting_shipments.html">Getting Shipments</a></li>
+<li>Learn how to cancel shipments: <a href="cancelling_shipments.html">Cancelling Shipments</a></li>
+<li>Learn how to allocate shipments: <a href="allocating_shipments.html">Allocating Shipments</a></li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

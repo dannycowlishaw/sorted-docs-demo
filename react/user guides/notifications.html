@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configuring Notifications | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configuring Notifications | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="react-help-configuring-notifications">
+<h1 id="configuring-notifications">Configuring Notifications</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            29/05/2020
+        </li>
+        <li class="li-time-to-read">
+             ~14 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            29/05/2020
+        </li>
+        <li class="li-time-to-read">
+             ~14 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">react</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">notifications</li>
+    </ul>
+</div>
+
+<p>REACT's <strong>Notifications Info</strong> UI page enables you to set up automated email and SMS delivery notifications for your customers without any development work. To configure notifications, you'll need to set up an account with one of REACT's compatible email or SMS providers, give REACT your account details, and configure the details of the notification itself.</p>
+<hr>
+<h2 id="notifications-overview">Notifications Overview</h2>
+<p>The REACT notification centre has three components:</p>
+<ul>
+<li><strong>Notification Connectors</strong> store the technical details REACT uses to send emails and SMS messages, including send-from addresses and account details for third party providers. All REACT notifications are powered by a notification connector.</li>
+<li><strong>Notification Templates</strong> define the content of your notification. These can either be set up via a third-party provider, or (in the case of REACT and Postmark notifications) edited from within the REACT UI via the <strong>Notification Templates</strong> page.</li>
+<li><strong>Notifications</strong> are the individual messages sent to customers. When you set up a notification, you define the connector that will power it, the template it should use, and define when the notification should be sent.</li>
+</ul>
+<h2 id="setting-up-notification-connectors">Setting up Notification Connectors</h2>
+<p>The first step in setting up REACT notifications is to create a notification connector. You can set up connectors for your existing <a href="https://postmarkapp.com/">Postmark</a> (email), <a href="https://www.twilio.com/">Twilio</a> (SMS), and <a href="https://sendgrid.com/">SendGrid</a> (email) accounts. Alternatively, you can set up a REACT connector, which enables you to send emails without the need for a third-party service.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Before you can set up a notification connector to a third-party service, you'll need to set up an account with the relevant provider and have your details to hand. This section explains the information you need to set up a connector to each of the providers.</p>
+</div>
+<p>To set up a new connector, select <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong>, scroll down to the <strong>All Notification Connectors</strong>, and click <strong>Connect</strong> on the connector you want to set up. See below for specific information on each provider.</p>
+<p>Once you have set a connector up, its tile moves to the <strong>Existing Connectors</strong> section of the <strong>Notification Connectors</strong> page.</p>
+<h3 id="react">REACT</h3>
+<p>REACT connectors enable you to send emails without the need for a third-party service. To set up a REACT connector:</p>
+<ol>
+<li><p>Select <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> and click <strong>Connect</strong> on the <strong>REACT Email Notifications</strong> connector.</p>
+<p><img src="images/notifications/react-connect.png" alt="react-connect"></p>
+<p>REACT displays the <strong>REACT Email Notifications Connection</strong> tile.</p>
+<p><img src="images/notifications/react-tile.png" alt="react-tile"></p>
+</li>
+<li><p>Enter a <strong>Name</strong> for your connection.</p>
+</li>
+<li><p>Enter the <strong>Email Address</strong> you want to send emails from.</p>
+<p>If you use an email associated with your own domain then you will need to verify that domain once the connector has been set up. Alternatively, you can use a <code>@react.sorted.com</code> address, which does not require domain verification.</p>
+</li>
+<li><p>Enter the sender <strong>Display Name</strong> you want to use in your sent emails.</p>
+</li>
+<li><p>Click <strong>Save</strong> to create the connector and return to the <strong>Notification Connectors</strong> page.</p>
+</li>
+</ol>
+<p><strong>Verifying Custom Domains</strong></p>
+<p>If you entered an address from a custom domain into the <strong>Email Address</strong> field, then you will need to verify that domain before you can use the new connector. Verifying your domain enables REACT to confirm that you own the domain you want to send emails from.</p>
+<p>To verify your domain:</p>
+<ol>
+<li><p>Click the context menu on the tile and then click <strong>Verify</strong>.</p>
+<p><img src="images/notifications/verify-option.png" alt="verify-option"></p>
+<p>REACT displays the <strong>Domain Verification</strong> dialog.</p>
+<p><img src="images/notifications/verify-tile.png" alt="verify-tile"></p>
+</li>
+<li><p>Make a note of the values in the <strong>DKIM Host</strong> and <strong>DKIM Text</strong> fields.</p>
+</li>
+<li><p>Create a new TXT DNS record on your domain, where Name = DKIM Host and Value = DKIM Text.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For information on creating TXT DNS records, see your domain host's documentation.</p>
+</div>
+</li>
+<li><p>In the REACT UI, click the <strong>Verify</strong> button to verify your domain. REACT checks the domain and indicates whether the domain was successfully verified.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>It may take up to 48 hours for the DNS record you created to become verifiable. You can <strong>Cancel</strong> the dialog and return to complete the verification later if required.</p>
+</div>
+</li>
+</ol>
+<h3 id="postmark">Postmark</h3>
+<p>Before you can set up a connector to Postmark, you'll need to do the following:</p>
+<ol>
+<li><p>Go the the <a href="https://postmarkapp.com/">Postmark</a> site and set up an account.</p>
+</li>
+<li><p>Add Sender Signatures or Verified Domains. In order to send emails via Postmark you'll need to have a Sender Signature set up for each email address you want to send from. Alternatively, you can verify all addresses in a particular domain by setting up a Verified Domain.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on setting up Sender Signatures, see <a href="https://postmarkapp.com/support/article/846-how-can-i-send-on-behalf-of-my-users">this page</a> of the Postmark documentation.</p>
+<p>For more information on setting up Verified Domains, see <a href="https://postmarkapp.com/support/article/1046-how-do-i-verify-a-domain">this page</a> of the Postmark documentation.</p>
+</div>
+</li>
+<li><p>Set up Postmark email templates. Any templates you set up will automatically be made available to select when you set up notifications in REACT.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on configuring Postmark email templates, see <a href="https://postmarkapp.com/support/sending-emails#templates">Postmark's documentation</a></p>
+</div>
+</li>
+<li><p>Make a note of your Postmark server API token. You can view your server API token by logging in to Postmark and selecting <strong>Servers &gt; [your server] &gt; API Tokens</strong>.</p>
+</li>
+</ol>
+<p><img src="images/notifications/postmark2.png" alt="postmark2"></p>
+<p>You're now ready to set up a Postmark connector. To do so:</p>
+<ol>
+<li><p>Select <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> and click <strong>Connect</strong> on the <strong>Postmark Email Notifications</strong> connector.</p>
+<p><img src="images/notifications/postmark-connect2.png" alt="postmark-connect2"></p>
+<p>REACT displays the <strong>Postmark Email Notifications Connection</strong> tile.</p>
+<p><img src="images/notifications/postmark-tile.png" alt="postmark-tile"></p>
+</li>
+<li><p>Enter a <strong>Name</strong> for your connection.</p>
+</li>
+<li><p>Enter the <strong>Server Token</strong> for your Postmark account.</p>
+</li>
+<li><p>Enter the <strong>Email Address</strong> you want to send your email updates from. The address must either have a Sender Signature or be part of a Verified Domain.</p>
+</li>
+<li><p>Click <strong>Save</strong> to create the connector.</p>
+</li>
+</ol>
+<h3 id="sendgrid">SendGrid</h3>
+<p>Before you can set up a connector to SendGrid, you'll need to do the following:</p>
+<ol>
+<li><p>Go the the <a href="https://sendgrid.com">SendGrid</a> site and set up an account.</p>
+</li>
+<li><p>Verify your sender details.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on verifying your SendGrid sender details, see <a href="https://sendgrid.com/docs/ui/account-and-settings/verifying-your-account/">SendGrid's documentation</a></p>
+</div>
+</li>
+<li><p>Set up SendGrid email templates. Any templates you set up are automatically made available to select when you set up notifications in REACT.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on configuring SendGrid email templates, see <a href="https://sendgrid.com/docs/ui/sending-email/create-and-edit-legacy-transactional-templates/">SendGrid's documentation</a></p>
+</div>
+</li>
+<li><p>Set up a SendGrid API key with full access to the SendGrid service, and make a note of it. You'll need this information in order to set up a connector to SendGrid.</p>
+<p><img src="images/notifications/sendgrid3a.png" alt="sendgrid3a"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can only view your SendGrid API key immediately after creating it. For more information on setting up SendGrid API keys, see <a href="https://sendgrid.com/docs/ui/account-and-settings/api-keys/">SendGrid's documentation</a></p>
+</div>
+</li>
+</ol>
+<p>You're now ready to set up a SendGrid connector. To do so:</p>
+<ol>
+<li><p>Select <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> and click <strong>Connect</strong> on the <strong>SendGrid Email Notifications</strong> connector.</p>
+<p><img src="images/notifications/sendgrid-connect2.png" alt="sendgrid-connect2"></p>
+<p>REACT displays the <strong>SendGrid Email Notifications Connection</strong> tile.</p>
+<p><img src="images/notifications/sendgrid-tile.png" alt="sendgrid-tile"></p>
+</li>
+<li><p>Enter a <strong>Name</strong> for your connection.</p>
+</li>
+<li><p>Enter the <strong>API Key</strong> for your SendGrid account.</p>
+</li>
+<li><p>Enter the <strong>Email Address</strong> of your SendGrid account.</p>
+</li>
+<li><p>Click <strong>Save</strong> to create the connector.</p>
+</li>
+</ol>
+<h3 id="twilio">Twilio</h3>
+<p>Before you can set up a connector to Twilio, you'll need to do the following:</p>
+<ol>
+<li><p>Go to the <a href="https://www.twilio.com/">Twilio</a> site and sign up for an account.</p>
+</li>
+<li><p>Create a Twilio messaging service.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on creating Twilio messaging services, see <a href="https://www.twilio.com/docs/notify/quickstart/sms#create-a-messaging-service">Twilio's documentation</a></p>
+</div>
+</li>
+<li><p>Make a note of your Twilio <strong>Account SID</strong> and <strong>Auth Token</strong>.</p>
+<p><img src="images/notifications/twilio1.png" alt="twilio1"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on obtaining your Twilio authentiication details, see <a href="https://support.twilio.com/hc/en-us/articles/223136027-Auth-Tokens-and-How-to-Change-Them">Twilio's documentation</a></p>
+</div>
+</li>
+</ol>
+<p>You're now ready to set up a Twilio connector. To do so:</p>
+<ol>
+<li><p>Select <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> and click <strong>Connect</strong> on the <strong>Twilio SMS Notifications</strong> connector.</p>
+<p><img src="images/notifications/twilio-connect2.png" alt="twilio-connect2"></p>
+<p>REACT displays the <strong>Twilio SMS Notifications Connection</strong> tile.</p>
+<p><img src="images/notifications/twilio-tile.png" alt="twilio-tile"></p>
+</li>
+<li><p>Enter a <strong>Name</strong> for your connection.</p>
+</li>
+<li><p>Enter the <strong>Account SID</strong> and <strong>Auth Token</strong> for your Twilio account.</p>
+</li>
+<li><p>Enter the <strong>Phone Number</strong> you want to send your SMS updates from. This must be a registered Twilio phone number.</p>
+</li>
+<li><p>Click <strong>Save</strong> to create the connector.</p>
+</li>
+</ol>
+<h3 id="managing-existing-connectors">Managing Existing Connectors</h3>
+<p><strong>Editing Existing Notification Connectors</strong></p>
+<p>To edit an existing notification connector, open the <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> UI page and click <strong>Edit</strong> on the connector you want to edit.</p>
+<p><img src="images/notifications/connector-edit.png" alt="connector-edit"></p>
+<p>REACT displays the <strong>Edit Notification Connection</strong> page for that connector. Make the required edits and click <strong>Save</strong> to save your changes.</p>
+<p><strong>Deactivating Existing Notification Connectors</strong></p>
+<p>To deactivate an existing notification connector, open the <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> UI page and click the <strong>Active</strong> toggle on the connector's tile.</p>
+<p><img src="images/notifications/deactivate.png" alt="deactivate"></p>
+<p>The toggle switches to the <strong>Inactive</strong> position, confirming that the connector has been deactivated.</p>
+<p>Deactivating a notification connector means that REACT can no longer retrieve data from that provider. However, its configuration is saved, and the connector can be reactivated by clicking the toggle again.</p>
+<p><strong>Disconnecting Existing Notification Connectors</strong></p>
+<p>To permanently disconnect a connector, open the <strong>Settings &gt; Notification Centre &gt; Notification Connectors</strong> UI page and click the <strong>Disconnect</strong> button on the connector's tile.</p>
+<p><img src="images/notifications/connector-disconnect.png" alt="connector-disconnect"></p>
+<p>A confirmation dialog is displayed. Click <strong>Yes</strong> to disconnect the connector.</p>
+<p>Disconnecting a notification connector deactivates it and deletes all of its configuration. To reinstate a disconnected notification connector you would need to set it up again as a new connector.</p>
+<h2 id="creating-notification-templates">Creating Notification Templates</h2>
+<p>The <strong>Notification Templates</strong> page enables you to create HTML email templates to use with your REACT and Postmark connectors. Email templates define the content of the emails you send. You can add personalised customer details, such as names and tracking links, to your templates using merge tags.</p>
+<p>To create a new notification template:</p>
+<ol>
+<li><p>Open the <strong>Settings &gt; Notification Centre &gt; Notification Templates</strong> UI page and click <strong>Create New Template</strong>.</p>
+<p><img src="images/notifications/create-new-template.png" alt="create-new-template"></p>
+<p>The <strong>Create Template</strong> page is displayed.</p>
+<p><img src="images/notifications/create-template-screen.png" alt="create-template-screen"></p>
+</li>
+<li><p>Enter a <strong>Name</strong> for the template. Names are used to identify the template in the REACT UI.</p>
+</li>
+<li><p>Enter a <strong>Subject</strong> for the template. This is the subject line that the sent emails will use.</p>
+</li>
+<li><p>Select the <strong>Notification Connector</strong> that the template is to be associated with.</p>
+</li>
+<li><p>Enter your email content into the <strong>HTML</strong> dialog box. You can use standard HTML and internal CSS.</p>
+</li>
+<li><p>Click <strong>Save</strong> to save your changes and return to the <strong>Notification Templates</strong> page. The template you set up is now displayed on the page. When you set up a notification using the connector you selected in Step 3, your template is available in the <strong>Select Email Template</strong> list.</p>
+</li>
+</ol>
+<p>To preview your new template, click the option menu on the template's tile and select <strong>Preview</strong>. Use the buttons at the top of the page to choose between previewing your template in desktop and mobile views.</p>
+<p><img src="images/notifications/preview-button.png" alt="preview-button"></p>
+<h3 id="using-merge-tags">Using Merge Tags</h3>
+<p>Merge tags enable you to personalise the notifications sent out to customers. For example, you might want to insert a customer's name or address details into the text and email sent to them,  rather than sending a generic message.</p>
+<p>A merge tag is a snippet of JSON that denotes the data that should be inserted into a notification, and where that data should be inserted. To use a merge tag, simply add the relevant field or fields to the text of your notification. For emails, you will need to do so in the relevant template (i.e. via the SendGrid / Postmark UI or the <strong>Notification Templates</strong> REACT UI page, as applicable). For SMS notifications, you would insert your merge tags into the REACT UI's <strong>Enter Text for SMS</strong> field.</p>
+<p>The full merge tag structure is:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_example-merge-tag" role="tab" aria-controls="tabpanel_bHGHmlrG6S_example-merge-tag" data-tab="example-merge-tag" tabindex="0" aria-selected="true">Example Merge Tag</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_address-structure" role="tab" aria-controls="tabpanel_bHGHmlrG6S_address-structure" data-tab="address-structure" tabindex="-1">Address Structure</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_date-structure" role="tab" aria-controls="tabpanel_bHGHmlrG6S_date-structure" data-tab="date-structure" tabindex="-1">Date Structure</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_example-merge-tag" role="tabpanel" data-tab="example-merge-tag">
+
+<pre><code class="lang-json">{
+ &quot;Consumer&quot;: {
+   &quot;Reference&quot;: &quot;Reference&quot;,
+   &quot;Email&quot;: &quot;Email&quot;,
+   &quot;Phone&quot;: &quot;Phone&quot;,
+   &quot;MobilePhone&quot;: &quot;MobilePhone&quot;,
+   &quot;FirstName&quot;: &quot;FirstName&quot;,
+   &quot;LastName&quot;: &quot;LastName&quot;,
+   &quot;MiddleName&quot;: &quot;MiddleName&quot;,
+   &quot;Title&quot;: &quot;Title&quot;
+ },
+ &quot;Carrier&quot;: &quot;Carrier&quot;,
+ &quot;CarrierService&quot;: &quot;CarrierService&quot;,
+ &quot;TrackingReference&quot;: &quot;TrackingReference&quot;,
+ &quot;RetailerName&quot;: &quot;RetailerName&quot;,
+ &quot;Signee&quot;: &quot;Signee&quot;,
+ &quot;Addresses&quot;: {
+   &quot;From&quot;: &quot;&lt;See Address Structure tab&gt;&quot;,
+   &quot;To&quot;: &quot;&lt;See Address Structure tab&gt;&quot;
+ },
+ &quot;PromisedDate&quot;: {
+   &quot;Start&quot;: &quot;&lt;See Date Structure tab&gt;&quot;,
+   &quot;End&quot;: &quot;&lt;See Date Structure tab&gt;&quot;
+ },
+ &quot;ExpectedDeliveryDate&quot;: {
+   &quot;Start&quot;: &quot;&lt;See Date Structure tab&gt;&quot;,
+   &quot;End&quot;: &quot;&lt;See Date Structure tab&gt;&quot;
+ },
+ &quot;DeliverySlotInterval&quot;: {
+   &quot;Start&quot;: &quot;&lt;See Date Structure tab&gt;&quot;,
+   &quot;End&quot;: &quot;&lt;See Date Structure tab&gt;&quot;
+ },
+ &quot;ShippedDate&quot;: &quot;&lt;See Date Structure tab&gt;&quot;,
+ &quot;OrderDate&quot;: &quot;&lt;See Date Structure tab&gt;&quot;,
+ &quot;DeliveredDate&quot;: &quot;&lt;See Date Structure tab&gt;&quot;,
+ &quot;TrackingPageUrl&quot;: &quot;TrackingPageUrl&quot;,
+ &quot;Key1&quot;: &quot;Value1&quot;,
+ &quot;Key2&quot;: &quot;Value2&quot;
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_address-structure" role="tabpanel" data-tab="address-structure" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+ &quot;PropertyName&quot;: &quot;PropertyName&quot;,
+ &quot;PropertyNumber&quot;: &quot;PropertyNumber&quot;,
+ &quot;AddressLine1&quot;: &quot;AddressLine1&quot;,
+ &quot;AddressLine2&quot;: &quot;AddressLine2&quot;,
+ &quot;AddressLine3&quot;: &quot;AddressLine3&quot;,
+ &quot;Locality&quot;: &quot;Locality&quot;,
+ &quot;Region&quot;: &quot;Region&quot;,
+ &quot;PostalCode&quot;: &quot;PostalCode&quot;,
+ &quot;CountryIsoCode&quot;: &quot;CountryIsoCode&quot;
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_date-structure" role="tabpanel" data-tab="date-structure" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+ &quot;Second&quot;: &quot;14&quot;,
+ &quot;Minute&quot;: &quot;32&quot;,
+ &quot;Hour&quot;: &quot;21&quot;,
+ &quot;Day&quot;: &quot;17&quot;,
+ &quot;Month&quot;: &quot;2&quot;,
+ &quot;Year&quot;: &quot;2020&quot;,
+ &quot;ShortDate&quot;: &quot;15/06/2009&quot;,
+ &quot;GeneralDateShortTime&quot;: &quot;24/11/2020 08:15&quot;
+}
+</code></pre>
+</section>
+</div>
+
+<p>In practice, you would likely use merge tags one field at a time, rather than as a single JSON object. For example, you might enter the following example as notification text:</p>
+<p>Hi <code>{{Consumer.FirstName}}</code>! Your package is on its way. To keep an eye on it, go to <code>{{TrackingPageUrl}}</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>When configuring Twilio notifications, the <code>TrackingPageUrl</code> property <em>only</em> requires triple curly brackets, rather than the standard double curly brackets. For Twilio, you would need to enter the above example as:</p>
+<p>Hi <code>{{Consumer.FirstName}}</code>! Your package is on its way. To keep an eye on it, go to <code>{{{TrackingPageUrl}}}</code>.</p>
+</div>
+<p>The metadata keys at the bottom enable you to further customise the information available in your notifications by adding metadata from your shipments. For example, supposed that you register a shipment with a <code>Contents</code> metadata property, which you use to supply a description of the shipment contents, as follows:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_example-metadata-property" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_example-metadata-property" data-tab="example-metadata-property" tabindex="0" aria-selected="true">Example Metadata Property</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_example-metadata-property" role="tabpanel" data-tab="example-metadata-property">
+
+<pre><code class="lang-json">      &quot;metadata&quot;: [
+        {
+          &quot;key&quot;: &quot;Contents&quot;,
+          &quot;value&quot;: &quot;Shoes&quot;,
+          &quot;type&quot;: &quot;String&quot;
+        },
+      ],
+</code></pre>
+</section>
+</div>
+
+<p>You could then further enhance your notification by adding shipment contents to the text. For example:</p>
+<p>Hi <code>{{Consumer.FirstName}}</code>! The package with your <code>{{Contents}}</code> in is on its way. To keep an eye on it, go to <code>{{TrackingPageUrl}}</code>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Merge tags can only display information about a shipment if that shipment has the relevant information registered. In the example above, this would require you to register a customer's first name, and a <code>Contents</code> metadata property.</p>
+<p>For more information on registering shipment data, including setting up metadata, see the <a href="https://docs.sorted.com/react/registering-shipments/">Registering Shipments</a> page.</p>
+</div>
+<h3 id="managing-existing-notification-templates">Managing Existing Notification Templates</h3>
+<p><strong>Editing Existing Templates</strong></p>
+<p>To edit an existing template, open the <strong>Settings &gt; Notification Centre &gt; Notification Templates</strong> UI page and click <strong>Edit</strong> on the template you want to edit.</p>
+<p><img src="images/notifications/edit-button.png" alt="edit-button"></p>
+<p>REACT displays the <strong>Edit Template</strong> page. Make the required edits and click <strong>Save</strong> to save your changes.</p>
+<p><strong>Deleting Templates</strong></p>
+<p>To delete a template, open the <strong>Settings &gt; Notification Centre &gt; Notification Templates</strong> UI page, click the option menu on the relevant template, and click <strong>Delete</strong>.</p>
+<p><img src="images/notifications/delete-button.png" alt="delete-button"></p>
+<p>REACT displays a confirmation dialog. Click <strong>Yes</strong> to delete the template.</p>
+<h2 id="creating-notifications">Creating Notifications</h2>
+<p>Once you've created your notification connectors, you're ready to configure your notifications themselves. When you create a notification, you tell REACT what connector you'd like to use, when REACT should send the notification, and what the content of the notification should be. If required, you can also include a link to a REACT tracking page within the notification.</p>
+<p>REACT notifications are triggered by shipment filters. Each shipment filter contains a list of shipment states and calculated events. When a shipment enters once of the filter's states or events, REACT sends any notifications using that filter as a trigger.</p>
+<p>For example, suppose that you want to send an SMS notification to your customers when their shipment is out for delivery but appears to be late. To do this, you would set up a shipment filter with the <em>Out For Delivery</em> state and <em>Late</em> calculated event selected, and then create a Twilio notification with that filter selected as the notification's trigger.</p>
+<p>To create a new notification:</p>
+<ol>
+<li><p>Select <strong>Settings &gt; Notification Centre &gt; Notification Set Up</strong> to display the <strong>Notification Set Up</strong> page.</p>
+<p><img src="images/notifications/existing-notifications.png" alt="existing-notifications"></p>
+</li>
+<li><p>Click the <strong>Add New Communication</strong> tile. REACT displays a list of available connectors.</p>
+<p><img src="images/notifications/notification-select-connector2.png" alt="notification-select-connector2"></p>
+</li>
+<li><p>Select the connector you want to use for the notification, and then click <strong>Next</strong> to display editable fields relating to notification details.</p>
+<p><img src="images/notifications/notification-create.png" alt="notification-create"></p>
+</li>
+<li><p>Enter a <strong>Name</strong> for the notification.</p>
+</li>
+<li><p>Select the <strong>Shipment Filter</strong> that you want to use as a trigger for the notification.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you have not yet created the shipment filter you want to use, click <strong>Create Shipment Filter</strong>. REACT redirects you to the <strong>Create &amp; Manage Shipment Filters</strong> page. When you have set your shipment filter up, return to the <strong>Settings &gt; Notification Centre &gt; Notification Set Up</strong> page to configure your notification.</p>
+</div>
+</li>
+<li><p>Enter your notification content. This step differs depending on whether you are setting up SMS or email notifications:</p>
+<ul>
+<li><p>If you are setting up email notifications, select the email template you want to use from the <strong>Select Email Template</strong> drop-down list.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>For REACT notifications, this list displays the templates you have configured for the selected connector on the <strong>Notification Templates</strong> UI page.</li>
+<li>For SendGrid notifications, the list is automatically populated using the templates you have set up in SendGrid.</li>
+<li>For Postmark notifications, the list displays both templates configured in Postmark and templates configured in the REACT UI.</li>
+</ul>
+</div>
+</li>
+</ul>
+<p><img src="images/notifications/notification-email-template.png" alt="notification-email-template"></p>
+<ul>
+<li>If you are setting up Twilio SMS notifications, enter the text of your SMS into the <strong>Enter Text for SMS</strong> field.</li>
+</ul>
+<p><img src="images/notifications/notification-sms-text.png" alt="notification-sms-text"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Merge tags enable you to inject specific customer details such as names and addresses into your notifications. For more information on merge tags, see the <a href="#using-merge-tags">Using Merge Tags</a> section.</p>
+</div>
+</li>
+<li><p>If required, select a REACT tracking page from the <strong>Select Tracking Page</strong> drop-down list. If you select a tracking page, then REACT will insert a tracking link into the notification.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on setting up REACT tracking pages, see the <a href="https://docs.sorted.com/react/tracking-pages/">Creating Tracking Pages</a> page.</p>
+</div>
+</li>
+<li><p>If you want to activate the notification immediately after saving, select the <strong>Activate This Notification</strong> check box.</p>
+<p>If you want to save the notification without activating it, leave the <strong>Activate This Notification</strong> check box unselected.</p>
+</li>
+<li><p>Click <strong>Save</strong> to save the notification.</p>
+</li>
+</ol>
+<h3 id="managing-existing-notifications">Managing Existing Notifications</h3>
+<p><strong>Editing Existing Notifications</strong></p>
+<p>To edit an existing notification, open the <strong>Settings &gt; Notification Centre &gt; Notification Set Up</strong> UI page and click <strong>Edit</strong> on the notification you want to edit.</p>
+<p><img src="images/notifications/notification-edit.png" alt="notification-edit"></p>
+<p>REACT displays the <strong>Edit Notification</strong> page for that notification. Make the required edits and click <strong>Save</strong> to save your changes.</p>
+<p><strong>Deactivating Existing Notifications</strong></p>
+<p>To deactivate an existing notification, open the <strong>Settings &gt; Notification Centre &gt; Notification Set Up</strong> UI page and click the <strong>Active</strong> toggle on the notification's tile. The toggle switches to the <strong>Inactive</strong> position, confirming that the notification has been deactivated.</p>
+<p><img src="images/notifications/notification-deactivate.png" alt="notification-deactivate"></p>
+<p>Deactivating a notification means that REACT will no longer send it, even if shipments meet the criteria set out in its shipment filter. However, its configuration is saved, and the notification can be reactivated by clicking the toggle again.</p>
+<p><strong>Disconnecting Existing Notifications</strong></p>
+<p>To permanently disconnect a notification, open the <strong>Settings &gt; Notification Centre &gt; Notification Set Up</strong> UI page and click the <strong>Disconnect</strong> button on the notification's tile.</p>
+<p><img src="images/notifications/notification-disconnect.png" alt="notification-disconnect"></p>
+<p>A confirmation dialog is displayed. Click <strong>Yes</strong> to disconnect the notification.</p>
+<p>Disconnecting a notification deactivates it and deletes all of its configuration. To reinstate a disconnected notification you would need to set it up again.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Read on for more info:</p>
+<ul>
+<li><a href="https://docs.sorted.com/react/overview/">REACT Overview</a></li>
+<li><a href="https://docs.sorted.com/react/registering-shipments/">Registering Shipments</a></li>
+<li><a href="https://docs.sorted.com/react/managing-webhooks/">Managing Webhooks</a></li>
+<li><a href="https://docs.sorted.com/react/retrieving-data/">Retrieving Shipment and Event Data</a></li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

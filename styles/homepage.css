@@ -1,0 +1,107 @@
+.explore {
+  font-size: 26px;
+  margin: 80px 0 40px 0;
+}
+
+.tile-wrap {
+  display: flex;
+  width: 100%;
+}
+
+.tile-wrap > div {
+  margin: 20px;
+  padding: 30px;
+  width: 50%;
+  background: #fff;
+  box-shadow: rgb(18 28 45 / 10%) 0px 8px 32px;
+  transform: none;
+  border-radius: 10px;
+}
+
+.tile-wrap > div > img {
+  max-height: 65px;
+  border: 0;
+  margin-bottom: 30px;
+}
+
+.tile-wrap > .tile-card{
+  width:100%;
+}
+
+.tile-card{
+  box-shadow: inset 0 -1px #e3e8ee;
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
+.tile-card > .screengrab{
+  padding: 30px 40px 0 40px;
+  border-radius: 10px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 15px
+}
+
+.tile-card > .screengrab > img{
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+}
+
+.card-btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer !important;
+  border-radius: 10px;
+  max-width: 160px;
+  transition: .3s background-color ease, .3s color ease;
+  border: none !important;
+  height: 32px;
+}
+
+.card-btn a {
+  text-decoration: none;
+}
+
+.card-btn.pink{
+  background-color: #ff005e !important;
+  color: white !important; 
+  border: 1px solid #ff005e !important;
+}
+.card-btn.pink a{
+  color: white !important; 
+}
+.card-btn.pink:hover{
+  background-color: white !important;
+  color: #ff005e !important;
+  border: 1px solid #ff005e !important;
+}
+.card-btn.pink:hover a{
+  color: #ff005e !important;
+}
+
+
+.card-btn.white{
+  background-color: white !important;
+  color: #ff005e !important;
+  border: 1px solid #ff005e !important;
+}
+.card-btn.white:hover{
+  background-color: #ff005e !important;
+  color: white !important;
+  border: 1px solid #ff005e !important;
+}
+.card-btn.white:hover a{
+  color: white !important; 
+}
+
+.gap{
+  box-shadow: inset 0 -1px #e3e8ee;
+  padding: 5px;
+  padding-bottom: 15px;
+}

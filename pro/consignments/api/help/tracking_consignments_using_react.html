@@ -1,0 +1,816 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Tracking PRO Consignments Using REACT | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Tracking PRO Consignments Using REACT | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link rel="stylesheet" href="../../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" src="../../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="pro-api-help-tracking-pro-consignments-using-react">
+<h1 id="tracking-pro-consignments-using-react">Tracking PRO Consignments Using REACT</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            01/06/2020
+        </li>
+        <li class="li-time-to-read">
+             ~6 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            01/06/2020
+        </li>
+        <li class="li-time-to-read">
+             ~6 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">v1</li>
+        <li class="tag-search">tracking</li>
+        <li class="tag-search">pro</li>
+        <li class="tag-search">react</li>
+        <li class="tag-search">api</li>
+        <li class="tag-search">consignments</li>
+    </ul>
+</div>
+
+<p>SortedPRO integrates seamlessly with REACT, Sorted's dedicated shipment tracking platform. PRO can automatically register shipments with REACT, and share carrier and tracking information. This page explains how PRO and REACT can interact with each other, and the benefits this brings.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For integration guides and user help on REACT, see the <a href="../../../react/help/overview.md">REACT</a> section of this site.</p>
+</div>
+<hr>
+<h2 id="why-use-react">Why Use REACT?</h2>
+<p>PRO's native tracking API enables you to build simple tracking pages that a consumer can access to check the status of their order. REACT, on the other hand, offers a full suite of tracking tools, giving you much more flexibility in the way that you supply tracking updates to your customers. REACT offers:</p>
+<ul>
+<li>Custom webhooks that notify you of shipping events proactively. Whenever a shipment enters a selected state, REACT will send that shipment’s data to you, thereby enabling you to build services such as push notifications as email alerts.</li>
+<li>A tracking dashboard that gives you advanced shipment monitoring features, and enables administrators to configure the system.</li>
+<li>Customisable shipment state labels, enabling you to to communicate tracking information to your customers in your brand’s tone of voice or in an alternative language, as opposed to using default tracking state names.</li>
+<li>Customisable web-based tracking pages that can be published with no development work needed.</li>
+<li>Calculated events, whereby shipment properties are changes based on REACT's internal processing rather than a carrier update. For example, REACT can automatically flag a shipment as late if it passes its expected delivery date.</li>
+</ul>
+<h2 id="integrating-pro-and-react">Integrating PRO and REACT</h2>
+<p>When you sign up to REACT as a PRO customer, your REACT and PRO accounts are automatically linked. You do not need to do any additional configuration beyond the regular configuration processes for each product.</p>
+<p>REACT uses carrier connectors to keep shipments from a particular carrier up to date. Carrier connectors contain configuration that enables REACT to obtain carrier tracking data. Ordinarily, you would need to configure carrier connectors yourself as part of the REACT setup process. However, when you sign up to REACT as a PRO customer, REACT takes your carrier configuration from PRO, enabling you to use your existing carrier integrations in REACT without needing to provide any additional details.</p>
+<p>To use your PRO carriers with REACT, navigate to <strong>Settings</strong> &gt; <strong>Carrier Connectors</strong> within the REACT UI, and click <strong>Connect</strong>.</p>
+<h2 id="registering-pro-consignments-in-react">Registering PRO Consignments in REACT</h2>
+<p>Once PRO and REACT have been linked, PRO will automatically create new REACT shipments from manifested consignments. The process is as follows:</p>
+<ol>
+<li>PRO tells REACT that a consignment has been manifested and sends the details of that consignment to REACT.</li>
+<li>REACT validates the consignment details and generates a new REACT shipment object from it.</li>
+<li>REACT registers the shipment via its <a href="../../../react/help/registering-shipments.md">Register Shipments</a> API.</li>
+</ol>
+<p>At this point, the shipment can now be tracked in the same way as any other REACT shipment.</p>
+<h3 id="mapping-table">Mapping Table</h3>
+<p>This table shows how the properties in a PRO consignment resource map to the properties in a REACT shipment resource.</p>
+<table>
+  <tr>
+    <th>REACT</th>
+    <th>PRO</th>
+  </tr>
+  <tr>
+    <td>customer_id</td>
+    <td>CustomerReference</td>
+  </tr>
+  <tr>
+    <td>carrier</td>
+    <td>Carrier</td>
+  </tr>
+  <tr>
+    <td>carrier_service</td>
+    <td>CarrierService</td>
+  </tr>
+  <tr>
+    <td>shipped_date</td>
+    <td>DateShipped</td>
+  </tr>
+  <tr>
+    <td>promised_date.start</td>
+    <td>EarliestDeliveryDate</td>
+  </tr>
+  <tr>
+    <td>promised_date.end</td>
+    <td>LatestDeliveryDate</td>
+  </tr>
+  <tr>
+    <td>expected_deliver_date.start</td>
+    <td>EarliestDeliveryDate</td>
+  </tr>
+  <tr>
+    <td>expected_deliver_date.end</td>
+    <td>LatestDeliveryDate</td>
+  </tr>
+  <tr>
+    <td>retailer</td>
+    <td>Retailer</td>
+  </tr>
+  <tr>
+    <td>shipment_type</td>
+    <td>ShipmentType</td>
+  </tr>
+  <tr>
+    <td>address.address_type</td>
+    <td>AddressType</td>
+  </tr>
+  <tr>
+    <td>address.reference</td>
+    <td>Reference</td>
+  </tr>
+  <tr>
+    <td>address.property_number</td>
+    <td>PropertyNumber</td>
+  </tr>
+  <tr>
+    <td>address.property_name</td>
+    <td>PropertyName</td>
+  </tr>
+  <tr>
+    <td>address.address_line1</td>
+    <td>AddressLine1</td>
+  </tr>
+  <tr>
+    <td>address.address_line2</td>
+    <td>AddressLine2</td>
+  </tr>
+  <tr>
+    <td>address.address_line3</td>
+    <td>AddressLine3</td>
+  </tr>
+  <tr>
+    <td>address.locality</td>
+    <td>Locality</td>
+  </tr>
+  <tr>
+    <td>address.region</td>
+    <td>Region</td>
+  </tr>
+  <tr>
+    <td>address.postal_code</td>
+    <td>PostalCode</td>
+  </tr>
+  <tr>
+    <td>address.country_iso_code</td>
+    <td>CountryIsoCode</td>
+  </tr>
+  <tr>
+    <td>tracking_references</td>
+    <td>ShipmentTrackingReferences</td>
+  </tr>
+  <tr>
+    <td>metadata</td>
+    <td>ShipmentMetaData</td>
+  </tr>
+  <tr>
+    <td>tags</td>
+    <td>Consignment Tags</td>
+  </tr>
+  <tr>
+    <td>custom_reference</td>
+    <td>ShipmentCustomReferences</td>
+  </tr>
+  <tr>
+    <td>consumer.email</td>
+    <td>Consumer.Email</td>
+  </tr>
+  <tr>
+    <td>consumer.phone</td>
+    <td>Phone</td>
+  </tr>
+  <tr>
+    <td>consumer.mobile_phone</td>
+    <td>MobilePhone</td>
+  </tr>
+  <tr>
+    <td>consumer.first_name</td>
+    <td>FirstName</td>
+  </tr>
+  <tr>
+    <td>consumer.last_name</td>
+    <td>LastName</td>
+  </tr>
+  <tr>
+    <td>consumer.middle_name</td>
+    <td>MiddleName</td>
+  </tr>
+  <tr>
+    <td>consumer.title</td>
+    <td>Title</td>
+  </tr>
+</table>
+<h3 id="mapping-example">Mapping Example</h3>
+<p>This example shows a PRO consignment and a REACT shipment that has been generated from that consignment at the point it was manifested.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_example-consignment" role="tab" aria-controls="tabpanel_bHGHmlrG6S_example-consignment" data-tab="example-consignment" tabindex="0" aria-selected="true">Example Consignment</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_corresponding-react-shipment" role="tab" aria-controls="tabpanel_bHGHmlrG6S_corresponding-react-shipment" data-tab="corresponding-react-shipment" tabindex="-1">Corresponding REACT Shipment</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_example-consignment" role="tabpanel" data-tab="example-consignment">
+
+<pre><code class="lang-json">{
+    &quot;ConsignmentLegs&quot;: [
+        {
+            &quot;Leg&quot;: 1,
+            &quot;TrackingReferences&quot;: [
+                &quot;1Z9A80W5D991115692&quot;
+            ],
+            &quot;CarrierReference&quot;: &quot;UPS&quot;,
+            &quot;CarrierServiceReference&quot;: &quot;UPSHSADCS&quot;,
+            &quot;CarrierName&quot;: &quot;UPS&quot;
+        }
+    ],
+    &quot;CollectionDate&quot;: &quot;2020-04-08T00:00:00+01:00&quot;,
+    &quot;DateDelivered&quot;: null,
+    &quot;FirstAttemptedDeliveryDate&quot;: null,
+    &quot;DateReturned&quot;: null,
+    &quot;DateShipped&quot;: null,
+    &quot;DateCollected&quot;: null,
+    &quot;AttemptedDeliveryDate&quot;: null,
+    &quot;MetaData&quot;: [],
+    &quot;Allocation&quot;: {
+        &quot;CarrierServiceGroupReference&quot;: &quot;&quot;,
+        &quot;MpdCarrierServiceGroupName&quot;: null,
+        &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHSADCS&quot;,
+        &quot;MpdCarrierServiceName&quot;: &quot;UPS SAVER (Delivery Confirmation Signature Required)&quot;,
+        &quot;AllocationDate&quot;: &quot;2020-04-08T08:57:20.0959259+00:00&quot;,
+        &quot;Price&quot;: {
+            &quot;Net&quot;: 22.99,
+            &quot;Gross&quot;: 22.99,
+            &quot;TaxRate&quot;: {
+                &quot;Reference&quot;: null,
+                &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                &quot;Type&quot;: &quot;Standard&quot;,
+                &quot;Rate&quot;: 0.0000
+            },
+            &quot;VatAmount&quot;: 0.00,
+            &quot;Currency&quot;: {
+                &quot;Name&quot;: null,
+                &quot;IsoCode&quot;: &quot;GBP&quot;
+            }
+        }
+    },
+    &quot;FailedAllocation&quot;: null,
+    &quot;Source&quot;: &quot;Api&quot;,
+    &quot;LabelCount&quot;: 0,
+    &quot;LabelsPrinted&quot;: false,
+    &quot;DateLabelsWereFirstPrinted&quot;: null,
+    &quot;IsLate&quot;: false,
+    &quot;LateForCustomer&quot;: false,
+    &quot;CustomerReference&quot;: &quot;338a3524-5a17-44dd-a601-1527574f1a5d&quot;,
+    &quot;Weight&quot;: {
+        &quot;Value&quot;: 2.00000,
+        &quot;Unit&quot;: &quot;Kg&quot;
+    },
+    &quot;Value&quot;: {
+        &quot;Amount&quot;: 20.00,
+        &quot;Currency&quot;: {
+            &quot;Name&quot;: &quot;United States dollars&quot;,
+            &quot;IsoCode&quot;: &quot;USD&quot;
+        }
+    },
+    &quot;Direction&quot;: &quot;Outbound&quot;,
+    &quot;Tags&quot;: [],
+    &quot;Reference&quot;: &quot;EC-000-05E-BKJ&quot;,
+    &quot;ConsignmentState&quot;: &quot;Manifested&quot;,
+    &quot;DateCreated&quot;: &quot;2020-04-08T08:57:17.5970788+00:00&quot;,
+    &quot;ShippingDate&quot;: &quot;2020-04-08T17:00:00+01:00&quot;,
+    &quot;RequestedDeliveryDate&quot;: {
+        &quot;Date&quot;: &quot;2020-04-10T00:00:00+00:00&quot;,
+        &quot;DeliveryWindow&quot;: {
+            &quot;Start&quot;: &quot;00:00:00&quot;,
+            &quot;End&quot;: &quot;00:00:00&quot;,
+            &quot;UtcOffset&quot;: null
+        },
+        &quot;IsToBeExactlyOnTheDateSpecified&quot;: true
+    },
+    &quot;EarliestDeliveryDate&quot;: &quot;2020-04-10T00:00:00-04:00&quot;,
+    &quot;LatestDeliveryDate&quot;: &quot;2020-04-10T23:30:00-04:00&quot;,
+    &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;PostDeploymentTest_API_v1.1_UKtoUS_NonGBP&quot;,
+    &quot;Addresses&quot;: [
+        {
+            &quot;AddressType&quot;: &quot;Origin&quot;,
+            &quot;ShopLocationReference&quot;: null,
+            &quot;Contact&quot;: {
+                &quot;Reference&quot;: null,
+                &quot;Title&quot;: &quot;Miss&quot;,
+                &quot;FirstName&quot;: &quot;Laura&quot;,
+                &quot;LastName&quot;: &quot;Somebody&quot;,
+                &quot;Position&quot;: null,
+                &quot;Telephone&quot;: &quot;01234 567 890&quot;,
+                &quot;Mobile&quot;: &quot;01234 567 890&quot;,
+                &quot;LandLine&quot;: &quot;&quot;,
+                &quot;Email&quot;: &quot;laura.somebody@mpd-group.com&quot;
+            },
+            &quot;CompanyName&quot;: null,
+            &quot;ShippingLocationReference&quot;: &quot;Sorted1&quot;,
+            &quot;CustomerName&quot;: null,
+            &quot;AddressLine1&quot;: &quot;Third Floor&quot;,
+            &quot;AddressLine2&quot;: &quot;Merchant Exchange&quot;,
+            &quot;AddressLine3&quot;: &quot;Whitworth Street West&quot;,
+            &quot;Town&quot;: &quot;Manchester&quot;,
+            &quot;Region&quot;: &quot;&quot;,
+            &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+            &quot;Country&quot;: {
+                &quot;Name&quot;: &quot;United Kingdom&quot;,
+                &quot;IsoCode&quot;: {
+                    &quot;TwoLetterCode&quot;: &quot;GB&quot;
+                }
+            },
+            &quot;RegionCode&quot;: &quot;&quot;,
+            &quot;SpecialInstructions&quot;: &quot;&quot;,
+            &quot;LatLong&quot;: null,
+            &quot;IsCached&quot;: false
+        },
+        {
+            &quot;AddressType&quot;: &quot;Destination&quot;,
+            &quot;ShopLocationReference&quot;: null,
+            &quot;Contact&quot;: {
+                &quot;Reference&quot;: null,
+                &quot;Title&quot;: &quot;&quot;,
+                &quot;FirstName&quot;: &quot;Robert&quot;,
+                &quot;LastName&quot;: &quot;Smith&quot;,
+                &quot;Position&quot;: null,
+                &quot;Telephone&quot;: &quot;07495747394&quot;,
+                &quot;Mobile&quot;: &quot;07495747394&quot;,
+                &quot;LandLine&quot;: &quot;0161111454&quot;,
+                &quot;Email&quot;: &quot;robert.smith@email.com&quot;
+            },
+            &quot;CompanyName&quot;: &quot;&quot;,
+            &quot;ShippingLocationReference&quot;: null,
+            &quot;CustomerName&quot;: null,
+            &quot;AddressLine1&quot;: &quot;400 N Calhoun Street&quot;,
+            &quot;AddressLine2&quot;: &quot;&quot;,
+            &quot;AddressLine3&quot;: &quot;&quot;,
+            &quot;Town&quot;: &quot;Leeds&quot;,
+            &quot;Region&quot;: &quot;West Yorks&quot;,
+            &quot;Postcode&quot;: &quot;LS1 6TH&quot;,
+            &quot;Country&quot;: {
+                &quot;Name&quot;: &quot;United Kingdom&quot;,
+                &quot;IsoCode&quot;: {
+                    &quot;TwoLetterCode&quot;: &quot;GB&quot;
+                }
+            },
+            &quot;RegionCode&quot;: &quot;IA&quot;,
+            &quot;SpecialInstructions&quot;: null,
+            &quot;LatLong&quot;: null,
+            &quot;IsCached&quot;: false
+        }
+    ],
+    &quot;Packages&quot;: [
+        {
+            &quot;ConsignmentLegs&quot;: [
+                {
+                    &quot;Leg&quot;: 1,
+                    &quot;TrackingReferences&quot;: [
+                        &quot;1Z9A80W5D991115692&quot;
+                    ],
+                    &quot;CarrierReference&quot;: &quot;UPS&quot;,
+                    &quot;CarrierServiceReference&quot;: null,
+                    &quot;CarrierName&quot;: null
+                }
+            ],
+            &quot;Items&quot;: [
+                {
+                    &quot;Reference&quot;: &quot;099681e6c66d47c982c86e1e5aaa803c&quot;,
+                    &quot;Sku&quot;: &quot;sku&quot;,
+                    &quot;Model&quot;: &quot;model&quot;,
+                    &quot;Description&quot;: &quot;desc&quot;,
+                    &quot;CountryOfOrigin&quot;: {
+                        &quot;Name&quot;: &quot;United Kingdom&quot;,
+                        &quot;IsoCode&quot;: {
+                            &quot;TwoLetterCode&quot;: &quot;GB&quot;
+                        }
+                    },
+                    &quot;HarmonisationCode&quot;: &quot;h code&quot;,
+                    &quot;Weight&quot;: {
+                        &quot;Value&quot;: 0.34000,
+                        &quot;Unit&quot;: &quot;Kg&quot;
+                    },
+                    &quot;Dimensions&quot;: {
+                        &quot;Unit&quot;: &quot;Cm&quot;,
+                        &quot;Width&quot;: 1.10000,
+                        &quot;Length&quot;: 1.10000,
+                        &quot;Height&quot;: 1.10000
+                    },
+                    &quot;Value&quot;: {
+                        &quot;Amount&quot;: 10.0000,
+                        &quot;Currency&quot;: {
+                            &quot;Name&quot;: &quot;United States dollars&quot;,
+                            &quot;IsoCode&quot;: &quot;USD&quot;
+                        }
+                    },
+                    &quot;ItemReferenceProvidedByCustomer&quot;: &quot;Sorted Package 1 Item 1 Referene&quot;,
+                    &quot;Barcode&quot;: {
+                        &quot;Code&quot;: &quot;code&quot;,
+                        &quot;BarcodeType&quot;: &quot;AztecCode&quot;
+                    },
+                    &quot;Quantity&quot;: 0,
+                    &quot;Unit&quot;: null,
+                    &quot;HarmonisationKeyWords&quot;: [
+                        &quot;one&quot;,
+                        &quot;two&quot;
+                    ],
+                    &quot;Status&quot;: null,
+                    &quot;ContentClassification&quot;: &quot;Unrestricted&quot;,
+                    &quot;ContentClassificationDetails&quot;: &quot;NotSpecified&quot;
+                }
+            ],
+            &quot;Charges&quot;: [],
+            &quot;Reference&quot;: &quot;EP-000-05G-CAH&quot;,
+            &quot;PackageReferenceProvidedByCustomer&quot;: &quot;&quot;,
+            &quot;Weight&quot;: {
+                &quot;Value&quot;: 2.00000,
+                &quot;Unit&quot;: &quot;Kg&quot;
+            },
+            &quot;Dimensions&quot;: {
+                &quot;Unit&quot;: &quot;Cm&quot;,
+                &quot;Width&quot;: 5.00000,
+                &quot;Length&quot;: 10.00000,
+                &quot;Height&quot;: 1.00000
+            },
+            &quot;Description&quot;: &quot;test description&quot;,
+            &quot;Value&quot;: {
+                &quot;Amount&quot;: 20.0000,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;United States dollars&quot;,
+                    &quot;IsoCode&quot;: &quot;USD&quot;
+                }
+            },
+            &quot;PackageSizeReference&quot;: null,
+            &quot;Barcode&quot;: {
+                &quot;Code&quot;: &quot;010101&quot;,
+                &quot;BarcodeType&quot;: &quot;AustraliaPostalCode&quot;
+            }
+        }
+    ]
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_corresponding-react-shipment" role="tabpanel" data-tab="corresponding-react-shipment" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+  &quot;shipments&quot;: [
+    {
+      &quot;tags&quot;: [],
+      &quot;tracking_references&quot;: [
+        &quot;1Z9A80W5D991115692&quot;
+      ],
+      &quot;carrier&quot;: &quot;UPS&quot;,
+      &quot;carrier_service&quot;: &quot;UPS SAVER (Delivery Confirmation Signature Required)&quot;,
+      &quot;shipped_date&quot;: null,
+      &quot;promised_date&quot;: {
+        &quot;start&quot;: &quot;2020-04-10T00:00:00-04:00&quot;,
+        &quot;end&quot;: &quot;2020-04-10T23:30:00-04:00&quot;
+      },
+      &quot;expected_deliver_date&quot;: {
+        &quot;start&quot;: &quot;2020-04-10T00:00:00-04:00&quot;,
+        &quot;end&quot;: &quot;2020-04-10T23:30:00-04:00&quot;
+      },
+      &quot;addresses&quot;: [
+        {
+            &quot;address_type&quot;: &quot;Origin&quot;,
+            &quot;reference&quot;: &quot;Sorted1&quot;,            
+            &quot;address_line1&quot;: &quot;Third Floor&quot;,
+            &quot;address_line2&quot;: &quot;Merchant Exchange&quot;,
+            &quot;address_line3&quot;: &quot;Whitworth Street West&quot;,
+            &quot;region&quot;: &quot;&quot;,
+            &quot;postal_code&quot;: &quot;M1 5WG&quot;,
+            &quot;country_iso_code&quot;: &quot;GB&quot;
+        },
+        {
+            &quot;address_type&quot;: &quot;Destination&quot;,
+            &quot;address_line1&quot;: &quot;400 N Calhoun Street&quot;,
+            &quot;address_line2&quot;: &quot;&quot;,
+            &quot;address_line3&quot;: &quot;&quot;,
+            &quot;region&quot;: &quot;West Yorks&quot;,
+            &quot;postal_code&quot;: &quot;LS1 6TH&quot;,
+            &quot;country_iso_code&quot;: &quot;GB&quot;
+        }
+      ],
+      &quot;metadata&quot;: []
+    }
+  ]
+}
+</code></pre>
+</section>
+</div>
+
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>For more information on the structure of a REACT shipment, see the <a href="https://docs.sorted.com/react/api/#RegisterShipments">Register Shipments</a> section of the REACT API reference and the <a href="../../../react/help/registering-shipments.md">Registering Shipments</a> page of the REACT help.</li>
+<li>For more information on the structure of a PRO consignment, see the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> page of the PRO API reference and the <a href="creating_new_consignments.html">Creating New Consignments</a> page of the PRO help.</li>
+</ul>
+</div>
+<h2 id="after-registration">After Registration</h2>
+<p>Once a PRO consignment has been registered as a REACT shipment, PRO automatically keeps REACT updated of any changes. Whenever PRO downloads a new carrier file, it updates any shipments in that file that you have registered with REACT accordingly.</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li>View the <a href="../../../react/help/overview.md">REACT User Guide</a> for a full overview of how to use REACT.</li>
+<li>Learn how to get customs docs and invoices for international shipments at the <a href="getting_customs_docs_and_invoices.html">Getting Customs Docs and Invoices</a> page.</li>
+<li>Learn how to manifest consignments at the <a href="manifesting_consignments.html">Manifesting Consignments</a> page.</li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

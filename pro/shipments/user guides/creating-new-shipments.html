@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating New Shipments | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating New Shipments | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="guide-creating-new-shipments">
+<h1 id="creating-new-shipments">Creating New Shipments</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            30/06/2020
+        </li>
+        <li class="li-time-to-read">
+             ~9 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            30/06/2020
+        </li>
+        <li class="li-time-to-read">
+             ~9 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/7d40af995c39ae5ed43c7e834bc10dae.jpg?d=robohash" class="img-circle img-contributor" title="martin.box@sorted.com"/>
+            <span class="tooltip-text">martin.box@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/b76a122b0a4c72b170aa7f268278ebc4.jpg?d=robohash" class="img-circle img-contributor" title="stephen.mckenzie@sorted.com"/>
+            <span class="tooltip-text">stephen.mckenzie@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">administration</li>
+        <li class="tag-search">guide</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">gui</li>
+        <li class="tag-search">portal</li>
+        <li class="tag-search">v2</li>
+        <li class="tag-search">shipments</li>
+        <li class="tag-search">creating</li>
+    </ul>
+</div>
+
+<p>This page explains how to use the Sorted Portal to create shipments manually.</p>
+[!include[_development_statement](../pro/api/includes/_development_statement.md)]<hr>
+<h2 id="introduction">Introduction</h2>
+<p>The Sorted delivery management platform is designed as an &quot;API-first&quot; system. Ordinarily, shipments are managed via an integration with customer’s warehouse / client management systems, utilising the Sorted APIs to perform actions such as shipment creation, allocation, manifesting, and reporting.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For information on creating shipments using the <strong>Create Shipments</strong> API, see the <a href="../pro/api/shipments/creating_shipments.md">Creating Shipments</a> page of the API User Guide.</p>
+</div>
+<p>However, there are certain cases where manual intervention is required, either as a workaround or as a convenient way to manage one-off shipment exceptions. For example, an order may need to be fulfilled urgently. By using the Portal to manage the shipment manually you can expedite the order by bypassing the conventional shipment creation/allocation/manifest process.</p>
+<p>The <strong>Create Shipments</strong> page enables you to create shipments manually. To access <strong>Create Shipments</strong>, select <strong>PRO &gt; Create Shipment</strong> from the Dashboard.</p>
+<p><img src="images/pro_create_shipment.png" alt="pro_create_shipment"></p>
+<h2 id="the-create-shipments-process">The Create Shipments Process</h2>
+<p>The <strong>Create Shipment</strong> process has eight steps, five of which are optional:</p>
+<ol>
+<li><strong><a href="#step-1--select-tenant">Select tenant</a></strong></li>
+<li><strong><a href="#step-2--enter-shipment-details">Enter shipment details</a></strong></li>
+<li><strong><a href="#step-3--enter-package-details">Enter package details</a></strong></li>
+<li><strong><a href="#step-4--enter-origin">Enter origin</a></strong></li>
+<li><strong><a href="#step-5--enter-destination">Enter destination</a></strong></li>
+<li><strong><a href="#step-6--enter-shipping-dates">Enter shipping dates</a></strong> (Optional)</li>
+<li><strong><a href="#step-7--provide-customs-documentation">Provide customs documentation</a></strong> (Optional)</li>
+<li><strong><a href="#step-8--provide-dangerous-goods-information">Provide dangerous goods information</a></strong> (Optional)</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Mandatory data fields are marked with an asterisk and display a red border if any required data fields are left blank.</p>
+</div>
+<h3 id="step-1--select-tenant">Step 1 – Select Tenant</h3>
+<p>If you have multi-tenancy enabled, the first step in the process is to use the <strong>Tenant/Channel Selection</strong> card to select the <strong>Tenant</strong> and <strong>Channel</strong> that the shipment belongs to. This step is not displayed for single-tenant customers, or for multi-tenanted users that are only assigned to a single tenant. In this case the relevant tenant is automatically selected in the background.</p>
+<p><img src="images/pro_create_shipment_select_tenant.png" alt="pro_create_shipment_select_tenant"></p>
+<p>Select an option from the <strong>Tenant</strong> drop-down menu and then click <strong>Next</strong> to display the <strong>Shipment Details</strong> card.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Selecting an incorrect tenant may limit the shipping locations and carrier services that you can select for the shipment, and may also affect the rates applied.</p>
+<p>For more information on configuring multi-tenancy, see the <a href="managing-tenants-and-channels.html">Managing Tenants and Channels</a> page.</p>
+</div>
+<h3 id="step-2--enter-shipment-details">Step 2 – Enter Shipment Details</h3>
+<p>The <strong>Shipment Details</strong> card enables you to select the shipment's type and direction, as well as specifying the measurement unit system and currency that the shipment should use. This step is mandatory for all shipments.</p>
+<p><img src="images/pro_create_shipment_select_type_direction.png" alt="pro_create_shipment_select_type_direction"></p>
+<p>To configure shipment details:</p>
+<ol>
+<li><p>Use the radio buttons to <strong>Select a shipment direction</strong>. There are two available options:</p>
+<ul>
+<li><strong>Outbound</strong> – The shipment is taking goods from the retailer/3PL to the end customer.</li>
+<li><strong>Inbound</strong> – The shipment is returning goods from the end customer to the retailer/3PL.</li>
+</ul>
+</li>
+<li><p>Use the radio buttons to <strong>Select a shipment type</strong>. There are two available options:</p>
+<ul>
+<li><strong>Scheduled</strong> – The shipment is intended to be allocated to a scheduled service (that is, a service whereby the pickup location has a regularly planned collection).</li>
+<li><strong>On-Demand</strong> – The shipment's start location does not have a regular, scheduled collection. As such, the shipment is intended to be allocated to an ad-hoc service and will require the Portal to book a bespoke collection.</li>
+</ul>
+</li>
+<li><p>Use the radio buttons to <strong>Select a unit system</strong>. You can select either <strong>Metric (cm / kg)</strong> or <strong>Imperial (in / lb)</strong>. The Portal uses the selected unit system throughout the rest of the shipment creation process.</p>
+</li>
+<li><p>Select a <strong>Currency</strong> from the drop-down list. The Portal uses the selected currency throughout the rest of the shipment creation process.</p>
+</li>
+<li><p>Optionally, enter a <strong>Custom Reference</strong>. The reference entered into this field populates the shipment's <code>custom_reference</code> field once the shipment is created.</p>
+</li>
+<li><p>Click <strong>Next</strong> to display the <strong>Package Details</strong> card.</p>
+</li>
+</ol>
+<h3 id="step-3--enter-package-details">Step 3 – Enter Package Details</h3>
+<p>The <strong>Package Details</strong> card enables you to specify details of the shipment's packages. This step is mandatory for all shipments.</p>
+<p><img src="images/review_create_shipment_package_details_1.png" alt="review_create_shipment_package_details_1"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>A package is an item or a collection of items contained together for a shipment. A shipment can contain multiple packages.</p>
+</div>
+<p>To configure package details:</p>
+<ol>
+<li><p>Enter a <strong>Custom Reference</strong> for the package.</p>
+</li>
+<li><p>Optionally, enter the <strong>Quantity of This Package</strong>. If you enter a value greater than one then the Portal adds multiple identical packages to the shipment at the point of creation.</p>
+</li>
+<li><p>Enter the <strong>Dimensions and Weight</strong> of the package. You can specify <strong>Length</strong>, <strong>Width</strong>, <strong>Height</strong>, and <strong>Weight</strong>. These values should be given in the <strong>unit system</strong> selected in the previous step.</p>
+</li>
+<li><p>Enter the <strong>Package Value</strong>. This value should be given in the <strong>Currency</strong> selected in the previous step.</p>
+</li>
+<li><p>Optionally, enter the package's <strong>SKU</strong>. This is the Stock Keeping Unit reference of the item / package.</p>
+<p><img src="images/review_create_shipment_package_details_2.png" alt="review_create_shipment_package_details_2"></p>
+</li>
+<li><p>Optionally, enter a <strong>Model</strong> reference for the package.</p>
+</li>
+<li><p>Optionally, enter the package's <strong>Country of Origin</strong></p>
+</li>
+<li><p>Optionally, enter the package's <strong>Harmonisation Code</strong>. If provided, must be a valid harmonisation code.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on harmonisation codes, see the <a href="https://unstats.un.org/unsd/tradekb/Knowledgebase/50018/Harmonized-Commodity-Description-and-Coding-Systems-HS">UN Trade Statistics</a> site.</p>
+</div>
+</li>
+<li><p>Optionally, select the package's <strong>Shipping Terms</strong></p>
+</li>
+<li><p>Optionally, specify a <strong>Unit</strong> of packing (e.g. &quot;box&quot;)</p>
+</li>
+<li><p>Enter a <strong>Package Description</strong> of up to 100 characters.</p>
+</li>
+<li><p>Optionally, click <strong>Add Item</strong> to add details of a specific item within the package. The Portal displays additional properties relating to item details.</p>
+<p><img src="images/review_create_shipment_package_details_3.png" alt="review_create_shipment_package_details_3"></p>
+<p>The system uses the same properties to record item details that it does to record package details. Repeat steps 2-12 to record the details of your item. The only mandatory fields for items are <strong>Value</strong> and <strong>Description</strong>.</p>
+</li>
+<li><p>Optionally, click <strong>Add Another Package</strong> to record details of another package. The system displays a new set of properties relating to the new package's details. Repeat steps 2-13 to record the new package's information.</p>
+</li>
+</ol>
+<p>To delete an item or package, select the <strong>-</strong> icon next to the item or package <strong>Reference</strong>. The shipment must contain details of at least one package.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, and a coat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. The resulting shipment would contain:</p>
+<ul>
+<li>One package containing details of the coat and its accompanying package.</li>
+<li>One package containing details of the package that the necklace and bracelet are shipping in.</li>
+<li>One item containing details of the necklace, nested inside the relevant package.</li>
+<li>One item containing details of the bracelet, nested inside the relevant package.</li>
+</ul>
+<p>When the system creates the shipment, it records the package and item details specified in a series of nested <code>contents</code> properties. See the <a href="../pro/api/shipments/creating_shipments.md#specifying-shipment-contents">Specifying Shipment Contents</a> section of the PRO v2 API User Guide for an overview of how the PRO <strong>Create Shipment</strong> API handles shipment contents.</p>
+</div>
+<p>When you have configured shipment contents, click <strong>Next</strong> to display the <strong>Origin Details</strong> card.
+ </p>
+<h3 id="step-4--enter-origin">Step 4 – Enter Origin</h3>
+<p>The <strong>Origin Details</strong> card enables you to specify an origin address and contact details for the shipment. This step is mandatory for all shipments.</p>
+<p>If your organisation (or the selected tenant and channel for multi-tenancy organisations) has shipping locations configured, then the Portal prompts you to select a location as your origin destination.</p>
+<p><img src="images/pro_create_shipment_enter_origin.png" alt="pro_create_shipment_enter_origin"></p>
+<p>Alternatively, select <strong>Enter Address Manually</strong> to enter a new address. The Portal displays editable fields relating to address details.</p>
+<p><img src="images/pro_create_shipment_enter_address_manually.png" alt="pro_create_shipment_enter_address_manually"></p>
+<p>If your organisation (or the relevant tenant / channel) does not have shipping locations set up, then the Portal displays the <strong>Enter Address Manually</strong> fields automatically.</p>
+<p>The origin address has two mandatory properties, <strong>Address Line 1</strong> and <strong>Country ISO Code</strong>. <strong>Postal Code</strong> is mandatory for certain countries, but not all.</p>
+<p>The origin contact has three mandatory properties:</p>
+<ul>
+<li><strong>First Name</strong></li>
+<li><strong>Last Name</strong></li>
+<li><strong>Email</strong></li>
+</ul>
+<p>In addition, you must provide either a <strong>Landline</strong> or <strong>Mobile</strong> contact number for the location. All other fields on the <strong>Origin Details</strong> card are optional.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For scheduled shipments, the shipping location is usually prepopulated. Scheduled shipments must use a pre-defined shipping location as either their origin or destination address. For more information on configuring shipping locations, see the <a href="managing-shipping-locations.html">Managing Shipping Locations</a> page.</p>
+</div>
+<p>Enter the relevant origin address details and click <strong>Next</strong> to display the <strong>Destination Details</strong> card.</p>
+<h3 id="step-5--enter-destination">Step 5 – Enter Destination</h3>
+<p>The <strong>Destination Details</strong> card enables you to specify destination address and contact details for the shipment. This step is mandatory for all shipments.</p>
+<p><img src="images/pro_create_shipment_enter_destination.png" alt="pro_create_shipment_enter_destination"></p>
+<p>The destination address has two mandatory properties, <strong>Address Line 1</strong> and <strong>Country ISO Code</strong>. <strong>Postal Code</strong> is mandatory for certain countries, but not all.</p>
+<p>The destination contact has three mandatory properties:</p>
+<ul>
+<li><strong>First Name</strong></li>
+<li><strong>Last Name</strong></li>
+<li><strong>Email</strong></li>
+</ul>
+<p>In addition, you must provide either a <strong>Landline</strong> or <strong>Mobile</strong> contact number for the location. All other fields on the <strong>Destination Details</strong> card are optional.</p>
+<p>Once you have entered the relevant destination details, click <strong>Next</strong> to move on to the optional <strong>Shipping Dates</strong> card.</p>
+<h3 id="step-6--enter-shipping-dates">Step 6 – Enter Shipping Dates</h3>
+<p>The <strong>Shipping Dates</strong> card enables you to specify required shipping and delivery dates. This step is optional for all shipments.</p>
+<p><img src="images/pro_create_shipment_enter_shipping_dates.png" alt="pro_create_shipment_enter_shipping_dates"></p>
+<p>To specify a specific <strong>Shipping Date</strong>, or <strong>Required Delivery Date</strong> select the corresponding <strong>Specify Date</strong> radio button and select the required date from the date picker.</p>
+<p>By default, shipping and delivery dates are set to <strong>ASAP</strong>.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>The <strong>Shipping Date</strong> and <strong>Required Delivery Date</strong> properties limit delivery options for the shipment, meaning that it can only be allocated to those carrier services that would be able to ship it within the specified date range and / or deliver it by the specified required delivery date.</p>
+<p>If the dates you specify are too restrictive then PRO may be unable to allocate, as there may not be any carrier services available to take the shipment. As such, you should only specify shipping and delivery dates where it is necessary to do so.</p>
+</div>
+<p>Once you have specified shipping dates, either click <strong>Create Shipment</strong> to finish creating the shipment, or <strong>Next</strong> to display the optional <strong>Customs Documentation</strong> card.</p>
+<h3 id="step-7--provide-customs-documentation">Step 7 – Provide Customs Documentation</h3>
+<p>The <strong>Customs Documentation</strong> card enables you to specify customs information for international shipments. International shipments require this information in order to ensure successful allocation, customs clearance, and delivery. This step is optional for all shipments.</p>
+<p>To add customs documentation for a shipment, first select the <strong>Yes</strong> radio button from the <strong>Customs Documentation Required?</strong> field. The Portal displays editable fields relating to customs documentation.</p>
+<p><img src="images/pro_create_shipment_customs_documentation.png" alt="pro_create_shipment_customs_documentation"></p>
+<p>When providing customs documentation, <strong>Shipping Terms</strong> and <strong>Category Type</strong> are mandatory. All other properties are optional.</p>
+<p>Once you have specified customs information, click <strong>Next</strong> to display the optional <strong>Dangerous Goods</strong> card.</p>
+<h3 id="step-8--provide-dangerous-goods-information">Step 8 – Provide Dangerous Goods Information</h3>
+<p>The <strong>Dangerous Goods</strong> card enables you to enter dangerous goods information for the shipment. This step is optional for all shipments.</p>
+<p><img src="images/pro_create_shipment_dangerous_goods.png" alt="pro_create_shipment_dangerous_goods"></p>
+<p>To enter dangerous goods information for a shipment:</p>
+<ol>
+<li>Select <strong>Yes</strong> on the <strong>Dangerous Goods Required?</strong> radio button. The Portal displays a list of packages within the shipment, as dangerous goods information is provided at package level.</li>
+<li>Click the <strong>+</strong> button on the required package to display editable fields relating to dangerous goods details.</li>
+<li>Select an IATA dangerous goods class for the package from the <strong>Classes</strong> list.</li>
+<li>Use the radio buttons to select a <strong>Packing Group</strong> for the package.</li>
+</ol>
+<p><img src="images/pro_create_shipment_dangerous_goods_2.png" alt="pro_create_shipment_dangerous_goods_2"></p>
+<ol start="5">
+<li>Enter any <strong>ID Number</strong>, <strong>Proper Shipping Name</strong>, and/or <strong>Technical Name</strong> values for the package as required.</li>
+<li>Select the package's <strong>Physical Form</strong> from the drop-down list.</li>
+<li>Select the package's level of <strong>Radioactivity</strong> from the drop-down list.</li>
+<li>Use the radio buttons to specify the package's <strong>Accessibility</strong>.</li>
+<li>Enter any <strong>Custom Label Text</strong>, as required.</li>
+</ol>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All dangerous goods fields are optional.</p>
+</div>
+<p>Once you have finished entering dangerous goods information, click <strong>Create Shipment</strong> to finish the shipment creation process. The system displays a unique system-generated reference for your new shipment.</p>
+<p><img src="images/pro_create_shipment_finish.png" alt="pro_create_shipment_finish"></p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

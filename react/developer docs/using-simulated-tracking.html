@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Using Simulated Tracking | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Using Simulated Tracking | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="react-help-using-simulated-tracking">
+<h1 id="using-simulated-tracking">Using Simulated Tracking</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            02/02/2021
+        </li>
+        <li class="li-time-to-read">
+             ~3 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            02/02/2021
+        </li>
+        <li class="li-time-to-read">
+             ~3 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">react</li>
+        <li class="tag-search">api</li>
+        <li class="tag-search">shipments</li>
+        <li class="tag-search">registration</li>
+        <li class="tag-search">simulated tracking</li>
+        <li class="tag-search">fake tracking</li>
+    </ul>
+</div>
+
+<p>Simulated tracking enables you to generate dummy tracking events for your registered shipments to help with testing or demonstrations. This page explains how to use simulated tracking in REACT.</p>
+<hr>
+<h2 id="how-does-simulated-tracking-work">How Does Simulated Tracking Work?</h2>
+<p>Ordinarily, REACT shipments are updated by external communication from carriers. When the system receives a carrier tracking event that includes changes to one of your registered shipments, REACT creates a shipment event and updates the shipment details as necessary.</p>
+<p>However, it may sometimes be necessary for REACT to generate its own tracking events. For example, you may be in the process of integrating with REACT's <strong>Get Shipment Events</strong> or <strong>Get Tracking Events</strong> endpoints, and need some non-live test data to work with.</p>
+<p>Simulated tracking is a means of generating dummy tracking events as part of a <strong>Register Shipment</strong> API call. When you register a dummy shipment (that is, a shipment that does not correspond with a real-life delivery) that has a <code>simulated_tracking</code> property, REACT creates its own standardised tracking and shipment events in the same way that it would if it had received &quot;real&quot; carrier tracking events for the shipment. You can then use these simulated tracking events for testing or demonstration purposes.</p>
+<h2 id="using-simulated-tracking-1">Using Simulated Tracking</h2>
+<p>Before you can receive tracking events from a particular simulated carrier, you will first need  a connector for that simulated carrier. REACT can simulate tracking events from the following carriers:</p>
+<ul>
+<li>Yodel</li>
+<li>DPD UK</li>
+<li>DPD Local</li>
+<li>Lineten</li>
+<li>Hermes</li>
+</ul>
+<p>For more information on setting up carrier connectors, see the <a href="settings.md#setting-up-carrier-connectors">Setting Up Carrier Connectors</a> section of the <strong>Settings</strong> page.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>In order to set up a simulated connector, you will need to enter login details for the relevant REACT simulated carrier. These details are generated by Sorted. Please contact support if you require simulated login details.</p>
+</div>
+<p>Once you have set up a connector for the carrier whose tracking events you want to simulate, you can use simulated tracking by registering a shipment with a <code>simulated_tracking</code> property.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>Simulated tracking should be used for testing and demonstration purposes only. Registering a <code>simulated_tracking</code> property for a live shipment could result in incorrect tracking data.</p>
+</div>
+<p>The <code>simulated_tracking</code> property has two sub-properties:</p>
+<ul>
+<li><code>simulation_type</code> is the tracking scenario you want to simulate. At present, this property can either take a value of <code>delivered</code>, in which REACT generates tracking events simulating an issue-free delivery, or <code>random</code>, in which REACT generates a random tracking scenario.</li>
+<li><code>carrier_reference</code> is the name of the carrier you want to simulate tracking events for: <code>yodel</code>, <code>dpd_uk</code>, <code>dpd_local</code>, ``hermes<code>, or </code>lineten`.</li>
+</ul>
+<p>Once you have registered a shipment with a <code>simulated_tracking</code> property, REACT generates dummy carrier tracking events for that shipment in line with the tracking scenario specified. The length of time taken to generate these simulated events varies based on the <code>simulation_type</code> selected. The <code>delivered</code> scenario generates events within 20 minutes, whereas the <code>random</code> scenario generates events over the course of the next few days.</p>
+<p>The system treats these tracking events in the same way as it would a &quot;regular&quot; tracking event, creating corresponding shipment events and updating the shipment's properties accordingly.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on how REACT processes incoming tracking events, see the <a href="overview.md#how-react-works">How REACT Works</a> section of the <strong>Overview</strong> page.</p>
+</div>
+<h2 id="example-simulated-tracking-call">Example Simulated Tracking Call</h2>
+<p>The example below shows a simple shipment registered with a <code>simulated_tracking</code> property.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_register-shipment-request-with-simulated-tracking" role="tab" aria-controls="tabpanel_bHGHmlrG6S_register-shipment-request-with-simulated-tracking" data-tab="register-shipment-request-with-simulated-tracking" tabindex="0" aria-selected="true">Register Shipment Request with Simulated Tracking</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_register-shipment-request-with-simulated-tracking" role="tabpanel" data-tab="register-shipment-request-with-simulated-tracking">
+
+<pre><code class="lang-json">
+{
+  &quot;shipments&quot;: [
+    {
+      &quot;tracking_references&quot;: [
+          &quot;sim_tracking_example&quot;
+      ],  
+      &quot;simulated_tracking&quot;: {
+          &quot;simulation_type&quot;: &quot;random&quot;,
+          &quot;carrier_reference&quot;: &quot;dpd_local&quot;
+      }
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="next-steps">Next Steps</h2>
+<p>Learn more about integrating with REACT:</p>
+<ul>
+<li><a href="retrieving-data.html">Retrieving Shipment and Event Data</a></li>
+<li><a href="updating-shipments.html">Updating Shipments</a></li>
+<li><a href="error-codes.html">Error Codes</a></li>
+</ul>
+</section>
+</div>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

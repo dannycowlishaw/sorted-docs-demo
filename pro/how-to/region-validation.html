@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Region Validation | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Region Validation | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="region-validation">
+<h1 id="region-validation">Region Validation</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            02/03/2021
+        </li>
+        <li class="li-time-to-read">
+             ~2 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            02/03/2021
+        </li>
+        <li class="li-time-to-read">
+             ~2 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/7d40af995c39ae5ed43c7e834bc10dae.jpg?d=robohash" class="img-circle img-contributor" title="martin.box@sorted.com"/>
+            <span class="tooltip-text">martin.box@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">pro</li>
+        <li class="tag-search">validation</li>
+        <li class="tag-search">postcode</li>
+    </ul>
+</div>
+
+<p>This page details Sorted's region validation rules for each country code.</p>
+<p>The <code>address.region</code> property is mandatory for certain countries. This page details the acceptable <code>region</code> values for these countries. PRO returns a validation error if you attempt to pass any other <code>region</code> value when creating a shipment to or from one of these countries.</p>
+<h2 id="australia">Australia</h2>
+<p>Country Code: <code>AU</code></p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New South Wales</td>
+<td>NS</td>
+</tr>
+<tr>
+<td>Queensland</td>
+<td>QL</td>
+</tr>
+<tr>
+<td>South Australia</td>
+<td>SA</td>
+</tr>
+<tr>
+<td>Tasmania</td>
+<td>TA</td>
+</tr>
+<tr>
+<td>Victoria</td>
+<td>VI</td>
+</tr>
+<tr>
+<td>Western Australia</td>
+<td>WA</td>
+</tr>
+<tr>
+<td>Australian Capital Territory</td>
+<td>AC</td>
+</tr>
+<tr>
+<td>Northern Territory</td>
+<td>NT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="canada">Canada</h2>
+<p>Country Code: <code>CA</code></p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ontario</td>
+<td>ON</td>
+</tr>
+<tr>
+<td>Quebec</td>
+<td>QC</td>
+</tr>
+<tr>
+<td>Nova Scotia</td>
+<td>NS</td>
+</tr>
+<tr>
+<td>New Brunswick</td>
+<td>NB</td>
+</tr>
+<tr>
+<td>Manitoba</td>
+<td>MB</td>
+</tr>
+<tr>
+<td>British Columbia</td>
+<td>BC</td>
+</tr>
+<tr>
+<td>Prince Edward Island</td>
+<td>PE</td>
+</tr>
+<tr>
+<td>Saskatchewan</td>
+<td>SK</td>
+</tr>
+<tr>
+<td>Alberta</td>
+<td>AB</td>
+</tr>
+<tr>
+<td>Newfoundland and Labrador</td>
+<td>NL</td>
+</tr>
+<tr>
+<td>Northwest Territories</td>
+<td>NT</td>
+</tr>
+<tr>
+<td>Nunavut</td>
+<td>NU</td>
+</tr>
+<tr>
+<td>Yukon</td>
+<td>YT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ireland">Ireland</h2>
+<p>Country Code: <code>IE</code></p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carlow</td>
+<td>CW</td>
+</tr>
+<tr>
+<td>Cavan</td>
+<td>CN</td>
+</tr>
+<tr>
+<td>Clare</td>
+<td>CE</td>
+</tr>
+<tr>
+<td>Cork</td>
+<td>CO</td>
+</tr>
+<tr>
+<td>Donegal</td>
+<td>DL</td>
+</tr>
+<tr>
+<td>Dublin</td>
+<td>D</td>
+</tr>
+<tr>
+<td>Galway</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Kerry</td>
+<td>KY</td>
+</tr>
+<tr>
+<td>Kildare</td>
+<td>KE</td>
+</tr>
+<tr>
+<td>Kilkenny</td>
+<td>KK</td>
+</tr>
+<tr>
+<td>Laois</td>
+<td>LS</td>
+</tr>
+<tr>
+<td>Leitrim</td>
+<td>LM</td>
+</tr>
+<tr>
+<td>Limerick</td>
+<td>LK</td>
+</tr>
+<tr>
+<td>Longford</td>
+<td>LD</td>
+</tr>
+<tr>
+<td>Louth</td>
+<td>LH</td>
+</tr>
+<tr>
+<td>Mayo</td>
+<td>MO</td>
+</tr>
+<tr>
+<td>Meath</td>
+<td>MH</td>
+</tr>
+<tr>
+<td>Monaghan</td>
+<td>MN</td>
+</tr>
+<tr>
+<td>Offaly</td>
+<td>OY</td>
+</tr>
+<tr>
+<td>Roscommon</td>
+<td>RN</td>
+</tr>
+<tr>
+<td>Sligo</td>
+<td>SO</td>
+</tr>
+<tr>
+<td>Tipperary</td>
+<td>TA</td>
+</tr>
+<tr>
+<td>Waterford</td>
+<td>WD</td>
+</tr>
+<tr>
+<td>Westmeath</td>
+<td>WH</td>
+</tr>
+<tr>
+<td>Wexford</td>
+<td>WX</td>
+</tr>
+<tr>
+<td>Wicklow</td>
+<td>WW</td>
+</tr>
+</tbody>
+</table>
+<h2 id="new-zealand">New Zealand</h2>
+<p>Country Code: <code>NZ</code></p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auckland</td>
+<td>AUK</td>
+</tr>
+<tr>
+<td>Bay of Plenty</td>
+<td>BOP</td>
+</tr>
+<tr>
+<td>Canterbury</td>
+<td>CAN</td>
+</tr>
+<tr>
+<td>Gisborne</td>
+<td>GIS</td>
+</tr>
+<tr>
+<td>Hawke's Bay</td>
+<td>HKB</td>
+</tr>
+<tr>
+<td>Marlborough</td>
+<td>MBH</td>
+</tr>
+<tr>
+<td>Manawatu-Wanganui</td>
+<td>MWT</td>
+</tr>
+<tr>
+<td>Nelson</td>
+<td>NSN</td>
+</tr>
+<tr>
+<td>Northland</td>
+<td>NTL</td>
+</tr>
+<tr>
+<td>Otago</td>
+<td>OTA</td>
+</tr>
+<tr>
+<td>Southland</td>
+<td>STL</td>
+</tr>
+<tr>
+<td>Tasman</td>
+<td>TAS</td>
+</tr>
+<tr>
+<td>Taranaki</td>
+<td>TKI</td>
+</tr>
+<tr>
+<td>Waikato</td>
+<td>WKO</td>
+</tr>
+<tr>
+<td>Wellington</td>
+<td>WGN</td>
+</tr>
+<tr>
+<td>West Coast</td>
+<td>WTC</td>
+</tr>
+<tr>
+<td>Chatham Islands Territory</td>
+<td>CIT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="united-states">United States</h2>
+<p>Country Code: <code>US</code></p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alabama</td>
+<td>AL</td>
+</tr>
+<tr>
+<td>Alaska</td>
+<td>AK</td>
+</tr>
+<tr>
+<td>Arizona</td>
+<td>AZ</td>
+</tr>
+<tr>
+<td>Arkansas</td>
+<td>AR</td>
+</tr>
+<tr>
+<td>California</td>
+<td>CA</td>
+</tr>
+<tr>
+<td>Colorado</td>
+<td>CO</td>
+</tr>
+<tr>
+<td>Connecticut</td>
+<td>CT</td>
+</tr>
+<tr>
+<td>Delaware</td>
+<td>DE</td>
+</tr>
+<tr>
+<td>Florida</td>
+<td>FL</td>
+</tr>
+<tr>
+<td>Georgia</td>
+<td>GA</td>
+</tr>
+<tr>
+<td>Hawaii</td>
+<td>HI</td>
+</tr>
+<tr>
+<td>Idaho</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>Illinois</td>
+<td>IL</td>
+</tr>
+<tr>
+<td>Indiana</td>
+<td>IN</td>
+</tr>
+<tr>
+<td>Iowa</td>
+<td>IA</td>
+</tr>
+<tr>
+<td>Kansas</td>
+<td>KS</td>
+</tr>
+<tr>
+<td>Kentucky</td>
+<td>KY</td>
+</tr>
+<tr>
+<td>Louisiana</td>
+<td>LA</td>
+</tr>
+<tr>
+<td>Maine</td>
+<td>ME</td>
+</tr>
+<tr>
+<td>Maryland</td>
+<td>MD</td>
+</tr>
+<tr>
+<td>Massachusetts</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>Michigan</td>
+<td>MI</td>
+</tr>
+<tr>
+<td>Minnesota</td>
+<td>MN</td>
+</tr>
+<tr>
+<td>Mississippi</td>
+<td>MS</td>
+</tr>
+<tr>
+<td>Missouri</td>
+<td>MO</td>
+</tr>
+<tr>
+<td>Montana</td>
+<td>MT</td>
+</tr>
+<tr>
+<td>Nebraska</td>
+<td>NE</td>
+</tr>
+<tr>
+<td>Nevada</td>
+<td>NV</td>
+</tr>
+<tr>
+<td>New Hampshire</td>
+<td>NH</td>
+</tr>
+<tr>
+<td>New Jersey</td>
+<td>NJ</td>
+</tr>
+<tr>
+<td>New Mexico</td>
+<td>NM</td>
+</tr>
+<tr>
+<td>New York</td>
+<td>NY</td>
+</tr>
+<tr>
+<td>North Carolina</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>North Dakota</td>
+<td>ND</td>
+</tr>
+<tr>
+<td>Ohio</td>
+<td>OH</td>
+</tr>
+<tr>
+<td>Oklahoma</td>
+<td>OK</td>
+</tr>
+<tr>
+<td>Oregon</td>
+<td>OR</td>
+</tr>
+<tr>
+<td>Pennsylvania</td>
+<td>PA</td>
+</tr>
+<tr>
+<td>Rhode Island</td>
+<td>RI</td>
+</tr>
+<tr>
+<td>South Carolina</td>
+<td>SC</td>
+</tr>
+<tr>
+<td>South Dakota</td>
+<td>SD</td>
+</tr>
+<tr>
+<td>Tennessee</td>
+<td>TN</td>
+</tr>
+<tr>
+<td>Texas</td>
+<td>TX</td>
+</tr>
+<tr>
+<td>Utah</td>
+<td>UT</td>
+</tr>
+<tr>
+<td>Vermont</td>
+<td>VT</td>
+</tr>
+<tr>
+<td>Virginia</td>
+<td>VA</td>
+</tr>
+<tr>
+<td>Washington</td>
+<td>WA</td>
+</tr>
+<tr>
+<td>West Virginia</td>
+<td>WV</td>
+</tr>
+<tr>
+<td>Wisconsin</td>
+<td>WI</td>
+</tr>
+<tr>
+<td>Wyoming</td>
+<td>WY</td>
+</tr>
+<tr>
+<td>District of Columbia</td>
+<td>DC</td>
+</tr>
+<tr>
+<td>American Samoa</td>
+<td>AS</td>
+</tr>
+<tr>
+<td>Guam</td>
+<td>GU</td>
+</tr>
+<tr>
+<td>Northern Mariana Islands</td>
+<td>MP</td>
+</tr>
+<tr>
+<td>Puerto Rico</td>
+<td>PR</td>
+</tr>
+<tr>
+<td>United States Minor Outlying Islands</td>
+<td>UM</td>
+</tr>
+<tr>
+<td>Virgin Islands</td>
+<td>VI</td>
+</tr>
+<tr>
+<td>Armed Forces - Americas</td>
+<td>AA</td>
+</tr>
+<tr>
+<td>Armed Forces - Europe</td>
+<td>AE</td>
+</tr>
+<tr>
+<td>Armed Forces - Pacific</td>
+<td>AP</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

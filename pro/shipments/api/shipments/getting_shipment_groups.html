@@ -1,0 +1,535 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Getting Shipment Groups | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Getting Shipment Groups | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <link rel="stylesheet" href="../../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../../index.html">
+                <img id="logo" src="../../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="pro-api-help-shipments-getting-shipment-groups">
+<h1 id="getting-shipment-groups">Getting Shipment Groups</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            08/10/2020
+        </li>
+        <li class="li-time-to-read">
+             ~5 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            08/10/2020
+        </li>
+        <li class="li-time-to-read">
+             ~5 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">v2</li>
+        <li class="tag-search">shipments</li>
+        <li class="tag-search">pro</li>
+        <li class="tag-search">api</li>
+        <li class="tag-search">shipment groups</li>
+    </ul>
+</div>
+
+<p>This page explains the various ways in which you can retrieve existing shipment group data.</p>
+<hr>
+<h2 id="overview-of-retrieving-shipment-groups">Overview of Retrieving Shipment Groups</h2>
+<p>PRO has three endpoints that enable you to retrieve details of existing shipment groups:</p>
+<ul>
+<li><strong>Get Shipment Group</strong> retrieves a single shipment group by its unique <code>reference</code>.</li>
+<li><strong>Get Shipment Groups by Custom Reference</strong> retrieves a summary of any shipment groups that have the specified <code>custom_reference</code>.</li>
+<li><strong>Get Shipment Group by Custom Reference</strong> retrieves a single shipment group using a combination of <code>custom_reference</code> and <code>version</code>.</li>
+</ul>
+<h2 id="shipment-group-references">Shipment Group References</h2>
+<p>In PRO, shipment groups can be retrieved by two types of reference:</p>
+<ul>
+<li><code>reference</code> is a unique identifier generated for every shipment group you create. It begins with <em>sg</em>.</li>
+<li><code>custom_reference</code> is a user-defined optional reference that is supplied as part of a <strong>Create Shipment Group</strong> call. While two open groups cannot share the same <code>custom_reference</code>, the <code>custom_reference</code> of a previously-closed group can be re-used.</li>
+</ul>
+<p>Because the <code>custom_reference</code> can be re-used, it is not a unique identifier for a group. To this end, PRO uses versioning as a means of uniquely identifying groups by <code>custom_reference</code>.</p>
+<h3 id="versioning-in-shipment-groups">Versioning in Shipment Groups</h3>
+<p>When you specify a <code>custom_reference</code> for a shipment group, PRO assigns that group a <code>version</code> number. Combined, the <code>custom_reference</code> and <code>version</code> provide a unique identifier for the group. A group's <code>version</code> number indicates how many times you have used that group's <code>custom_reference</code>.</p>
+<p>For example, suppose that you choose to use shipment groups to represent carrier trailers, so that you can manifest an entire trailer of shipments at once. To this end, you create a shipment group with a <code>custom_reference</code> of <em>CarrierX-PM</em> to represent Carrier X's daily afternoon collection.</p>
+<p>The first time you create this group, the group has a <code>version</code> number of <em>1</em>. You add the relevant shipments to the group, manifest them using the <strong>Manifest Shipments by Shipment Group</strong> endpoint as they are picked up, and then close the shipment group.</p>
+<p>The following day, you create a new shipment group for that day's collection. As before, you use a <code>custom_reference</code> of <em>CarrierX-PM</em>. This time, however, PRO responds with a <code>version</code> number of <em>2</em>, as this is the second time that that <code>custom_reference</code> has been used.</p>
+<p>You can now use the version number to point to the shipment group you want. <em>CarrierX-PM</em> version <em>1</em> points to the original (now closed) shipment group, while <em>CarrierX-PM</em> version <em>2</em> points to the new group. Note that both groups also have unique (PRO-generated) <code>references</code>.</p>
+<h2 id="getting-shipment-groups-by-group-reference">Getting Shipment Groups by Group Reference</h2>
+<p>To call <strong>Get Shipment Group</strong>, send a <code>GET</code> request to <code>https://api.sorted.com/pro/shipment_groups/{reference}</code>, where <code>{reference}</code> is the unique reference of the shipment group you want to retrieve details for.</p>
+<p>PRO returns a <code>shipment_group</code> object. The <code>shipment_group</code> object contains the following information:</p>
+<ul>
+<li>The group's unique <code>reference</code>.</li>
+<li>The group's <code>custom_reference</code> and <code>version</code> (if applicable).</li>
+<li>A list of the <code>shipments</code> in the group.</li>
+<li>The current <code>state</code> of the group.</li>
+<li>The date that the group was <code>created</code>.</li>
+<li>The dates that the group was <code>locked</code>, <code>closed</code>, and/or <code>updated</code> (if applicable).</li>
+</ul>
+<h3 id="get-shipment-group-example">Get Shipment Group Example</h3>
+<p>The example shows a request for shipment <em>sg_00013464648946915264789208891778</em>.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_get-shipment-group-request" role="tab" aria-controls="tabpanel_bHGHmlrG6S_get-shipment-group-request" data-tab="get-shipment-group-request" tabindex="0" aria-selected="true">Get Shipment Group Request</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_get-shipment-group-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S_get-shipment-group-response" data-tab="get-shipment-group-response" tabindex="-1">Get Shipment Group Response</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_get-shipment-group-request" role="tabpanel" data-tab="get-shipment-group-request">
+
+<pre><code class="lang-json">GET https://api.sorted.com/pro/shipment_groups/sg_00013464648946915264789208891778
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S_get-shipment-group-response" role="tabpanel" data-tab="get-shipment-group-response" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+    &quot;reference&quot;: &quot;sg_00013464648946915264789208891778&quot;,
+    &quot;shipments&quot;: [
+        &quot;sp_00013473827456470532303387361290&quot;,
+        &quot;sp_09830498509898987009909000543435&quot;
+    ],
+    &quot;custom_reference&quot;: &quot;CarrierX-PM&quot;,
+    &quot;version&quot;: &quot;1&quot;,
+    &quot;state&quot;: &quot;open&quot;,
+    &quot;created&quot;: &quot;2019-05-03T17:00:23+01:00&quot;
+}
+
+</code></pre>
+</section>
+</div>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>For full reference information on the <strong>Get Shipment Group</strong> endpoint, see the <a href="/pro/api/reference/shipments.html#tag/Shipment-Groups/paths/%7E1shipment_groups%7E1%7BshipmentGroupReference%7D/get">PRO v2 API reference</a>.</p>
+</div>
+<h2 id="getting-shipment-groups-by-custom-reference">Getting Shipment Groups by Custom Reference</h2>
+<p>To call <strong>Get Shipment Groups by Custom Reference</strong>, send a <code>GET</code> request to <code>https://api.sorted.com/pro/shipment_groups/custom_reference/{custom_reference}</code>.</p>
+<p>PRO returns details of every shipment group that has the specified <code>custom_reference</code>, irrespective of <code>version</code>. Specifically, PRO returns a list of <code>shipment_group_summary</code> objects.</p>
+<p>Each <code>shipment_group_summary</code> is a simplified version of the full <code>shipment_group</code> object, containing the following information:</p>
+<ul>
+<li>The group's unique <code>reference</code>.</li>
+<li>The group's <code>custom_reference</code> and <code>version</code> (if applicable).</li>
+<li>Links to the full version of the group.</li>
+</ul>
+<h3 id="example-get-shipment-groups-by-custom-reference-call">Example Get Shipment Groups by Custom Reference Call</h3>
+<p>The example shows a request for a summary of all shipment groups with the <code>custom_reference</code> <em>CarrierX-PM</em>. PRO has returned a summary of two shipment groups.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_get-shipment-groups-by-custom-reference-request" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_get-shipment-groups-by-custom-reference-request" data-tab="get-shipment-groups-by-custom-reference-request" tabindex="0" aria-selected="true">Get Shipment Groups by Custom Reference Request</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_get-shipment-groups-by-custom-reference-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_get-shipment-groups-by-custom-reference-response" data-tab="get-shipment-groups-by-custom-reference-response" tabindex="-1">Get Shipment Groups by Custom Reference Response</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_get-shipment-groups-by-custom-reference-request" role="tabpanel" data-tab="get-shipment-groups-by-custom-reference-request">
+
+<pre><code class="lang-json">GET https://api.sorted.com/pro/shipment_groups/custom_reference/CarrierX-PM
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_get-shipment-groups-by-custom-reference-response" role="tabpanel" data-tab="get-shipment-groups-by-custom-reference-response" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">[
+    {
+        &quot;reference&quot;: &quot;sg_00013464648946915264789208891778&quot;,
+        &quot;custom_reference&quot;: &quot;CarrierX-PM&quot;,
+        &quot;version&quot;: 1,
+        &quot;_links&quot;: [
+            {
+                &quot;rel&quot;: &quot;self&quot;,
+                &quot;href&quot;: &quot;/pro/shipment_groups/sg_00013464648946915264789208891778&quot;
+            },
+            {
+                &quot;rel&quot;: &quot;version&quot;,
+                &quot;href&quot;: &quot;/pro/shipment_groups/custom_reference/CarrierX-PM/1&quot;
+            }
+        ]
+    },
+    {
+        &quot;reference&quot;: &quot;sg_00013464648946915264789208891788&quot;,
+        &quot;custom_reference&quot;: &quot;CarrierX-PM&quot;,
+        &quot;version&quot;: 2,
+        &quot;_links&quot;: [
+            {
+                &quot;rel&quot;: &quot;self&quot;,
+                &quot;href&quot;: &quot;/pro/shipment_groups/sg_00013464648946915264789208891788&quot;
+            },
+            {
+                &quot;rel&quot;: &quot;version&quot;,
+                &quot;href&quot;: &quot;/pro/shipment_groups/custom_reference/CarrierX-PM/2&quot;
+            }
+        ]
+    }
+]
+</code></pre>
+</section>
+</div>
+<h2 id="getting-a-shipment-group-by-custom-reference-and-version">Getting a Shipment Group by Custom Reference and Version</h2>
+<p>To call <strong>Get Shipment Group by Custom Reference</strong>, send a <code>GET</code> request to <code>https://api.sorted.com/pro/shipment_groups/custom_reference/{custom_reference}/{version}</code>, where <code>{custom_reference}</code> is the reference you want to search on and <code>{version}</code> represents the group version you want PRO to return. <code>{version}</code> can be either an integer or the value <em>latest</em>.</p>
+<p>PRO returns a full shipment group object (as opposed to the summaries returned by the <strong>Get Shipment Groups by Custom Reference</strong> endpoint). The shipment group object contains the following information:</p>
+<ul>
+<li>The group's unique <code>reference</code>.</li>
+<li>The group's <code>custom_reference</code> and <code>version</code> (if applicable).</li>
+<li>A list of the <code>shipments</code> in the group.</li>
+<li>The current <code>state</code> of the group.</li>
+<li>The date that the group was <code>created</code>.</li>
+<li>The dates that the group was <code>locked</code>, <code>closed</code>, and/or <code>updated</code> (if applicable).</li>
+</ul>
+<h3 id="example-get-shipment-group-by-custom-reference-call">Example Get Shipment Group by Custom Reference Call</h3>
+<p>These examples show two calls, based on the data used in previous examples on this page: one to get a group with a <code>custom_reference</code> of <em>CarrierX-PM</em> and a <code>version</code> of <em>1</em>, and one to get the latest <em>CarrierX-PM</em> group.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_requests" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_requests" data-tab="requests" tabindex="0" aria-selected="true">Requests</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_version-1-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_version-1-response" data-tab="version-1-response" tabindex="-1">Version 1 Response</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_latest-version-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_latest-version-response" data-tab="latest-version-response" tabindex="-1">Latest Version Response</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_requests" role="tabpanel" data-tab="requests">
+
+<pre><code class="lang-json">GET https://api.sorted.com/pro/shipment_groups/custom_reference/CarrierX-PM/1
+GET https://api.sorted.com/pro/shipment_groups/custom_reference/CarrierX-PM/latest
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-2_version-1-response" role="tabpanel" data-tab="version-1-response" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+    &quot;reference&quot;: &quot;sg_00013464648946915264789208891778&quot;,
+    &quot;shipments&quot;: [
+        &quot;sp_00013473827456470532303387361290&quot;,
+        &quot;sp_09830498509898987009909000543435&quot;
+    ],
+    &quot;custom_reference&quot;: &quot;CarrierX-PM&quot;,
+    &quot;version&quot;: &quot;1&quot;,
+    &quot;state&quot;: &quot;open&quot;,
+    &quot;created&quot;: &quot;2019-05-03T17:00:23+01:00&quot;
+}
+
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-2_latest-version-response" role="tabpanel" data-tab="latest-version-response" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+    &quot;reference&quot;: &quot;sg_00013464648946915264789208891788&quot;,
+    &quot;shipments&quot;: [
+        &quot;sp_00013473827456270532303387361927&quot;,
+        &quot;sp_09830498509898987009909000543108&quot;
+    ],
+    &quot;custom_reference&quot;: &quot;CarrierX-PM&quot;,
+    &quot;version&quot;: &quot;2&quot;,    
+    &quot;state&quot;: &quot;open&quot;,
+    &quot;created&quot;: &quot;2019-05-04T17:00:23+01:00&quot;
+}
+
+</code></pre>
+</section>
+</div>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li>Learn how to create new shipment groups: <a href="creating_shipment_groups.html">Creating Shipment Groups</a></li>
+<li>Learn how to add and remove shipments from groups: <a href="editing_shipment_groups.html">Editing Shipment Groups</a></li>
+<li>Learn how to retrieve collection notes: <a href="getting_collection_notes.html">Getting Collection Notes</a></li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

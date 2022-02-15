@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Managing Webhooks | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Managing Webhooks | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="react-help-managing-webhooks">
+<h1 id="managing-webhooks">Managing Webhooks</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            29/05/2020
+        </li>
+        <li class="li-time-to-read">
+             ~14 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            29/05/2020
+        </li>
+        <li class="li-time-to-read">
+             ~14 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">react</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">webhooks</li>
+    </ul>
+</div>
+
+<p>SortedREACT uses webhooks to notify you of shipment events. This page explains how REACT webhooks work, how you can control them using shipment filters, and how to set webhooks and shipment filters up in the UI.</p>
+<hr>
+<h2 id="what-is-a-webhook">What is a Webhook?</h2>
+<p>A webhook is an automated message sent by an app whenever a particular event occurs. The principle is fairly simple: you tell the app <em>where</em> to send the data (i.e. the URL it should send to) and <em>when</em> to send (i.e. the circumstances in which you want to receive data). Whenever those circumstances occur, the webhook sends its payload to the location you specified. You can then use that data in whatever way you need.</p>
+<p>The key is that the webhook sends data to you proactively - you don't need to make a request like you would with a &quot;regular&quot; API. This enables you to build efficient services that don't need to continually poll an app for changes in order to stay up to date.</p>
+<h2 id="webhooks-in-react">Webhooks in REACT</h2>
+<p>In REACT, webhooks are used a means of keeping you up to date with registered shipments. They are triggered either by changes in shipment state, or by calculated events (i.e. when REACT detects that a shipment may be missing or is late). When a shipment enters a pre-selected state, REACT sends the current details of the shipment and the event that caused it to change state to a pre-configured location.</p>
+<p>These timely updates mean that you can automate processes such as customer communications and carrier escalations. For example, you might set up a webhook that sends data whenever a shipment enters a state of <strong>Delayed</strong>. You could then feed the data from that webhook into your SMS gateway so that your customers are immediately alerted by text when delays occur.</p>
+<h3 id="webhook-payload">Webhook Payload</h3>
+<p>When a shipment state change triggers a webhook, the webhook sends the <strong>Shipment Events</strong> resource for the event that caused that shipment state change in its payload body. The data sent has the same structure as the response from the <strong>Get Shipment Events</strong> API.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For full reference details of the <strong>Shipment Events</strong> resource, click <a href="https://docs.sorted.com/react/api/#GetShipmentEvents">here</a>.</p>
+</div>
+<p>The <strong>Shipment Events</strong> resource has two main parts:</p>
+<ul>
+<li><code>shipment</code> - This object contains a summary of the data REACT holds on the shipment in question, including reference numbers, carrier information and expected dates.</li>
+<li><code>events</code> - This object contains details of the event that triggered the relevant shipment state change, including timestamps and a list of the properties that were changed as a result of the event.</li>
+</ul>
+<p>It's worth paying particular attention to the <code>property_summary</code> array within the <code>events</code> object. This array lists any changes to the <code>shipment.shipment_state.state</code>, <code>shipment.delivered_date</code>, <code>shipment.promised_date</code>, and <code>shipment.shipped_date</code> properties that occurred as a result of the event that triggered the webhook, including what each property was changed to and what it was set to previously.</p>
+<p>The richness of the data returned by the <strong>Shipment Events</strong> resource will depend to some extent on the data that was provided when the shipment in question was registered. If a webhook returns a shipment that was registered with just a carrier tracking reference, then the resource will only contain event details and that carrier tracking reference.</p>
+<p>However, if a webhook returns a shipment that was registered with additional details (such as custom references and promised dates) then these details will be sent as part of the webhook's payload, enabling you to build services that use this information without having to look it up elsewhere.</p>
+<h3 id="webhooks-and-shipment-filters">Webhooks and Shipment Filters</h3>
+<p>Each REACT webhook must be associated with at least one shipment filter. A shipment filter is a set of shipment conditions that is used as a webhook trigger. When a tracking event causes a shipment to change state so that it meets the criteria set out for a particular shipment filter, any webhooks that are associated with that filter will send their data.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All REACT shipments have a current shipment state, which is updated as shipment events occur.</p>
+<p>For a full list of REACT shipment states, see the <a href="shipment-states.md">Shipment States</a> page.</p>
+</div>
+<p>You can use changes in shipment state and new calculated events to filter shipments. States and calculated events can be filtered in whatever way you choose. For example, you could set up a filter containing states that require escalation to the carrier, such as <strong>Lost</strong>, <strong>Damaged</strong>, and the <strong>Late</strong> calculated event. You could also set up a filter containing states that you would want to send delivery updates to your customers on, such as <strong>Out For Delivery</strong>, <strong>Collection Reminder</strong>, and <strong>Delivery Attempted</strong>. The <a href="managing-webhooks.html#example-configuration">Example Configuration</a> section gives further examples of potential shipment filters.</p>
+<p>In REACT, each shipment filter can trigger multiple webhooks, and each webhook can be triggered by multiple filters. This many-to-many relationship enables you to create flexible configurations that don't tie your business processes into your webhook configurations.</p>
+<h2 id="managing-your-shipment-filters">Managing Your Shipment Filters</h2>
+<p>Shipment filters are managed in the REACT UI via the <strong>Settings &gt; Shipment Filters</strong> page. This page enables you to set up new filters and edit or remove existing ones. It displays a card for each shipment filter that you set up.</p>
+<p>You'll need to set up your filters before configuring webhooks, as selecting shipment filters is part of the webhook configuration process.</p>
+<h3 id="creating-new-shipment-filters">Creating New Shipment Filters</h3>
+<ol>
+<li><p>Log into the REACT UI and select <strong>Settings &gt; Shipment Filters</strong> to display the <strong>Create &amp; Manage Shipment Filters</strong> page.</p>
+<p><img src="images/filter-home.png" alt="filter-home"></p>
+</li>
+<li><p>Click the <strong>Create New Shipment Filter</strong> tile to begin creating a new filter. The <strong>Shipment Filter Name</strong> tile is displayed.</p>
+<p><img src="images/filter-name.png" alt="filter-name"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Filter names should be related to the business process you want to drive with the filter rather than the communication method you want to use with the customer. For example, &quot;Contact Required&quot; would be a better choice of filter name than &quot;SMS&quot;.</p>
+</div>
+</li>
+<li><p>Give your filter a name and click <strong>Next</strong> to display a list of available carriers.</p>
+<p><img src="images/new-filter-select-carrier.png" alt="new-filter-select-carrier"></p>
+</li>
+<li><p>Select the carriers that you want to add to the filter. If you do not select any carriers then the filter will trigger for shipments with all carriers. Click <strong>Next</strong> to display a list of available shipment states.</p>
+<p><img src="images/filter-ship-states.png" alt="filter-ship-states"></p>
+</li>
+<li><p>Select the shipment states and calculated events you want to add to the filter. You can select calculated events can be selected from the <strong>Calculated Events</strong> tab.</p>
+<p><img src="images/filter-calc-events.png" alt="filter-calc-events"></p>
+<p>When you've selected everything you need, click <strong>Next</strong>. A list of the states and calculated events you selected is displayed.</p>
+<p><img src="images/filter-selection.png" alt="filter-selection"></p>
+</li>
+<li><p>You can deselect states from this tile if you need to. When you're happy with the states and events in the filter, click <strong>Next</strong> to display a list of shipment types.</p>
+<p><img src="images/filter-shipment-types.png" alt="filter-shipment-types"></p>
+</li>
+<li><p>Select the shipment types you want to include and then click <strong>Next</strong> to display the <strong>Add Shipment Tags</strong> tile.</p>
+<p><img src="images/filter-tags.png" alt="filter-tags"></p>
+</li>
+<li><p>If required, add shipment tags by entering a tag name and clicking the plus button. If you select tags then only shipments that are tagged with at least one of those tags can trigger webhooks via your filter.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can add tags to shipments via the <strong>Register Shipments</strong> and <strong>Update Shipments</strong> endpoints. For more information on adding tags to shipments, see the <a href="registering-shipments.md#registering-extra-shipment-information">Registering Extra Shipment Information</a> section of the <a href="registering-shipments.md">Registering Shipments</a> page, and the <a href="updating-shipments.md">Updating Shipments</a> page.</p>
+</div>
+<p>When you have added any tags you need, click <strong>Create Filter</strong> to finish. Your new filter appears as a tile on the <strong>Shipment Filters</strong> page.</p>
+</li>
+</ol>
+<h3 id="editing-existing-shipment-filters">Editing Existing Shipment Filters</h3>
+<p>To edit an existing shipment filter, click the <strong>Edit</strong> button on that filter's tile. The process of editing an existing filter is the same as that used to set up a new one.</p>
+<p><img src="images/filter-edit.png" alt="edit-SSG"></p>
+<p>To delete an existing shipment filter, click the <strong>Delete</strong> button on that filter's tile and click <strong>Confirm</strong> on the pop-up confirmation dialog. You cannot delete a shipment filter if it is currently being used by one or more webhooks.</p>
+<p><img src="images/filter-delete.png" alt="delete-SSG"></p>
+<h3 id="user-access">User Access</h3>
+<p>Admin and Marketing users can view, edit and delete shipment filters. Dashboard users do not have access to this feature.</p>
+<h2 id="managing-your-webhooks">Managing Your Webhooks</h2>
+<p>Webhooks are managed in the REACT UI via the <strong>Settings &gt; Webhooks</strong> page. This page enables you to set up new webhooks and edit or remove existing ones. It displays a card for each webhook that you set up.</p>
+<h3 id="creating-new-webhooks">Creating New Webhooks</h3>
+<ol>
+<li><p>Log into the REACT UI and select <strong>Settings &gt; Webhooks</strong> to display the <strong>Create Webhooks</strong> page.</p>
+<p><img src="images/create-WH.png" alt="create-WH"></p>
+</li>
+<li><p>Click the <strong>Create New Webhook</strong> tile to begin creating a new webhook. The <strong>Name Your Webhook</strong> tile is displayed.</p>
+<p><img src="images/create-WH2.png" alt="create-WH2"></p>
+</li>
+<li><p>Give your webhook a name and click <strong>Next</strong> to select shipment filters.</p>
+<p><img src="images/filters-WH.png" alt="filters-WH"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you haven't set the required shipment filters up yet, click the <strong>Create Shipment Filter</strong> link to jump to the filter creation process. You will lose any unsaved configuration for your webhook.</p>
+</div>
+</li>
+<li><p>Select the shipment filter(s) that you want to trigger your webhook and click <strong>Next</strong> to select shipping state label languages.</p>
+<p><img src="images/create-WH4.png" alt="create-WH4"></p>
+<p>In order to receive shipment state labels in a language other than <em>English (Great Britain)</em>, you'll need to have configured custom shipping state labels in that language via the <strong>Settings &gt; Shipment State Labels</strong> page.</p>
+</li>
+<li><p>Select the language you want to receive shipment state labels in. The default is <em>English (Great Britain)</em>. Click <strong>Next</strong> to set up authentication.</p>
+<p><img src="images/create-WH5.png" alt="create-WH5"></p>
+</li>
+<li><p>Select the authentication method for the service you want the webhook to send its data to. REACT supports outbound authentication via <strong>API Key</strong>, <strong>Basic authentication</strong> and <strong>JSON Web Token (JWT)</strong>:</p>
+<ul>
+<li><p><strong>API Key</strong> - Select the <strong>API Key</strong> tab and enter the <strong>Request header</strong> and <strong>API key value</strong> that the webhook should authenticate with. The webhook will send this key-value pair every time it sends data.</p>
+<p><img src="images/create-WH6b.png" alt="create-W6b"></p>
+</li>
+<li><p><strong>Basic</strong> - Select the <strong>Basic authentication</strong> tab and enter the <strong>Username</strong> and <strong>Password</strong> that the webhook should use. The webhook will authenticate with these details every time it sends data.</p>
+<p><img src="images/create-WH6a.png" alt="create-W6a"></p>
+</li>
+<li><p><strong>JWT</strong> - To set up JWT webhook authentication, you'll need to be running a service that can create JWT tokens and pass them back to REACT. When you configure JWT authentication in REACT, you specify the details of that service and tell REACT where in the webhook data it should place the token it receives.</p>
+<p>The setup process is as follows:</p>
+<ol>
+<li><p>Select the <strong>JWT</strong> tab to display the JWT configuration fields.</p>
+<p><img src="images/create-WH6ca.png" alt="create-W6ca"></p>
+</li>
+<li><p>Enter the <strong>URL</strong> of the service REACT should make the JWT request to.</p>
+</li>
+<li><p>Enter any JSON that REACT will need to include in the body of the request into the <strong>JSON Request Body</strong> field.</p>
+<p>For example, if your JWT service requires callers to supply a username and password in the body of the request, you could enter the following into this field:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_example-jwt-json-request-body" role="tab" aria-controls="tabpanel_bHGHmlrG6S_example-jwt-json-request-body" data-tab="example-jwt-json-request-body" tabindex="0" aria-selected="true">Example JWT JSON Request Body</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_example-jwt-json-request-body" role="tabpanel" data-tab="example-jwt-json-request-body">
+
+<pre><code>```json
+{
+   &quot;username&quot;: &quot;EXAMPLE_USERNAME&quot;,
+   &quot;password&quot;: &quot;EXAMPLE_PASSWORD&quot;
+}
+```
+</code></pre>
+</section>
+</div>
+</li>
+<li><p>Enter the <strong>HTTP Method</strong> that REACT should use when requesting the token.</p>
+<p><img src="images/create-WH6cb.png" alt="create-W6cb"></p>
+</li>
+<li><p>Enter the header that the webhook should send the resulting JWT token in into the <strong>Request Header</strong> field.</p>
+</li>
+<li><p>Enter the value mask that REACT should use when sending the resulting token into the <strong>Value Mask Format</strong> field. The token itself should be represented as <code>$JWT$</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Request Header</strong> and <strong>Value Mask Format</strong> fields enable you to specify exactly how REACT should use the token it receives from your authentication service. When a JWT-authenticated webhook sends data it places the token inside the header key specified. The corresponding value for this header key is the contents of the <strong>Value Mask Format</strong> field, where <code>$JWT$</code> represents the token itself.</p>
+<p>For example, if you wanted REACT to send the token in a header named <em>Authentication</em>, with a corresponding key of <em>Bearer (token)</em>, you would enter:</p>
+<p><strong>Request Header:</strong> <code>Authentication</code></p>
+<p><strong>Value Mask:</strong> <code>Bearer $JWT$</code></p>
+</div>
+</li>
+<li><p>Enter any headers that REACT should use when requesting the token by entering a <strong>Key</strong> and <strong>Value</strong> and clicking the <strong>Add</strong> button.</p>
+</li>
+<li><p>Click <strong>Next</strong> to finish setting up authentication.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Your JWT service should be configured to return JWT tokens in the following format: <code>{&quot;access_token&quot;: &quot;[jwt-here]&quot;}</code>. REACT cannot accept tokens in alternative formats.</p>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>When you have entered your authentication details, click <strong>Next</strong> to set up headers.</p>
+<p><img src="images/create-WH7.png" alt="create-WH7"></p>
+</li>
+<li><p>If required, enter any headers you want the webhook to include in the data it sends to you by entering their <strong>Key</strong> and <strong>Value</strong> and clicking <strong>Add</strong>. Adding headers is optional. You can add multiple headers if you need to.</p>
+<p>When you've added any headers you need, click <strong>Next</strong> to set up your webhook URL.</p>
+<p><img src="images/create-WH8.png" alt="create-WH8"></p>
+</li>
+<li><p>Enter the <strong>Request URL</strong> you want the webhook to send its payload to and select whether you want it to use a <code>POST</code> or <code>PUT</code> <strong>HTTP method</strong> when sending data to your service.</p>
+<p>If you need to, click <strong>Send Test Webhook</strong> to test your webhook configuration. The panel on the card shows what the payload will look like.</p>
+<div class="CAUTION">
+<h5>Caution</h5>
+<p>You should enter your <strong>Request URL</strong> details carefully, as REACT doesn't attempt to re-send data in cases where a webhook could not be received.</p>
+</div>
+</li>
+<li><p>When you're happy with your setup, click <strong>Create</strong> to create the webhook. Your new webhook appears as a tile on the <strong>Webhooks</strong> page.</p>
+</li>
+</ol>
+<h3 id="editing-existing-webhooks">Editing Existing Webhooks</h3>
+<p>To edit an existing webhook, click the <strong>Edit</strong> button on the webhook's tile. The process of editing an existing webhook is the same as that used to set up a new one.</p>
+<p><img src="images/edit-WH.png" alt="edit-WH"></p>
+<p>To deactivate and reactivate a webhook, click the <strong>Active / Inactive</strong> toggle on the webhook's tile. Deactivating a webhook means that it will not send data even if a shipment meet the criteria set out in an associated shipment filter.</p>
+<p><img src="images/active-WH.png" alt="active-WH"></p>
+<p>To delete an existing webhook, click the <strong>Delete</strong> button on the webhook's tile and click <strong>Confirm</strong> on the pop-up confirmation dialog.</p>
+<p><img src="images/delete-WH.png" alt="delete-WH"></p>
+<h3 id="viewing-webhook-logs">Viewing Webhook Logs</h3>
+<p>The <strong>Webhook Logs</strong> page enables you to view details of each time that a particular webhook has been triggered. This information could help you to better understand how your webhooks are being used, or to troubleshoot potential problems.</p>
+<p>To view the <strong>Webhook Logs</strong> page for a webhook, click the webhook's tile on the <strong>Settings &gt; Webhooks</strong> page, or navigate to <code>https://app.sorted.com/settings/webhooks/wh_xxxxxxxxxxxxxxxxxxxx/logs</code>, where <code>wh_xxxxxxxxxxxxxxxxxxxx</code> is the unique ID of the webhook you want to view details for.</p>
+<p>The <strong>Webhook Logs</strong> page displays a list of all events for the selected webhook, including the following information:</p>
+<ul>
+<li>The <strong>Code</strong> of the response to the webhook's payload (that is, whether the data sent by the webhook was received and recognised as valid by the destination service, or an error message was returned).</li>
+<li>The <strong>URL</strong> that the request was sent to.</li>
+<li>The <strong>Elapsed Time</strong> between the webhook being triggered and a response being received.</li>
+<li>The <strong>Date</strong> and time that the webhook was triggered.</li>
+</ul>
+<p><img src="images/wh-logs1.png" alt="wh-logs1"></p>
+<p>To filter the list of webhook events, click the <strong>Add Filters</strong> drop-down. You can filter either by the <strong>Date</strong> that the webhook request was sent, or by <strong>Status</strong> (that is, whether the webhook request was successful or returned an error).</p>
+<p><img src="images/wh-logs2.png" alt="wh-logs2"></p>
+<p>To view further information on a particular webhook event, select it from the list. REACT displays the <strong>Request Details</strong> page.</p>
+<p><img src="images/wh-logs3.png" alt="wh-logs3"></p>
+<p>The <strong>Request Details</strong> page displays the following information for the selected request:</p>
+<ul>
+<li>The <strong>URL</strong> that the request was sent to.</li>
+<li>The <strong>Elapsed Time</strong> between the webhook being triggered and a response being received.</li>
+<li>The <strong>Date</strong> and time that the webhook was triggered.</li>
+<li>The <strong>Request Headers</strong> sent. For information on configuring the headers that your webhooks send, see steps 6-8 of the <a href="#creating-new-webhooks">Creating New Webhooks</a> process.</li>
+<li>The <strong>Request Body</strong> sent. For more information on the information sent in the body of REACT webhooks, see the <a href="#webhook-payload">Webhook Payload</a> section.</li>
+<li>The <strong>Response Headers</strong> and <strong>Response Body</strong> received (where applicable).</li>
+</ul>
+<h3 id="user-access-1">User Access</h3>
+<p>Admin users can view, edit and delete webhooks. Marketing users can view existing webhooks but not edit configuration. Dashboard users do not have access to this feature.</p>
+<h2 id="example-configuration">Example Configuration</h2>
+<p>This section gives a simplified example of how webhooks and shipment filters can be linked. Suppose you want to set up the following business processes:</p>
+<ul>
+<li>If a shipment is <strong>In Transit</strong>, <strong>Delivered</strong>, or has a <strong>Collection Reminder</strong> available, send an SMS update to the customer.<br>
+You could put these states in a shipment filter called <strong>Updates</strong>.</li>
+<li>If a shipment has a <strong>Final Collection Reminder</strong> available, or is in a state of <strong>Action Required</strong>, send SMS and email updates to the customer.<br>
+You could put these states in a shipment filter called <strong>Action Required</strong>.</li>
+<li>If a shipment has a <strong>Proof of Delivery</strong> available, send an email to the customer.<br>
+You could put this state in a shipment filter called <strong>For Reference</strong>.</li>
+<li>If a shipment is <strong>Delayed</strong> or has had a calculated event, send an SMS update to the customer and escalate to the carrier.<br>
+You could put this state in a shipment filter called <strong>Escalate and Update</strong>.</li>
+<li>If a shipment is <strong>Damaged</strong> or <strong>Destroyed</strong>, escalate to the carrier without initially sending an SMS to the customer.<br>
+You could put these states in a shipment filter called <strong>Escalate</strong>.</li>
+</ul>
+<p>You could then set the following webhooks up:</p>
+<ul>
+<li>One that sends data to your SMS gateway to trigger text shipment state updates to your customers.</li>
+<li>One that sends data to your Email gateway to trigger email shipment state updates to your customers.</li>
+<li>One that sends data to your CRM, from where it is used to generate escalation cases with your carriers.</li>
+</ul>
+<p>During the webhook setup process, you would link the webhooks to the shipment filters as follows:</p>
+<p><img src="images/webhooks-diagram-update3.png" alt="webhooks-diagram-update3"></p>
+<p>Note that the shipment filters are based around business processes, and the webhooks are based around the services you want REACT to communicate with. This means that if you want to, say, change the <strong>Updates</strong> filter so that it sends out Whatsapp messages instead of SMS, you could use your existing filter with a new webhook. Equally, if you wanted to use email updates with a new shipment filter, you could simply create the filter and add it to the existing <strong>Email</strong> webhook.</p>
+<p>However, this is only a suggested workflow. REACT enables you to combine shipment filters and webhooks in whatever way you feel is best for your business.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>If you use webhooks to set up automated customer communications, consider asking your carrier to disable any automated tracking updates they may send to customers. Otherwise, customers might receive duplicate communications.</p>
+</div>
+<h2 id="next-steps">Next Steps</h2>
+<p>Learn more about the REACT UI:</p>
+<ul>
+<li><a href="monitoring-shipments.html">Monitoring Shipments</a></li>
+<li><a href="settings.html">Settings</a></li>
+<li><a href="user-management.html">User Management</a></li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

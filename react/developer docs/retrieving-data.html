@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Retrieving Shipment and Event Data | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Retrieving Shipment and Event Data | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="react-help-retrieving-data">
+<h1 id="retrieving-shipment-and-event-data">Retrieving Shipment and Event Data</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            29/05/2020
+        </li>
+        <li class="li-time-to-read">
+             ~14 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            29/05/2020
+        </li>
+        <li class="li-time-to-read">
+             ~14 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">react</li>
+        <li class="tag-search">api</li>
+        <li class="tag-search">shipments</li>
+    </ul>
+</div>
+
+<p>SortedREACT's APIs can retrieve shipment, event, and tracking information, enabling you to embed live shipment tracking into your websites and apps. This page explains the endpoints you can use to get this information, and the format in which the information is returned.</p>
+<hr>
+<h2 id="tracking-in-react">Tracking in REACT</h2>
+<p>REACT has three APIs that enable you to retrieve information.</p>
+<ul>
+<li>The <strong>Shipment</strong> API enables you to retrieve full details of one or more shipments.</li>
+<li>The <strong>Tracking</strong> API enables you to retrieve carrier tracking event details in a standardised format. This is the API that you would likely use to drive embedded tracking on your site or apps.</li>
+<li>The <strong>Events</strong> API enables you to retrieve details of events within REACT (for example, an address or shipment state change).</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>All REACT APIs require you to include JSON <code>Content-Type</code> and <code>Accept</code> headers and a valid API key as request headers. You can get an API key from the <strong>Settings &gt; API Keys</strong> page of the REACT UI.</p>
+<p>For more information on obtaining an API key, see the <a href="quick-start.md#registering-a-shipment">Getting an API Key</a> section of the Quick Start guide.</p>
+</div>
+<h2 id="retrieving-shipments">Retrieving Shipments</h2>
+<p>REACT has two endpoints that you can use to get shipment details:</p>
+<ul>
+<li><strong><a href="https://docs.sorted.com/react/api/#GetShipments">Get Shipments</a></strong> - Takes shipment <code>tracking_references</code> and <code>custom_references</code> and returns details of all shipments that meet those criteria.</li>
+<li><strong><a href="https://docs.sorted.com/react/api/#GetShipmentbyShipmentID">Get Shipment by Shipment ID</a></strong> - Takes a shipment <code>{id}</code> and returns details of the corresponding shipment.</li>
+</ul>
+<h3 id="get-shipment-by-shipment-id-endpoint">Get Shipment by Shipment ID Endpoint</h3>
+<p>The <strong>Get Shipment by Shipment ID</strong> endpoint returns details of a single shipment by that shipment's REACT <code>{id}</code>. To use the <strong>Get Shipment by Shipment ID</strong> endpoint, send a <code>GET</code> request to <code>https://api.sorted.com/react/shipments/{id}</code>.</p>
+<p>You can only use this API to get details of your own shipments. If you attempt to get details of another customer's shipments, REACT returns an error.</p>
+<h3 id="get-shipments-endpoint">Get Shipments Endpoint</h3>
+<p>The <strong>Get Shipments</strong> endpoint returns details of all shipments that meet your search criteria. It accepts the following parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start</td>
+<td>Returns all shipments that were created after the supplied timestamp</td>
+<td><a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix time</a></td>
+<td><code>start=1543920000</code></td>
+</tr>
+<tr>
+<td>End</td>
+<td>Returns all shipments that were created before the supplied timestamp</td>
+<td><a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix time</a></td>
+<td><code>end=1543926896</code></td>
+</tr>
+<tr>
+<td>Tracking References</td>
+<td>Returns the shipment that has the specified tracking reference</td>
+<td>String</td>
+<td><code>tracking_reference=TRK098JKH54ADD</code></td>
+</tr>
+<tr>
+<td>Custom References</td>
+<td>Returns all shipments that have the specified custom reference</td>
+<td>String</td>
+<td><code>custom_references=HB-003</code></td>
+</tr>
+<tr>
+<td>Page</td>
+<td>Returns a particular page of results</td>
+<td>Integer</td>
+<td><code>page=2</code></td>
+</tr>
+</tbody>
+</table>
+<p>To use the <strong>Get Shipments</strong> endpoint, send a <code>GET</code> request to <code>https://api.sorted.com/react/shipments/search?start=timestamp&amp;end=timestamp&amp;tracking_references=strings&amp;custom_references=strings&amp;page=int</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can only retrieve shipments by <code>custom_references</code> if you have previously registered that information for the relevant shipments. For more information on registering shipment information, see the <a href="registering-shipments.html">Registering Shipments</a> page.</p>
+</div>
+<p>None of the search parameters are mandatory in themselves, but at least one search parameter must be provided. If you do not provide at least one search parameter, then REACT returns a validation error.</p>
+<p>The timestamp parameters must be provided in pairs. If you provide a <code>start</code> value with no corresponding <code>end</code> value (or vice versa), then REACT returns a validation error. Timestamps should be provided as UTC time. If neither timestamp is specified, then REACT searches for shipments created in the last 28 days (including today).</p>
+<p>You can only add a maximum of one <code>tracking_reference</code> to your request. As such, you can only return one shipment at a time when searching by <code>tracking_reference</code>. To search for multiple shipments at once, use <code>custom_references</code>. You can add multiple <code>custom_references</code> by appending additional <code>&amp;custom_references=(strings)</code> parameters to the end of the link. REACT treats multiple <code>custom_references</code> as an AND operation, and will return only those shipments that contain all provided references.</p>
+<p>Where a valid request is made but no matching shipments are found, REACT returns an empty array with a link to the resource itself. Note that in this scenario the response has a code <em>200 OK</em> rather than <em>404 Not Found</em>, as the request itself is valid even though there are no shipments currently matching your search criteria.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_no-matching-shipments-example" role="tab" aria-controls="tabpanel_bHGHmlrG6S_no-matching-shipments-example" data-tab="no-matching-shipments-example" tabindex="0" aria-selected="true">No Matching Shipments Example</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_no-matching-shipments-example" role="tabpanel" data-tab="no-matching-shipments-example">
+
+<pre><code class="lang-json">{
+  &quot;shipments&quot;: [],
+  &quot;_links&quot;: [
+    {
+      &quot;href&quot;:
+        &quot;https://api.sorted.com/react/shipments/search?trackingReferences=nonexistenttrackingreference&quot;,
+      &quot;rel&quot;: &quot;self&quot;
+    }
+  ]
+}
+</code></pre>
+</section>
+</div>
+
+<p>As with all REACT APIs, the <strong>Get Shipments</strong> endpoint retrieves a maximum of 200 records with any single request. Where more than 200 records exist, paging links to the next and previous set of results, as well as the first and last set of results, are returned. The <code>page</code> parameter enables you to request a particular page of results. See the <a href="#paging-results">Paging Results</a> section for more information on paging in REACT's APIs.</p>
+<h3 id="the-shipment-resource">The Shipment Resource</h3>
+<p>Both Get Shipments endpoints return <strong>Shipment</strong> resources. The <strong>Shipment</strong> resource contains the information provided when the shipment was registered. For more information on the information that REACT accepts when registering a shipment, see the <a href="registering-shipments.html">Registering Shipments</a> doc page and the <a href="https://docs.sorted.com/react/api/#RegisterShipments">Register Shipments API reference</a>.</p>
+<p>As well as the shipment's registration information, the <strong>Shipment</strong> resource contains some REACT-generated properties that could be particularly useful when embedding tracking pages on your website or app:</p>
+<ul>
+<li><code>shipment.shipment_state.state</code> - Contains the shipment's current REACT shipment state. REACT uses carrier tracking events to calculate this value. For a full list of available REACT shipment states, see the <a href="shipment-states.html">Shipment States</a> page.</li>
+<li><code>shipment.shipment_state.state_label</code> - Contains the customer-facing label for the shipment's current state. You can customise shipment state labels using the <strong>Custom State Labels</strong> UI page. If you have not set a custom label up for the shipment state then this field contains the default label text.
+<div class="NOTE">
+<h5>Note</h5>
+<p>The <strong>Custom State Labels</strong> UI page enables you to set up custom labels in multiple languages. By default, REACT's APIs and webhooks return labels in <code>en-gb</code> (English - United Kingdom). To retrieve labels in languages other than <code>en-gb</code>, add an <code>accept-language</code> header with the relevant language code as its value to your API request.</p>
+<p>For example, to retrieve language labels in German, you would first need to use the <strong>Customise Shipment State Labels</strong> page to add German labels to your shipment states. You would then add an <code>accept-language</code> header with a value of <code>de</code> to any API requests you made. In its response, REACT would populate the <code>state_label</code> field with your German labels.</p>
+</div>
+</li>
+<li><code>shipment.delivered_date</code> - The date and time on which the shipment was delivered. REACT automatically records this information when a shipment enters a state of <em>Delivered</em>,  <em>Delivered to Neighbour</em>, <em>Delivered to Reception</em>, or <em>Delivered to Safe Location</em>.</li>
+<li><code>shipment.may_be_missing</code> - Indicates whether REACT believes that the shipment may be missing. REACT marks shipments as <code>may_be_missing</code> if they are not updated within a set time period after registration, or if they are not marked as delivered, lost, or refused within a different set time period. REACT can only perform <code>may_be_missing</code> calculations for shipments that have a <code>country_iso_code</code> recorded for their origin and destination addresses.</li>
+<li><code>shipment.lateness.late</code> and <code>shipment.lateness.hours_late</code> - These properties indicate whether REACT believes a shipment to be late, and (where applicable) how many hours late this shipment is. REACT can only perform lateness calculations for shipments that have a <code>promised_date</code> recorded.</li>
+</ul>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This section gives a high-level overview of the information returned by the Get Shipments endpoints. For full reference details of the data returned, see the <a href="https://docs.sorted.com/react/api/#GetShipmentEvents">Get Shipment Events</a> and <a href="https://docs.sorted.com/react/api/#GetShipmentEventsbyShipmentID">Get Shipment Events by Shipment ID</a> sections of the API reference.</p>
+</div>
+<h2 id="retrieving-tracking-events">Retrieving Tracking Events</h2>
+<p>The <strong><a href="https://docs.sorted.com/react/api/#GetTrackingEventsbyShipmentID">Get Tracking Events by Shipment ID</a></strong> endpoint enables you to get details of carrier tracking events. <strong>Get Tracking Events by Shipment ID</strong> takes a shipment <code>{id}</code> and returns all tracking events associated with that shipment, as well as a summary of shipment details.</p>
+<p>To use the <strong>Get Tracking Events by Shipment ID</strong> endpoint, send a <code>GET</code> request to <code>https://api.sorted.com/react/tracking/search?shipment_id=string</code>.</p>
+<h3 id="the-tracking-events-resource">The Tracking Events Resource</h3>
+<p>The Tracking API returns a <strong>Shipment Tracking Events</strong> resource. The <strong>Shipment Tracking Events</strong> resource contains details of all tracking events related to a particular shipment and a summary of the shipment itself. The tracking information in the <strong>Shipment Tracking Events</strong> resource takes a standardised format, with the same data structure used for all carriers.</p>
+<p>The <strong>Shipment Tracking Events</strong> resource has two parts:</p>
+<ul>
+<li><code>ShipmentSummary</code> - This object contains a summary of the data REACT holds on the shipment, including tags, reference numbers, carrier information and expected dates.</li>
+<li><code>events</code> - This array contains details of all tracking events associated with the shipment in question.</li>
+</ul>
+<p>The <code>ShipmentSummary</code> object contains all the information in the <a href="https://docs.sorted.com/react/api/#GetShipments">Shipments</a> resource, except for the following:</p>
+<ul>
+<li>Consumer details.</li>
+<li>Address information.</li>
+<li>Carrier service details.</li>
+<li>Shipping and order dates.</li>
+</ul>
+<p>The <code>events</code> object contains any tracking events that are associated with the selected shipment. Each <strong>Tracking Event</strong> resource contains details on an individual carrier tracking event, including:</p>
+<ul>
+<li><strong>ID</strong> - A REACT-generated unique identifier for the tracking event.</li>
+<li><strong>Dates and Times</strong> - The timestamps at which that the event occurred and was received by REACT.</li>
+<li><strong>Event Code</strong> - The REACT event code.</li>
+<li><strong>Event Description</strong></li>
+<li><strong>Signee</strong> - The name of the signee for the shipment, where applicable.</li>
+<li><strong>Location</strong> - A text description of the location at which the tracking event occurred.</li>
+<li><strong>Latitude / Longitude</strong> - The latitude and longitude of the location at which the event occurred.</li>
+</ul>
+<p>If REACT finds a shipment that meets your criteria, but that shipment does not have associated tracking events, then the Tracking API returns a response containing shipment details only. This feature enables you to distinguish between a <em>404 Not Found</em> response in which data matching the supplied details could not be found, and a <em>200 OK</em> response in which a matching shipment was found but that shipment did not contain any tracking event data.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This section gives a brief overview of the contents of the <strong>Tracking Event</strong> resource. For full reference information, see the <a href="https://docs.sorted.com/react/api/#GetTrackingEventsbyShipmentID">Get Tracking Events by Shipment ID</a> section of the API reference.</p>
+</div>
+<h2 id="retrieving-events">Retrieving Events</h2>
+<p>You can get event details using the following endpoints:</p>
+<ul>
+<li><strong><a href="https://docs.sorted.com/react/api/#GetShipmentEvents">Get Shipment Events</a></strong> - Takes various shipment-related parameters and returns details of all events associated with the selected shipments, as well as summaries of the shipments themselves.</li>
+<li><strong><a href="https://docs.sorted.com/react/api/#GetShipmentEventsbyShipmentID">Get Shipment Events by Shipment ID</a></strong> - Takes a <code>shipment.id</code> and returns all events associated with that shipment, as well as a summary of shipment details.</li>
+</ul>
+<p>You can only retrieve events which are associated with your organisation's shipments. REACT returns an error if you attempt to retrieve another organisation's event details.</p>
+<p>REACT events are not the same as carrier tracking events. REACT uses events to track changes in shipment state. An event is generated whenever one of the following occurs:</p>
+<ul>
+<li>A shipment's <code>shipment_state</code> changes.</li>
+<li>A shipment's <code>promised_date</code> or <code>shipped_date</code> changes.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The Events API returns the same data as REACT's webhooks. You may want to consider implementing webhooks rather than integrating Events endpoints, as webhooks enable REACT to send event data proactively rather than requiring you to make a request. For more information on implementing webhooks, see the <a href="managing-webhooks.md">Managing Webhooks</a> page.</p>
+</div>
+<h3 id="the-get-shipment-events-endpoint">The Get Shipment Events Endpoint</h3>
+<p>The <strong>Get Shipment Events</strong> endpoint returns details of all events related to a particular shipment or group of shipments, as well as a summary of the shipments themselves. It accepts the following parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Format</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start</td>
+<td>Returns all events that occurred after the supplied timestamp</td>
+<td><a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix time</a></td>
+<td><code>start=1543920000</code></td>
+</tr>
+<tr>
+<td>End</td>
+<td>Returns all events that occurred before the supplied timestamp</td>
+<td><a href="https://en.wikipedia.org/wiki/Unix_time" target="_blank">Unix time</a></td>
+<td><code>end=1543926896</code></td>
+</tr>
+<tr>
+<td>Tracking References</td>
+<td>Returns all events associated with the specified shipment</td>
+<td>String</td>
+<td><code>tracking_reference=TRK098JKH54ADD</code></td>
+</tr>
+<tr>
+<td>Custom References</td>
+<td>Returns all events associated with the specified shipment(s)</td>
+<td>String</td>
+<td><code>custom_references=HB-003</code></td>
+</tr>
+<tr>
+<td>Carrier</td>
+<td>Returned all events associated with the specified carrier's shipments</td>
+<td>String</td>
+<td><code>carrier=CarrierX</code></td>
+</tr>
+</tbody>
+</table>
+<p>To use the <strong>Get Shipment Events</strong> endpoint, send a <code>GET</code> request to <code>https://api.sorted.com/react/events/search?start=timestamp&amp;end=timestamp&amp;tracking_references=strings&amp;custom_references=strings&amp;carrier=strings</code>.</p>
+<p>None of the search parameters are mandatory in themselves, but at least one search parameter must be provided. If you do not provide at least one search parameter, then REACT returns a validation error.</p>
+<p>The timestamp parameters must be provided in pairs. If you provide a <code>start</code> value with no corresponding <code>end</code> value (or vice versa), then REACT returns a validation error. Timestamps should be provided as UTC time.</p>
+<p>As with all REACT APIs, the <strong>Get Shipment Events</strong> endpoint retrieves a maximum of 200 records with any single request. Where more than 200 records exist, paging links to the next and previous set of results, as well as the first and last set of results, are returned. See the <a href="retrieving-data.html#paging-results">Paging Results</a> section for more information on paging in REACT's APIs.</p>
+<p>If REACT finds shipments that meet your criteria, but those shipments do not have associated events, then the Events API returns a response containing shipment details only. This feature enables you to distinguish between a <em>404 Not Found</em> response in which data matching the supplied details could not be found, and a <em>200 OK</em> response in which a matching shipment was found but that shipment did not contain any event data.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This section gives a brief overview of <strong>Get Shipment Events</strong> requests. For full reference information, see the <a href="https://docs.sorted.com/react/api/#GetShipmentEvents">Get Shipment Events</a> section of the API reference.</p>
+</div>
+<h3 id="the-get-shipment-events-by-shipment-id-endpoint">The Get Shipment Events by Shipment ID Endpoint</h3>
+<p>The <strong>Get Shipment Events by Shipment ID</strong> endpoint takes a shipment <code>{id}</code> and returns details of all events related to a particular shipment, as well as a summary of the shipment itself.</p>
+<p>To use the <strong>Get Shipment Events by Shipment ID</strong> endpoint, send a <code>GET</code> request to <code>https://api.sorted.com/react/events/search?shipment_id=string</code>.</p>
+<h3 id="the-shipmentevents-resource">The ShipmentEvents Resource</h3>
+<p>The <strong>Get Shipment Events by Shipment ID</strong> and <strong>Get Shipment Events</strong> endpoints return <strong>ShipmentEvents</strong> resources. The <strong>ShipmentEvents</strong> resource contains details of all events related to a particular shipment and a summary of the shipment itself.</p>
+<p>The <strong>Shipment Events</strong> resource has two parts:</p>
+<ul>
+<li><code>ShipmentSummary</code> - This object contains a summary of the data REACT holds on the shipment, including tags, reference numbers, carrier information and expected dates.</li>
+<li><code>events</code> - This array contains details of all events associated with the shipment in question.</li>
+</ul>
+<p>The <code>ShipmentSummary</code> object contains all the information in the <a href="https://docs.sorted.com/react/api/#GetShipments">Shipments</a> resource, except for the following:</p>
+<ul>
+<li>Consumer details.</li>
+<li>Address information.</li>
+<li>Carrier service details.</li>
+<li>Shipping and order dates.</li>
+<li>Custom metadata fields.</li>
+</ul>
+<p>The <code>events</code> object contains the following information:</p>
+<ul>
+<li><strong>ID</strong> - A REACT-generated unique identifier for the event.</li>
+<li><strong>Event Type</strong> - The event's type (e.g. <code>state_change</code> or <code>rescheduled</code>).</li>
+<li><strong>Timestamp</strong> - The time that the event occurred.</li>
+<li><strong>Message</strong> - A brief message describing the event.</li>
+<li><strong>Property Summary</strong> - Details of any changes that were made to the shipment's <code>shipment.shipment_state.state</code>, <code>shipment.delivered_date</code>, <code>shipment.promised_date</code>, and <code>shipment.shipped_date</code> properties, including whether each property was changed as a result of the event, the property's value before the event, and the property's value after the event.</li>
+</ul>
+<p>Within the <code>events</code> object, events are grouped by the action that triggered them. The <code>EventGroup</code> object contains an array of individual events.</p>
+<p>Each <code>EventGroup</code> has a <code>Trigger</code> property containing details of the action that triggered the event, including the initiator (for example, the carrier or user), a brief message describing the trigger, and a timestamp. <code>EventGroup</code>s can be identified by <code>correlation_id</code> - a REACT-generated string assigned to groups of events.</p>
+<p>As an example of event grouping, let's suppose that the following sequence of events has occurred:</p>
+<ol>
+<li>A carrier was unable to deliver a shipment, and left a calling card.</li>
+<li>The customer has called the carrier to indicate that they would like to pick the shipment up from a click and collect point.</li>
+<li>The carrier has put the shipment back out for delivery to the click and collect point and recorded the <code>promised_date</code> that the customer was advised the shipment would be reading for collection by.</li>
+</ol>
+<p>The carrier update would cause two events to be generated: one with an <code>EventType</code> of <em>state_change</em>, and one with an <code>EventType</code> of <em>key_property_change</em>. These events would be grouped into the same <code>EventGroup</code> object, because they were triggered by the same action.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This section gives a brief overview of the <strong>ShipmentEvents</strong> resource. For full reference information, see the <a href="https://docs.sorted.com/react/api/#GetShipmentEvents">Get Shipment Events</a> section of the API reference.</p>
+</div>
+<h2 id="retrieving-shipment-state-history">Retrieving Shipment State History</h2>
+<p>You can also use the Events API to get further information on shipment states. The <strong><a href="https://docs.sorted.com/react/api/#GetShipmentStatesHistory">Get Shipment States History</a></strong> endpoint takes a shipment <code>{id}</code> and returns a history of the shipment states that a particular shipment has been in.</p>
+<p>To use the <strong>Get Shipment States History</strong> endpoint, send a <code>GET</code> request to <code>https://api.sorted.com/react/events/shipment-states?{id}</code>.</p>
+<h3 id="the-shipment-state-events-resource">The Shipment State Events Resource</h3>
+<p>The <strong>Get Shipment States History</strong> endpoint returns a <strong>Shipment State Events</strong> resource. In addition to the relevant shipment ID, this resource contains an array of <strong>ShipmentStateEvent</strong> objects, one for each state that that shipment has assumed. Each of these objects contains the following data:</p>
+<ul>
+<li><strong>State</strong> - The state that the shipment assumed.</li>
+<li><strong>Label</strong> - The custom label corresponding to that shipment state, where applicable.
+<div class="NOTE">
+<h5>Note</h5>
+<p>Custom shipment state labels enable you to explain shipment states to your customers in your brand's own tone of voice. For more information on setting up custom shipment state labels, see the <a href="settings.md#setting-up-custom-state-labels">Setting up Custom State Labels</a> section of the <strong>Settings</strong> page.</p>
+</div>
+</li>
+<li><strong>Timestamp</strong> - The date and time at which the shipment assumed the state in question.</li>
+</ul>
+<p>The following example shows the <strong>Shipment State Events</strong> resource for a shipment that has gone from <em>Dispatched</em> to <em>In Transit</em> to <em>Delivered</em>, with accompanying timestamps and custom labels.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_shipment-state-events-resource" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_shipment-state-events-resource" data-tab="shipment-state-events-resource" tabindex="0" aria-selected="true">Shipment State Events Resource</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_shipment-state-events-resource" role="tabpanel" data-tab="shipment-state-events-resource">
+
+<pre><code class="lang-json">{
+  &quot;shipment_id&quot;: &quot;sp_18446744073709551615&quot;,
+  &quot;shipment_state_events&quot;: [
+    {
+      &quot;shipment_state&quot;: &quot;Dispatched&quot;,
+      &quot;state_label&quot;: &quot;Dispatched!&quot;,
+      &quot;timestamp&quot;: &quot;2019-03-22T14:52:02.1053944+00:00&quot;
+    },
+    {
+      &quot;shipment_state&quot;: &quot;In Transit&quot;,
+      &quot;state_label&quot;: &quot;In Transit!&quot;,
+      &quot;timestamp&quot;: &quot;2019-03-22T17:31:02.1022944+00:00&quot;
+    },
+        {
+      &quot;shipment_state&quot;: &quot;Delivered&quot;,
+      &quot;state_label&quot;: &quot;Delivered!&quot;,
+      &quot;timestamp&quot;: &quot;2019-03-23T18:02:02.103544+00:00&quot;
+    }
+  ]
+}
+</code></pre>
+</section>
+</div>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>This section gives a brief overview of the <strong>Shipment State Events</strong> resource. For full reference information, see the <a href="https://docs.sorted.com/react/api/#GetShipmentStatesHistory">Get Shipment States History</a> section of the API reference.</p>
+</div>
+<h2 id="paging-results">Paging Results</h2>
+<p>REACT enables you to retrieve a maximum of 200 records with any individual API call. Where more than 200 records exist, paging links are supplied. These links enable you to retrieve the next, previous, first, and last sets of results.</p>
+<p>All paging links follow a standard format. They are returned in a <code>_links</code> object, located after either the 200th or final record returned, whichever is earlier. Each link takes the format <code>[URL requested]&amp;page=[PAGE NUMBER]</code></p>
+<p>For example, let's say you want to view all events for the shipments you have with Carrier X. You've sent a <code>GET</code> request to <code>https://api.sorted.com/react/events/search?carrier=Carrier%20X&amp;page=1</code>, which has found around 900 results. After the 200th record, the response from the API would include the following:</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-2">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-2_paging-links" role="tab" aria-controls="tabpanel_bHGHmlrG6S-2_paging-links" data-tab="paging-links" tabindex="0" aria-selected="true">Paging Links</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-2_paging-links" role="tabpanel" data-tab="paging-links">
+
+<pre><code class="lang-json">{
+  &quot;_links&quot;: [
+    {
+      &quot;rel&quot;: &quot;self&quot;,
+      &quot;href&quot;:
+        &quot;https://api.sorted.com/react/events/search?carrier=Carrier%20X&amp;page=1&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;next&quot;,
+      &quot;href&quot;:
+        &quot;https://api.sorted.com/react/events/search?carrier=Carrier%20X&amp;page=2&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;first&quot;,
+      &quot;href&quot;:
+        &quot;https://api.sorted.com/react/events/search?carrier=Carrier%20X&amp;page=1&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;last&quot;,
+      &quot;href&quot;:
+        &quot;https://api.sorted.com/react/events/search?carrier=Carrier%20X&amp;page=5&quot;
+    }
+  ]
+}
+</code></pre>
+</section>
+</div>
+
+<p>To access the rest of the results, you would need to make a <code>GET</code> request to the relevant paging link. For example, to get the third page of results, you would use <code>GET</code> <code>https://api.sorted.com/react/events/search?carrier=Carrier%20X&amp;page=3</code>. The results returned are sorted by <code>created_on</code> date.</p>
+<p>This paging format is used across all of REACT's APIs.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Learn more about integrating with REACT:</p>
+<ul>
+<li><a href="registering-shipments.html">Registering Shipments</a></li>
+<li><a href="updating-shipments.html">Updating Shipments</a></li>
+<li><a href="error-codes.html">Error Codes</a></li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

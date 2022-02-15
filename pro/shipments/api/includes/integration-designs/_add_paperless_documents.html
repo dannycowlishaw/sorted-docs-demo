@@ -1,0 +1,384 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Add Paperless Document Example | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Add Paperless Document Example | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../../styles/main.css">
+    <link rel="stylesheet" href="../../../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../../../toc.html">
+    <meta id="docfx-style:rel" content="../../../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../../../index.html">
+                <img id="logo" src="../../../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="">
+
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            
+        </li>
+        <li class="li-time-to-read">
+             ~2 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            
+        </li>
+        <li class="li-time-to-read">
+             ~2 minutes  to read
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_add-paperless-document-endpoint" role="tab" aria-controls="tabpanel_bHGHmlrG6S_add-paperless-document-endpoint" data-tab="add-paperless-document-endpoint" tabindex="0" aria-selected="true">Add Paperless Document Endpoint</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_add-paperless-document-endpoint" role="tabpanel" data-tab="add-paperless-document-endpoint">
+
+<pre><code>POST https://api.sorted.com/pro/documents/paperless/{shipment_reference}
+</code></pre>
+</section>
+</div>
+
+<p>Paperless documents are customer-generated documents that are transmitted to carriers as part of a shipment's data, as opposed to being generated separately by the carrier. They can help to make your workflows more efficient, reducing steps in the manifest process and enabling you to attach document data to a shipment directly.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>PRO's paperless document functionality should not be confused with PRO's customs documents functionality. Paperless documents are added to the shipment before allocation and transmitted as part of that shipment's data, while customs documents are generated post-allocation and are intended to be printed before dispatch. For more information on working with customs documents in PRO, see the <a href="/pro/api/shipments/getting_shipment_documents.html">Getting Shipment Documents</a> page.</p>
+<p>Not all carriers support paperless trade.</p>
+</div>
+<p>You can add paperless documents to an unallocated shipment via the <strong>Add Paperless Document</strong> endpoint. As a minimum, <strong>Add Paperless Document</strong> requests should include the document's <code>file_format</code>, <code>document_type</code>, and <code>file_content</code> (as a base64-encoded byte array). You can also add <code>expiration</code> and <code>usage</code> data if required.</p>
+<p>Once it has received the request, PRO attaches the document to the specified shipment and returns a unique <code>reference</code> for the paperless document. You can use this reference to retrieve details of the paperless document (via the <a href="/pro/api/reference/paperless-documents.html#tag/Paperless-Documents/paths/%7E1documents%7E1paperless%7E1%7Bdocument_reference%7D/get">Get Paperless Document</a> endpoint), or delete the paperless document entirely (via the <a href="/pro/api/reference/paperless-documents.html#tag/Paperless-Documents/paths/%7E1documents%7E1paperless%7E1%7Bdocument_reference%7D/delete">Remove Paperless Document</a> endpoint).</p>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>For full reference information on the <strong>Add Paperless Document</strong> endpoint, see the <a href="/pro/api/reference/paperless-documents.html#tag/Paperless-Documents/paths/%7E1documents%7E1paperless%7E1%7Bshipment_reference%7D/post">PRO v2 API Reference</a>.</li>
+<li>For a user guide on working with paperless documents, see the <a href="/pro/api/shipments/adding_paperless_documents.html">Adding Paperless Documents</a> page.</li>
+</ul>
+</div>
+<h3 id="add-paperless-document-example">Add Paperless Document Example</h3>
+<p>The example shows a successful request to add a <code>commercial_invoice</code> paperless document to shipment <em>sp_00595452779180472847666078547968</em>. PRO has responded with a paperless document <code>reference</code> of <em>pd_00797582543150236528252876881920</em>.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_example-add-paperless-document-request" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_example-add-paperless-document-request" data-tab="example-add-paperless-document-request" tabindex="0" aria-selected="true">Example Add Paperless Document Request</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_example-add-paperless-document-response" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_example-add-paperless-document-response" data-tab="example-add-paperless-document-response" tabindex="-1">Example Add Paperless Document Response</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_example-add-paperless-document-request" role="tabpanel" data-tab="example-add-paperless-document-request">
+
+<p><code>POST https://api.sorted.com/pro/documents/paperless/sp_00595452779180472847666078547968</code></p>
+<pre><code class="lang-json">{
+  &quot;file_format&quot;: &quot;pdf&quot;,
+  &quot;document_type&quot;: &quot;commercial_invoice&quot;,
+  &quot;expiration&quot;: &quot;2021-09-01T06:00:00+00:00&quot;,
+  &quot;file_content&quot;: (Base64 document data),
+  &quot;usage&quot;: &quot;electronic_trade&quot;
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_example-add-paperless-document-response" role="tabpanel" data-tab="example-add-paperless-document-response" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+    &quot;reference&quot;: &quot;pd_00797582543150236528252876881920&quot;,
+    &quot;message&quot;: &quot;Paperless Document pd_00797582543150236528252876881920 added successfully&quot;,
+    &quot;_links&quot;: [
+        {
+            &quot;href&quot;: &quot;https://api-int.sorted.com/pro/documents/paperless/pd_00797582543150236528252876881920&quot;,
+            &quot;rel&quot;: &quot;self&quot;,
+            &quot;reference&quot;: &quot;pd_00797582543150236528252876881920&quot;,
+            &quot;type&quot;: &quot;paperless_document&quot;
+        },
+        {
+            &quot;href&quot;: &quot;https://api-int.sorted.com/pro/shipments/sp_00797580869643167594270016798720&quot;,
+            &quot;rel&quot;: &quot;shipment&quot;,
+            &quot;reference&quot;: &quot;sp_00797580869643167594270016798720&quot;,
+            &quot;type&quot;: &quot;shipment&quot;
+        }
+    ]
+}
+</code></pre>
+</section>
+</div>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

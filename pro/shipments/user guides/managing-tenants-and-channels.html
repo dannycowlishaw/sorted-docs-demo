@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Managing Tenants and Channels | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Managing Tenants and Channels | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="guide-managing-tenants-and-channels">
+<h1 id="managing-tenants-and-channels">Managing Tenants and Channels</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            19/01/2020
+        </li>
+        <li class="li-time-to-read">
+             ~6 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            19/01/2020
+        </li>
+        <li class="li-time-to-read">
+             ~6 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/7d40af995c39ae5ed43c7e834bc10dae.jpg?d=robohash" class="img-circle img-contributor" title="martin.box@sorted.com"/>
+            <span class="tooltip-text">martin.box@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">administration</li>
+        <li class="tag-search">guide</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">gui</li>
+        <li class="tag-search">portal</li>
+        <li class="tag-search">v2</li>
+        <li class="tag-search">tenants</li>
+        <li class="tag-search">channels</li>
+        <li class="tag-search">multi-tenancy</li>
+        <li class="tag-search">settings</li>
+    </ul>
+</div>
+
+<p>Multi-tenancy enables you to set up tenants and channels (that is, multiple sub-companies or brands) within your main Sorted account. This page explains how to use the <strong>Multi-tenancy</strong> page to set up and manage tenants and channels.</p>
+[!include[_development_statement](../pro/api/includes/_development_statement.md)]<hr>
+<h2 id="multi-tenancy-overview">Multi-Tenancy Overview</h2>
+<p>Within the Sorted platform, a <strong>tenant</strong> is a sub-company that exists within a customer account. Tenants can be further divided into <strong>channels</strong>, which are analogous to brands or smaller companies. Tenants and channels can have their own carrier services, carrier accounts, shipping locations, and users, enabling the platform to support complex retail operations in which each of a customer's brands operates as essentially a separate entity.</p>
+<p>For example, suppose that a clothing company group called <strong>ABC Limited</strong> becomes a Sorted customer. ABC Limited consists of three separate companies:</p>
+<ul>
+<li>Aunty Mabel Co – a clothing brand selling high value items to a more mature audience.</li>
+<li>Billy Bob's Apparel – a clothing brand selling work wear.</li>
+<li>City Stocks – a clothing brand with two “child brands”.
+<ul>
+<li>City Bespoke Clothing.</li>
+<li>City Hats and Shoes.</li>
+</ul>
+</li>
+</ul>
+<p>In this example, ABC Limited would create tenants for each of their three sub-companies from their parent account. Within the City Stocks tenant, they would also create two channels. Channels are added as part of the tenant creation process.</p>
+<p><img src="images/multi_tenancy_example.png" alt="multi_tenancy_example"></p>
+<p>You can manage your tenants and channels in the Sorted Portal via the <strong>Managing Tenants</strong> page. To access the <strong>Managing Tenants</strong> page, select <strong>Settings &gt; Multi-tenancy</strong> from the main menu.</p>
+<h2 id="viewing-tenants">Viewing Tenants</h2>
+<p>To view your tenants, select the <strong>Managing Tenants</strong> page, and ensure that the <strong>Tenants</strong> tab is selected.</p>
+<p><img src="images/pro_manage_multi_tenancy_menu.png" alt="pro_manage_multi_tenancy_menu"></p>
+<p>The <strong>Managing Tenants</strong> page displays a tile for each of your tenants. From here, you can use the <strong>Active</strong> / <strong>Inactive</strong> toggle to deactivate and reactivate tenants as required, or select <strong>Edit</strong> to edit the tenant's details.</p>
+<p>The process of editing an existing tenant is the same as that used to set up a new tenant, as explained in the <a href="#adding-a-new-tenant">Adding a New Tenant</a> section of this page.</p>
+<p><img src="images/pro_manage_multi_tenancy.png" alt="pro_manage_multi_tenancy"></p>
+<h2 id="viewing-channels">Viewing Channels</h2>
+<p>To view your channels, select the <strong>Managing Tenants</strong> page, and click the <strong>Channels</strong> tab. The <strong>Channels</strong> tab displays a table of your existing channels, including their associated <strong>Tenant Name</strong> and the number of <strong>Users</strong>, <strong>Carrier Services</strong>, <strong>Carrier Account Configurations</strong>, and <strong>Shipping Locations</strong> that that channel has.</p>
+<p><img src="images/pro_manage_multi_tenancy_channels.png" alt="pro_manage_multi_tenancy_channels"></p>
+<p>From here, you can use the <strong>Enable</strong> / <strong>Disable</strong> toggle to deactivate and reactivate channels as required, or select <strong>Edit</strong> to edit the channel details.</p>
+<p>The process of editing an existing channel is the same as that used to set up a new channel, as explained in the <a href="#adding-a-new-channel">Adding a New Channel</a> section of this page.</p>
+<h2 id="adding-a-new-tenant">Adding a New Tenant</h2>
+<p>To add a new tenant, select the <strong>Managing Tenants</strong> page and click the <strong>Add New Tenant</strong> card from the <strong>Tenants</strong> tab. The system displays the <strong>Add New Tenant</strong> page.</p>
+<h3 id="step-1-adding-tenant-details">Step 1: Adding Tenant Details</h3>
+<p>The <strong>Tenant Details</strong> card enables you to enter identifying information about your new tenant</p>
+<p><img src="images/pro_manage_multi_tenancy_add_tenant.png" alt="pro_manage_multi_tenancy_add_tenant"></p>
+<ol>
+<li>Add a <strong>Name</strong>. This is a unique identifier for the tenant, and must be between three and 50 characters long.</li>
+<li>Optionally, add a tenant <strong>Description</strong> of up to 100 characters.</li>
+<li>Click <strong>Next</strong> to display the <strong>Add Channels</strong> card</li>
+</ol>
+<h3 id="step-2-optional-adding-channels">Step 2 (Optional): Adding Channels</h3>
+<p>The <strong>Add Channels</strong> card enables you to add channels to your new tenant. If you do not want to add channels to your tenant, click <strong>Next</strong> to display the <strong>Link Users</strong> card.</p>
+<p><img src="images/pro_manage_multi_tenancy_add_channel.png" alt="pro_manage_multi_tenancy_add_channel"></p>
+<p>To add a channel:</p>
+<ol>
+<li>Add a <strong>Name</strong>. This is a unique identifier for the channel, and must be between three and 50 characters long.</li>
+<li>Optionally, add a channel <strong>Description</strong> of up to 100 characters.</li>
+<li>Click <strong>Add to Channel List</strong> to add the channel to the tenant's <strong>Channel List</strong></li>
+</ol>
+<p>Once you have entered the channels you need, click <strong>Next</strong> to display the <strong>Link Users</strong> card.</p>
+<h3 id="step-3-linking-users">Step 3: Linking Users</h3>
+<p>The <strong>Link Users</strong> card enables you to to link users to your tenant and its channels. Users cannot access a tenant or channel unless they have been linked to it.</p>
+<p><img src="images/pro_manage_multi_tenancy_link_user.png" alt="pro_manage_multi_tenancy_link_user"></p>
+<p>For example, a customer working with a system integration may create a &quot;system&quot; user and restrict that user so that they can only create shipments for a specific tenant.</p>
+<p>To link users:</p>
+<ol>
+<li>Select a user or users from the <strong>Select users</strong> menu.</li>
+<li>Select the tenant and channels that you want to link those users to from the <strong>Link selected users to</strong> menu.</li>
+<li>Click <strong>Add to my selection</strong> to link the selected users to the selected tenant and channels. The system adds your selection to the <strong>My selection</strong> list.</li>
+</ol>
+<p>In the example image above, Default Users 1 and 3 have been granted access to the <strong>sorted_brand_02</strong> channel within the <strong>sorted_group</strong> tenant.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on configuring users, see the <a href="managing-users-and-roles.html">Managing Users and Roles</a> page.</p>
+</div>
+<p>Once you have finished linking your users, click <strong>Next</strong> to display the <strong>Link Carrier Services</strong> card.</p>
+<h3 id="step-4-linking-carrier-services">Step 4: Linking Carrier Services</h3>
+<p>The <strong>Link Carrier Services</strong> card enables you to to link carrier services to your tenant and its channels.</p>
+<p><img src="images/pro_manage_multi_tenancy_link_carrier_service.png" alt="pro_manage_multi_tenancy_link_carrier_service"></p>
+<p>To link carrier services:</p>
+<ol>
+<li>Select one or more carrier services from the <strong>Select carrier services</strong> menu.</li>
+<li>Select the tenant and channels that you want to link those services to from the <strong>Link selected carrier services to</strong> menu.</li>
+<li>Click <strong>Add to my selection</strong> to link the selected services to the selected tenant and channels. The system adds your selection to the <strong>My selection</strong> list.</li>
+</ol>
+<p>In the example image above, Carrier Services 2 and 6 have been granted access to the <strong>sorted_brand_02</strong> channel within the <strong>sorted_group</strong> tenant.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on managing carrier services, see the <a href="managing-carrier-services.html">Managing Carrier Services</a> page.</p>
+</div>
+<p>Once you have finished linking your carrier services, click <strong>Next</strong> to display the <strong>Link Carrier Account Configuration</strong> card.</p>
+<h3 id="step-5-link-carrier-account-configurations">Step 5: Link Carrier Account Configurations</h3>
+<!--Need more info on carrier account configurations, what are they, how do we set them up etc?-->
+<p>The <strong>Link Carrier Account Configuration</strong> card enables you to to link carrier account configurations to your tenant and its channels.</p>
+<p><img src="images/pro_manage_multi_tenancy_link_carrier_account_config.png" alt="pro_manage_multi_tenancy_link_carrier_account_config"></p>
+<p>To link carrier account configurations:</p>
+<ol>
+<li>Select one or more account configurations from the <strong>Select carrier account configuration</strong> menu.</li>
+<li>Select the tenant and channels that you want to link those account configurations to from the <strong>Link selected carrier account configurations to</strong> menu.</li>
+<li>Click <strong>Add to my selection</strong> to link the selected account configurations to the selected tenant and channels. The system adds your selection to the <strong>My selection</strong> list.</li>
+</ol>
+<p>In the example image above, Carrier Account Configurations 2 and 6 have been granted access to the <strong>sorted_brand_02</strong> channel within the <strong>sorted_group</strong> tenant.</p>
+<p>Once you have finished linking your account configurations, click <strong>Next</strong> to display the <strong>Link Shipping Locations</strong> card.</p>
+<h3 id="step-6-link-shipping-locations">Step 6: Link Shipping Locations</h3>
+<p>The <strong>Link Shipping Location</strong> card enables you to to link shipping locations to your tenant and its channels.</p>
+<p><img src="images/pro_manage_multi_tenancy_link_shipping_location.png" alt="pro_manage_multi_tenancy_link_shipping_location"></p>
+<p>To link shipping locations:</p>
+<ol>
+<li>Select one or more shipping locations from the <strong>Select shipping locations</strong> menu.</li>
+<li>Select the tenant and channels that you want to link those shipping locations to from the <strong>Link selected shipping locations to</strong> menu.</li>
+<li>Click <strong>Add to my selection</strong> to link the selected shipping locations to the selected tenant and channels. The system adds your selection to the <strong>My selection</strong> list.</li>
+</ol>
+<p>In the example image above, Sorted Group Location has been granted access to the <strong>sorted_brand_02</strong> channel within the <strong>sorted_group</strong> tenant.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>For more information on configuring shipping locations, see the <a href="managing-shipping-locations.html">Managing Shipping Locations</a> page.</p>
+</div>
+<p>Finally, select <strong>Add Tenant</strong> to create your tenant and close the <strong>Add New Tenant</strong> page.</p>
+<h2 id="adding-a-new-channel">Adding a New Channel</h2>
+<p>As well as creating new channels during the tenant creation process, you can also create new channels directly by clicking <strong>Add new channels</strong> on the <strong>Channels</strong> tab of the <strong>Managing Tenants</strong> page.</p>
+<p><img src="images/pro_manage_multi_tenancy_channels.png" alt="pro_manage_multi_tenancy_channels"></p>
+<p>The process of creating a new channel is largely the same as the process of creating a new tenant, with one exception: instead of a <strong>Tenant Details</strong> card the <strong>Add New Channels</strong> page displays a <strong>Choose Tenant</strong> card from which you can select the tenant that you want your new channel to be associated with.</p>
+<p><img src="images/choose_tenant.png" alt="choose_tenant"></p>
+<p>Select the tenant and click <strong>Next</strong> to display the <strong>Add Channels</strong> card. The rest of the process is the same as that detailed in the <a href="#step-2-optional-adding-channels">Adding a New Tenant</a> section.</p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

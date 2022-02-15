@@ -1,0 +1,540 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKT96K5');</script>
+    <!-- End Google Tag Manager -->
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Grouping Shipments | Sorted Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Grouping Shipments | Sorted Docs ">
+    <meta name="generator" content="docfx 2.58.9.0">
+    
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4a9dfb254.js" crossorigin="anonymous"></script>
+  
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/theme-switcher.css">
+  
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta id="docfx-style:rel" content="../../">
+    <!--prevent caching the HTML-->
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKT96K5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/sorted_logo.svg" height="auto" width="auto" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar"> 
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="theme-switcher">
+                  <input type="checkbox" id="theme-switcher">
+                  <div class="slider round"></div>
+                </label>
+              </div> 
+              <div>
+                <form class="navbar-form navbar-right" role="search" id="search">
+                    <div class="form-group">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control" id="search-query" placeholder="Search our documentation..." autocomplete="off">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default custom">
+            <div class="container">
+                <div class="row row-nomargin">
+                    <div class="hide-when-search col-sm-6" id="breadcrumb">
+                        <div class="col-md-6">
+                            <ul class="breadcrumb">
+                            <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      </header>
+      <div class="container body-content">
+        
+        <div id="search-results" class="tech-docs">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="close-search" type="button" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-arrow-left"></i>&nbsp;Back</button>
+            </div>
+        </div>
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10 docs-body" id="docfx-page-content">
+            <article class="content wrap" id="_content" data-uid="react-help-grouping-shipments">
+<h1 id="grouping-shipments">Grouping Shipments</h1>
+
+<!-- Time to read article - render code -->
+<!--
+<div class="page-stats row visible-xs">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            03/07/2020
+        </li>
+        <li class="li-time-to-read">
+             ~7 minutes  to read
+        </li>
+    </ul>
+</div>
+<div class="page-stats row visible-sm visible-md visible-lg visible-xl">
+    <ul class="page-metadata">
+        <li class="li-page-date">
+            03/07/2020
+        </li>
+        <li class="li-time-to-read">
+             ~7 minutes  to read
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/75aba8f6bb41171675ba3ced4172e9cb.jpg?d=robohash" class="img-circle img-contributor" title="andy.walton@sorted.com"/>
+            <span class="tooltip-text">andy.walton@sorted.com</span>
+        </li>
+        <li class="contributor-li">
+            <img src="https://www.gravatar.com/avatar/435f6d0dafb6467a7e20a69f720fb6f1.jpg?d=robohash" class="img-circle img-contributor" title="michael.rose@sorted.com"/>
+            <span class="tooltip-text">michael.rose@sorted.com</span>
+        </li>
+    </ul>
+</div>
+-->
+
+<div class="page-tags">
+    <span class="glyphicon glyphicon-tags"></span>
+    <ul class="tags">
+        <li class="tag-search">react</li>
+        <li class="tag-search">ui</li>
+        <li class="tag-search">shipments</li>
+        <li class="tag-search">shipment groups</li>
+    </ul>
+</div>
+
+<p>REACT shipment groups help you to track orders that will take more than one shipment to fulfil. This page explains how to use metadata to group shipments together, how to view shipment groups in the REACT UI, and how to present grouped shipments to your customers using REACT's tracking pages.</p>
+<hr>
+<h2 id="shipment-groups-overview">Shipment Groups Overview</h2>
+<p>In REACT, a shipment is a singly-tracked consignment of goods that are being shipped together from a single origin location to a single destination location. Shipment groups enable you to link related shipments together so that they can be tracked through the same page.</p>
+<p>For example, suppose that a clothing retailer has received an order for a coat and a hat. At the time of order, the two items are physically located in two different warehouses. This means that they will need to be sent as two separate shipments, as all items on a shipment must share an origin location.</p>
+<p>However, both items are still a single order from the customer's perspective. As such, it would be a better user experience to provide the customer with a single link that they could use to track both shipments, rather than two separate links.</p>
+<p>By using shipment groups, you can link these two shipments together via a shared metadata property, enabling you to send tracking details for both as a single link. The page displayed by the link displays tracking information for all shipments tagged with that property, with a drop-down menu enabling customers to switch between all shipments in the group without navigating to a separate page.</p>
+<h2 id="registering-grouped-shipments">Registering Grouped Shipments</h2>
+<p>Shipment groups are based on metadata. If two shipments share an identical metadata property (that is, one that has both the same <code>key</code> and <code>value</code>), then REACT considers them to be grouped together.</p>
+<p>When grouping REACT shipments, the metadata <code>key</code> is the grouping (that is, the category by which shipments are grouped together) and the metadata <code>value</code> is effectively the name of the group itself. For example, an organisation grouping shipments by order number might use <em>orderID</em> (or similar) as a metadata <code>key</code> and their own order number as the <code>value</code>.</p>
+<p>The following example shows a request to register four simple shipments at once. The shipments all have a metadata key named <code>group_name</code> denoting the group they are in. The first two shipments belong to <code>example_group1</code>, and the second two below to <code>example_group2</code>.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S_shipment-groups-example" role="tab" aria-controls="tabpanel_bHGHmlrG6S_shipment-groups-example" data-tab="shipment-groups-example" tabindex="0" aria-selected="true">Shipment Groups Example</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S_shipment-groups-example" role="tabpanel" data-tab="shipment-groups-example">
+
+<pre><code class="lang-json">{
+    &quot;shipments&quot;: [
+    	{
+            &quot;tracking_references&quot;: [
+                &quot;shipment1&quot;
+            ],
+            &quot;metadata&quot;: [
+                {
+                &quot;key&quot;: &quot;group_id&quot;,
+                &quot;value&quot;: &quot;example_group1&quot;,
+                &quot;type&quot;: &quot;String&quot;
+                }
+            ]
+    	},
+    	{
+            &quot;tracking_references&quot;: [
+                &quot;shipment2&quot;
+            ],
+            &quot;metadata&quot;: [
+                {
+                &quot;key&quot;: &quot;group_id&quot;,
+                &quot;value&quot;: &quot;example_group1&quot;,
+                &quot;type&quot;: &quot;String&quot;
+                }
+            ]
+    	},
+        {
+            &quot;tracking_references&quot;: [
+                &quot;shipment3&quot;
+            ],
+            &quot;metadata&quot;: [
+                {
+                &quot;key&quot;: &quot;group_id&quot;,
+                &quot;value&quot;: &quot;example_group2&quot;,
+                &quot;type&quot;: &quot;String&quot;
+                }
+            ]
+    	},
+        {
+            &quot;tracking_references&quot;: [
+                &quot;shipment4&quot;
+            ],
+            &quot;metadata&quot;: [
+                {
+                &quot;key&quot;: &quot;group_id&quot;,
+                &quot;value&quot;: &quot;example_group2&quot;,
+                &quot;type&quot;: &quot;String&quot;
+                }
+            ]
+    	}        
+    ]
+}
+</code></pre>
+</section>
+</div>
+
+<p>To add a pre-existing shipment to a group, use the <strong>Update Shipment</strong> endpoint to add the relevant metadata property to the shipment. Note that REACT's <strong>Update Shipment</strong> endpoint requires you to pass an entire new shipment object, which overwrites the existing shipment resource. As such, you would need to pass all of the shipment's current details as well as the metadata property when adding a shipment to a group.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>For more information on registering REACT shipments, see the <a href="/react/help/registering-shipments.html">Registering Shipments</a> page.</li>
+<li>For more information on updating REACT shipments, see the <a href="/react/help/updating-shipments.html">Updating Shipments</a> page.</li>
+</ul>
+</div>
+<h2 id="tracking-grouped-shipments">Tracking Grouped Shipments</h2>
+<p>Your customers can view tracking information for any shipment group by visiting <code>https://react.sorted.com/tracking/[page_title]?customer_id=[customer_id_here]&amp;metadata_key=[metadata_key_here]&amp;metadata_value=[metadata_value_here]</code>, where <code>[page_title]</code> is the title of your tracking page, <code>[customer_id_here]</code> is your REACT customer ID, <code>[metadata_key_here]</code> is the relevant grouping key and <code>[metadata_value_here]</code> is the value that you grouped the shipments together on.</p>
+<p>As an example, suppose that a customer with a <code>customer_id</code> of <em>cs_1234567890</em> created a tracking page called <em>examplePage</em> and wanted to use it to let a customer view the first two shipments from the code sample given in the previous section. To do so, they would share the following link: <code>https://react.sorted.com/tracking/examplePage?customer_id=cs_1234567890&amp;metadata_key=group_id&amp;metadata_value=example_group1</code></p>
+<p>Shipment group tracking pages have a drop-down picker on the tracking widget that enables the customer to select which shipment's tracking information they want to view.</p>
+<p><img src="images/grouped_shipments.png" alt="grouped_shipments"></p>
+<p>The page also displays the key and value that the shipments are grouped by, and the number of shipments in the group.</p>
+<p><img src="images/group_id.png" alt="group_id"></p>
+<p>For non-autoloading shipment groupings REACT only displays the drop-down shipment picker and grouping information if you access the shipment via the shipment group link (that is, you use the shared metadata <code>key</code> and <code>value</code> to identify the shipments to be displayed). You can still use other valid tracking page link formats to view a shipment that is in a non-autoloading grouping (such as <code>shipment_id</code> or <code>tracking_reference</code>), but REACT does not display links to other shipments in the group in this case.</p>
+<p>However, for shipments in an auto-loading shipment grouping, REACT always displays links to other shipments in the grouping, even if you track the individual shipments by their <code>shipment_id</code> or <code>tracking_reference</code>.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<ul>
+<li>For more information on using auto-loading groupings, see the <a href="#auto-loading-shipments">Auto-Loading Shipments</a> section.</li>
+<li>For more information on creating and distributing REACT tracking pages, see the <a href="/react/help/tracking-pages.html">Tracking Pages</a> page.</li>
+</ul>
+</div>
+<h2 id="creating-shipment-groupings">Creating Shipment Groupings</h2>
+<p>The <strong>Configure Shipment Groupings</strong> UI page enables you to specify a name for up to three of the metadata keys that you use for your shipment groupings.</p>
+<p>For example, you might group shipments by a key called <code>orderID</code>. The <strong>Configure Shipment Groupings</strong> page enables you to specify a name such as <em>Order Reference</em> (or similar) for that grouping, which REACT would then display on the group tracking page instead of the <code>orderID</code> key name.</p>
+<p><img src="images/grouping_names.png" alt="grouping_names"></p>
+<p>To name a shipment group:</p>
+<ol>
+<li><p>Select <strong>Settings &gt; Shipment Groupings</strong> to display the <strong>Configure Shipment Groupings</strong> UI page.</p>
+</li>
+<li><p>Enter the <strong>Metakey</strong> of the group you want to name.</p>
+</li>
+<li><p>Enter the <strong>Name</strong> you want to give to the group.</p>
+</li>
+<li><p>Use the <strong>AutoLoad</strong> toggle to select whether you want REACT to automatically search for grouped shipments. For more information on auto-loading shipments, see the <a href="#auto-loading-shipments">Auto-Loading Shipments</a> section.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can only specify one of your group keys as an autoload key. If you select the <strong>AutoLoad</strong> toggle for a particular key, then PRO deselectes it for any other keys.</p>
+</div>
+</li>
+<li><p>Add up to two more keys and names, if required.</p>
+</li>
+<li><p>Click <strong>Save</strong> to save your changes.</p>
+</li>
+</ol>
+<p>To edit your existing group names, click the <strong>Edit</strong> button.</p>
+<h2 id="auto-loading-shipments">Auto-Loading Shipments</h2>
+<p>If you set a key to auto-load, then REACT automatically performs a lookup to obtain further shipments that have the same key and value when it receives a shipment that contains the specified key.</p>
+<p>To put it another way, REACT actively groups shipments with an auto-loading metadata key together. This means that when you track an individual shipment with an auto-load key through REACT's tracking pages (for example, by <code>shipment_id</code>, <code>tracking_reference</code>, or <code>custom_reference</code>), the system is able to see that the shipment has related shipments and can display a link to their details on the tracking page.</p>
+<p>This is different to regular &quot;passive&quot; shipment groupings, in which REACT does not actively search for additional shipments and does not display grouped shipment details on the tracking page if you track an individual shipment. For non-autoloading groupings, the only way to see grouped shipments on the REACT tracking page is by searching for them using shared metadata key / value parameters, as explained in the <a href="#tracking-grouped-shipments">Tracking Grouped Shipments</a> section.</p>
+<h3 id="auto-loading-shipments-example">Auto-Loading Shipments Example</h3>
+<p>As an example, you might specify an auto-load key for multi-package shipments originating from PRO. When REACT receives shipments from PRO, it registers one shipment per PRO package. By using an auto-loading key, REACT can automatically obtain, register, and group all of the packages in a PRO shipment as soon as it receives the first package.</p>
+<p>One way to do this would be to append PRO's <code>shipment_id</code> property to each shipment as a metadata key/value at the point of registration in REACT, as all packages from a PRO shipment would share a common PRO <code>shipment_id</code>.</p>
+<p>The code sample below shows two simplified <strong>Register Shipment</strong> requests with a PRO <code>shipment_id</code> appended as metadata via a key called <code>PRO_Shipment_Id</code>. Note that these shipments have the same metadata key but individual tracking references.</p>
+<div class="tabGroup" id="tabgroup_bHGHmlrG6S-1">
+<ul role="tablist">
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_shipment-1" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_shipment-1" data-tab="shipment-1" tabindex="0" aria-selected="true">Shipment 1</a>
+</li>
+<li role="presentation">
+<a href="#tabpanel_bHGHmlrG6S-1_shipment-2" role="tab" aria-controls="tabpanel_bHGHmlrG6S-1_shipment-2" data-tab="shipment-2" tabindex="-1">Shipment 2</a>
+</li>
+</ul>
+<section id="tabpanel_bHGHmlrG6S-1_shipment-1" role="tabpanel" data-tab="shipment-1">
+
+<pre><code class="lang-json">{
+    &quot;shipments&quot;: [
+        {
+            &quot;tracking_references&quot;: [
+                &quot;AutoLoadExamples1&quot;
+            ],
+            &quot;metadata&quot;: [
+                {
+                    &quot;key&quot;: &quot;PRO_Shipment_Id&quot;,
+                    &quot;value&quot;: &quot;sp_01114749695851729329506736537600&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+</section>
+<section id="tabpanel_bHGHmlrG6S-1_shipment-2" role="tabpanel" data-tab="shipment-2" aria-hidden="true" hidden="hidden">
+
+<pre><code class="lang-json">{
+    &quot;shipments&quot;: [
+        {
+            &quot;tracking_references&quot;: [
+                &quot;AutoLoadExamples2&quot;
+            ],
+            &quot;metadata&quot;: [
+                {
+                    &quot;key&quot;: &quot;PRO_Shipment_Id&quot;,
+                    &quot;value&quot;: &quot;sp_01114749695851729329506736537600&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+</section>
+</div>
+
+<p>You would then need to set that metadata key as an auto-loading grouping in the REACT UI.</p>
+<p><img src="images/Autoload_example.png" alt="Autoload_example"></p>
+<p>Now, if you track one of the shipments by its <code>tracking_reference</code> in a REACT tracking page, then REACT automatically recognises that the shipment has a related shipment and offers a drop-down picker at the top of the page to enable you to switch between shipments.</p>
+<p><img src="images/Autoload_example2.png" alt="Autoload_example2"></p>
+<h2 id="searching-for-grouped-shipments">Searching For Grouped Shipments</h2>
+<p>You can search for grouped shipments using your named shipment groupings (that is, those shipments that are grouped using the metadata keys configured on the <strong>Configure Shipment Groupings</strong> UI page) via the search bar in the REACT UI. To do so:</p>
+<ol>
+<li>From any page of the REACT UI, click the drop-down menu on the search bar and select the name of the grouping (i.e. the metadata key) you want to search by</li>
+</ol>
+<p><img src="images/select_grouping.png" alt="select_grouping"></p>
+<ol start="2">
+<li>Enter the group name (i.e. the metadata value) and press Enter to display tabbed details of all the shipments in the group.</li>
+</ol>
+<p><img src="images/group_tabs.png" alt="group_tabs"></p>
+<p>REACT only displays tabs if you search for shipments by their grouping. If you were to search for the shipment in the example above by its tracking reference, for example, then REACT would only display that shipment's details.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Read on for more info:</p>
+<ul>
+<li><a href="https://docs.sorted.com/react/overview/">REACT Overview</a></li>
+<li><a href="https://docs.sorted.com/react/registering-shipments/">Registering Shipments</a></li>
+<li><a href="https://docs.sorted.com/react/managing-webhooks/">Managing Webhooks</a></li>
+<li><a href="https://docs.sorted.com/react/retrieving-data/">Retrieving Shipment and Event Data</a></li>
+</ul>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary" id="docfx-side-menu">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © Sorted Group 2021. Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/styleswitcher.js"></script>
+    <script type="text/javascript" src="../../styles/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+    
+        window.onload = function() {
+            const elements = document.getElementsByClassName("lang-mermaid");
+            let index = 0;
+    
+            while (elements.length != 0) {
+                let element = elements[0];
+                mermaid.render('graph'+ index, element.innerText, (svgGraph) => {
+                    element.parentElement.outerHTML = "<div class='mermaid'>" + svgGraph + "</div>";
+                });
+                index++;
+            }
+    
+            addCodeCopyWrapper();
+            identifyStatusCodes();
+        };
+    
+        function addCodeCopyWrapper() {
+            document.querySelectorAll('code.hljs').forEach(function (codeBlock) {
+    
+                var pre = codeBlock.parentNode;
+    
+                var containingDiv = document.createElement('div');
+                containingDiv.className = 'code-copy';
+    
+                wrap(pre, containingDiv);
+            });
+            
+            if (navigator && navigator.clipboard) {
+                addCopyButtons(navigator.clipboard);
+            } else {
+                var script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.7.0/clipboard-polyfill.promise.js';
+                script.integrity = 'sha256-waClS2re9NUbXRsryKoof+F9qc1gjjIhc2eT7ZbIv94=';
+                script.crossOrigin = 'anonymous';
+                script.onload = function() {
+                    addCopyButtons(clipboard);
+                };
+    
+                document.body.appendChild(script);
+            }
+        }
+    
+        function wrap(el, wrapper) {
+            el.parentNode.insertBefore(wrapper, el);
+            wrapper.appendChild(el);
+        }
+    
+        function addCopyButtons(clipboard) {
+            document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+                var button = document.createElement('button');
+                button.className = 'copy-code-button';
+                button.type = 'button';
+    
+                button.addEventListener('click', function () {
+                    clipboard.writeText(codeBlock.innerText).then(function () {
+                        successCopyButtonState(button);
+                    }, function (error) {
+                        defaultCopyButtonState(button);
+                    });
+                });
+    
+                var pre = codeBlock.parentNode;
+                if (pre.parentNode.classList.contains('highlight')) {
+                    var highlight = pre.parentNode;
+                    highlight.parentNode.insertBefore(button, highlight);
+                } else {
+                    pre.parentNode.insertBefore(button, pre);
+                }
+    
+                defaultCopyButtonState(button);
+            });
+        }
+    
+        function defaultCopyButtonState(button) {
+    
+            button.classList.remove('copy-success');
+            button.innerText = '';
+    
+            var buttonSpanIcon = document.createElement('span');
+            buttonSpanIcon.className = 'glyphicon glyphicon-copy';
+            var buttonSpanText = document.createElement('span');
+            buttonSpanText.innerText = 'Copy';
+            buttonSpanText.classList.add('copy');
+    
+            button.appendChild(buttonSpanIcon);
+            button.appendChild(buttonSpanText);
+        }
+    
+        function successCopyButtonState(button) {
+            button.blur();
+    
+            button.innerText = '';
+    
+            var buttonSpanOkIcon = document.createElement('span');
+            buttonSpanOkIcon.className = 'glyphicon glyphicon-ok';
+    
+            button.appendChild(buttonSpanOkIcon);
+    
+            button.classList.add('copy-success');
+    
+            setTimeout(function () {
+                defaultCopyButtonState(button);
+            }, 2000);
+        }
+    
+        function identifyStatusCodes() {
+            document.querySelectorAll('.endpoint code').forEach(function (e) {
+                highlightStatusCodes(e);
+            });
+        }
+    
+        function highlightStatusCodes(el) {
+    
+            var codePrefix = el.innerText.substring(0,1);
+            
+            if (typeof codePrefix === 'undefined' || codePrefix == null) {
+                return;
+            }
+    
+            if (codePrefix == "2") {
+                el.classList.add('code-success');
+                return;
+            }
+    
+            if (codePrefix == "3") {
+                el.classList.add('code-warning');
+                return;
+            }
+    
+            if (codePrefix == "4" || codePrefix == "5") {
+                el.classList.add('code-error');
+                return;
+            }
+        }
+    </script>  </body>
+</html>

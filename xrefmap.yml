@@ -1,0 +1,594 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: collection-notes-api-reference
+  name: Collection Notes API Reference
+  href: pro/shipments/api/reference/collection-notes.html
+- uid: customs-docs-api-reference
+  name: Customs Documents API Reference
+  href: pro/shipments/api/reference/customs-documents.html
+- uid: guide-creating-new-shipments
+  name: Creating New Shipments
+  href: pro/shipments/user%20guides/creating-new-shipments.html
+- uid: guide-getting-started
+  name: Getting Started
+  href: pro/shipments/user%20guides/getting-started.html
+- uid: guide-index
+  name: Pro Shipments User Guide
+  href: pro/shipments/user%20guides/index.html
+- uid: guide-managing-allocation-windows
+  name: Managing Allocation Windows
+  href: pro/shipments/user%20guides/managing-allocation-windows.html
+- uid: guide-managing-carrier-services
+  name: Managing Carrier Services
+  href: pro/shipments/user%20guides/managing-carrier-services.html
+- uid: guide-managing-existing-shipments
+  name: Managing Existing Shipments
+  href: pro/shipments/user%20guides/managing-existing-shipments.html
+- uid: guide-managing-shipping-locations
+  name: Managing Shipping Locations
+  href: pro/shipments/user%20guides/managing-shipping-locations.html
+- uid: guide-managing-shipping-modes
+  name: Managing Shipping Modes
+  href: pro/shipments/user%20guides/managing-shipping-modes.html
+- uid: guide-managing-shipping-rules
+  name: Managing Shipping Rules
+  href: pro/shipments/user%20guides/managing-shipping-rules.html
+- uid: guide-managing-tenants-and-channels
+  name: Managing Tenants and Channels
+  href: pro/shipments/user%20guides/managing-tenants-and-channels.html
+- uid: guide-managing-users-and-roles
+  name: Managing Users and Roles
+  href: pro/shipments/user%20guides/managing-users-and-roles.html
+- uid: guide-viewing-carrier-account-settings
+  name: Viewing Carrier Account Settings
+  href: pro/shipments/user%20guides/viewing-carrier-account-settings.html
+- uid: guide-viewing-shipment-groups
+  name: Viewing Shipment Groups
+  href: pro/shipments/user%20guides/viewing-shipment-groups.html
+- uid: labels-api-reference
+  name: Labels API Reference
+  href: pro/shipments/api/reference/labels.html
+- uid: paperless-documents-api-reference
+  name: Paperless Documents API Reference
+  href: pro/shipments/api/reference/paperless-documents.html
+- uid: postcode-validation
+  name: Postcode Validation
+  href: pro/how-to/postcode-validation.html
+- uid: pro-api-error-codes-shipments-521
+  name: 521 - Allocation Failed
+  href: pro/shipments/api/error-codes/shipments/521.html
+- uid: pro-api-help-allocating-consignments
+  name: Allocating Consignments
+  href: pro/consignments/api/help/allocating_consignments.html
+- uid: pro-api-help-allocating-to-a-specific-carrier-service
+  name: Allocating to a Specific Carrier Service
+  href: pro/consignments/api/help/allocating_to_a_specific_carrier_service.html
+- uid: pro-api-help-allocating-to-a-specific-quote
+  name: Allocating to a Specific Quote
+  href: pro/consignments/api/help/allocating_to_a_specific_quote.html
+- uid: pro-api-help-allocating-using-default-allocation-rules
+  name: Allocate Using Default Allocation Rules
+  href: pro/consignments/api/help/allocating_using_default_allocation_rules.html
+- uid: pro-api-help-allocating-via-service-group
+  name: Allocating Via Service Group
+  href: pro/consignments/api/help/allocating_via_service_group.html
+- uid: pro-api-help-brexit-guide
+  name: Brexit Data Guide
+  href: pro/how-to/brexit-guide.html
+- uid: pro-api-help-brexit-sandbox-carrier-changes
+  name: Brexit Sandbox Carrier Changes
+  href: pro/how-to/brexit-sandbox-carrier-changes.html
+- uid: pro-api-help-cancelling-consignments
+  name: Cancelling Consignments
+  href: pro/consignments/api/help/cancelling_consignments.html
+- uid: pro-api-help-consignment-states
+  name: Consignment States
+  href: pro/consignments/api/help/consignment_states.html
+- uid: pro-api-help-creating-new-consignments
+  name: Creating New Consignments
+  href: pro/consignments/api/help/creating_new_consignments.html
+- uid: pro-api-help-creating-new-orders
+  name: Creating New Orders
+  href: pro/consignments/api/help/creating_new_orders.html
+- uid: pro-api-help-deallocating-consignments
+  name: Deallocating Consignments
+  href: pro/consignments/api/help/deallocating_consignments.html
+- uid: pro-api-help-flows
+  name: PRO Call Flows
+  href: pro/consignments/api/help/flows.html
+- uid: pro-api-help-flows-classic-flow
+  name: Classic Flow
+  href: pro/consignments/api/help/flows/classic_flow.html
+- uid: pro-api-help-flows-consumer-options-flow
+  name: Consumer Options Flow
+  href: pro/consignments/api/help/flows/consumer_options_flow.html
+- uid: pro-api-help-flows-consumer-options-pickup-flow
+  name: Consumer Options Pickup Flow
+  href: pro/consignments/api/help/flows/consumer_options_pickup_flow.html
+- uid: pro-api-help-flows-order-flex-flow
+  name: Order Flex Flow
+  href: pro/consignments/api/help/flows/order_flex_flow.html
+- uid: pro-api-help-flows-quotes-flow
+  name: Quotes Flow
+  href: pro/consignments/api/help/flows/quotes_flow.html
+- uid: pro-api-help-getting-consignment-data
+  name: Getting Consignment Data
+  href: pro/consignments/api/help/getting_consignment_data.html
+- uid: pro-api-help-getting-customs-docs-and-invoices
+  name: Getting Customs Docs and Invoices
+  href: pro/consignments/api/help/getting_customs_docs_and_invoices.html
+- uid: pro-api-help-getting-delivery-options
+  name: Getting Delivery Options
+  href: pro/consignments/api/help/getting_delivery_options.html
+- uid: pro-api-help-getting-labels
+  name: Getting Labels
+  href: pro/consignments/api/help/getting_labels.html
+- uid: pro-api-help-getting-pickup-options
+  name: Getting Pickup Options
+  href: pro/consignments/api/help/getting_pickup_options.html
+- uid: pro-api-help-getting-quotes
+  name: Getting Quotes
+  href: pro/consignments/api/help/getting_quotes.html
+- uid: pro-api-help-getting-quotes-for-an-existing-consignment
+  name: Getting Quotes for an Existing Consignment
+  href: pro/consignments/api/help/getting_quotes_for_an_existing_consignment.html
+- uid: pro-api-help-glossary
+  name: Glossary
+  href: pro/consignments/api/help/glossary.html
+- uid: pro-api-help-introduction
+  name: Getting Started with Consignments APIs
+  href: pro/consignments/api/help/introduction.html
+- uid: pro-api-help-managing-consignments
+  name: Managing Consignments
+  href: pro/consignments/api/help/managing_consignments.html
+- uid: pro-api-help-managing-existing-orders
+  name: Managing Existing Orders
+  href: pro/consignments/api/help/managing_existing_orders.html
+- uid: pro-api-help-managing-orders
+  name: Managing Orders
+  href: pro/consignments/api/help/managing_orders.html
+- uid: pro-api-help-managing-quotes
+  name: Managing Quotes
+  href: pro/consignments/api/help/managing_quotes.html
+- uid: pro-api-help-manifesting-consignments
+  name: Manifesting Consignments
+  href: pro/consignments/api/help/manifesting_consignments.html
+- uid: pro-api-help-metadata
+  name: Metadata
+  href: pro/consignments/api/help/metadata.html
+- uid: pro-api-help-packing-orders
+  name: Creating Consignments From Orders
+  href: pro/consignments/api/help/packing_orders.html
+- uid: pro-api-help-redoc
+  name: Redoc
+  href: pro/consignments/api/help/redoc.html
+- uid: pro-api-help-selecting-options
+  name: Selecting Options
+  href: pro/consignments/api/help/selecting_options.html
+- uid: pro-api-help-shipments-allocating-shipments
+  name: Allocating Shipments
+  href: pro/shipments/api/shipments/allocating_shipments.html
+- uid: pro-api-help-shipments-allocating-to-default-rules
+  name: Allocating to Default Rules
+  href: pro/shipments/api/shipments/allocating_to_default_rules.html
+- uid: pro-api-help-shipments-allocating-using-filters
+  name: Allocating Using Filters
+  href: pro/shipments/api/shipments/allocating_using_filters.html
+- uid: pro-api-help-shipments-allocating-with-a-specific-carrier-service
+  name: Allocating with a Specific Carrier Service
+  href: pro/shipments/api/shipments/allocating_with_a_specific_carrier_service.html
+- uid: pro-api-help-shipments-allocating-within-a-carrier-service-group
+  name: Allocating Within A Carrier Service Group
+  href: pro/shipments/api/shipments/allocating_within_a_carrier_service_group.html
+- uid: pro-api-help-shipments-api-updates
+  name: API Updates
+  href: pro/shipments/api/shipments/api_updates.html
+- uid: pro-api-help-shipments-cancelling-shipments
+  name: Cancelling Shipments
+  href: pro/shipments/api/shipments/cancelling_shipments.html
+- uid: pro-api-help-shipments-changing-shipment-states-manually
+  name: Changing Shipment States Manually
+  href: pro/shipments/api/shipments/changing_shipment_states_manually.html
+- uid: pro-api-help-shipments-closing-shipment-groups
+  name: Closing Shipment Groups
+  href: pro/shipments/api/shipments/closing_shipment_groups.html
+- uid: pro-api-help-shipments-consignments_vs_shipments
+  name: Consignments vs Shipments
+  href: pro/shipments/api/shipments/consignments_vs_shipments.html
+- uid: pro-api-help-shipments-creating-shipment-groups
+  name: Creating Shipment Groups
+  href: pro/shipments/api/shipments/creating_shipment_groups.html
+- uid: pro-api-help-shipments-creating-shipments
+  name: Creating Shipments
+  href: pro/shipments/api/shipments/creating_shipments.html
+- uid: pro-api-help-shipments-editing-shipment-groups
+  name: Editing Shipment Groups
+  href: pro/shipments/api/shipments/editing_shipment_groups.html
+- uid: pro-api-help-shipments-getting-collection-notes
+  name: Getting Collection Notes
+  href: pro/shipments/api/shipments/getting_collection_notes.html
+- uid: pro-api-help-shipments-getting-content-level-events
+  name: Getting Content Level Events
+  href: pro/shipments/api/shipments/getting_content_level_events.html
+- uid: pro-api-help-shipments-getting-shipment-documents
+  name: Getting Shipment Documents
+  href: pro/shipments/api/shipments/getting_shipment_documents.html
+- uid: pro-api-help-shipments-getting-shipment-events
+  name: Getting Shipment Events
+  href: pro/shipments/api/shipments/getting_shipment_events.html
+- uid: pro-api-help-shipments-getting-shipment-groups
+  name: Getting Shipment Groups
+  href: pro/shipments/api/shipments/getting_shipment_groups.html
+- uid: pro-api-help-shipments-getting-shipment-labels
+  name: Getting Shipment Labels
+  href: pro/shipments/api/shipments/getting_shipment_labels.html
+- uid: pro-api-help-shipments-getting-shipment-quotes
+  name: Getting Shipment Quotes
+  href: pro/shipments/api/shipments/getting_shipment_quotes.html
+- uid: pro-api-help-shipments-getting-shipments
+  name: Getting Shipments
+  href: pro/shipments/api/shipments/getting_shipments.html
+- uid: pro-api-help-shipments-glossary
+  name: Shipments Glossary
+  href: pro/shipments/api/shipments/shipments_glossary.html
+- uid: pro-api-help-shipments-introduction
+  name: Introduction
+  href: pro/shipments/api/shipments/introduction.html
+- uid: pro-api-help-shipments-managing-documents
+  name: Managing Documents
+  href: pro/shipments/api/shipments/managing_documents.html
+- uid: pro-api-help-shipments-managing-shipment-groups
+  name: Managing Shipment Groups
+  href: pro/shipments/api/shipments/managing_shipment_groups.html
+- uid: pro-api-help-shipments-managing-shipment-quotes
+  name: Managing Shipment Quotes
+  href: pro/shipments/api/shipments/managing_shipment_quotes.html
+- uid: pro-api-help-shipments-managing-shipments
+  name: Managing Shipments
+  href: pro/shipments/api/shipments/managing_shipments.html
+- uid: pro-api-help-shipments-manifesting-shipments
+  name: Manifesting Shipments
+  href: pro/shipments/api/shipments/manifesting_shipments.html
+- uid: pro-api-help-shipments-manifesting-shipments-by-query
+  name: Manifesting Shipments by Query
+  href: pro/shipments/api/shipments/manifesting_shipments_by_query.html
+- uid: pro-api-help-shipments-manifesting-shipments-by-shipment-groups
+  name: Manifesting Shipments by Shipment Groups
+  href: pro/shipments/api/shipments/manifesting_shipments_by_shipment_group.html
+- uid: pro-api-help-shipments-manifesting-shipments-manually
+  name: Manifesting Shipments Manually
+  href: pro/shipments/api/shipments/manifesting_shipments_manually.html
+- uid: pro-api-help-shipments-shipment-states
+  name: Shipment States
+  href: pro/shipments/api/shipments/shipment_states.html
+- uid: pro-api-help-shipments-tracking-pro-shipments
+  name: Tracking PRO Shipments
+  href: pro/shipments/api/shipments/tracking_pro_shipments.html
+- uid: pro-api-help-shipments-using_shipment_tags
+  name: Using Shipment Tags
+  href: pro/shipments/api/shipments/using_shipment_tags.html
+- uid: pro-api-help-shipments-using-paperless-documents
+  name: Adding Paperless Documents
+  href: pro/shipments/api/shipments/adding_paperless_documents.html
+- uid: pro-api-help-tags
+  name: Tags
+  href: pro/consignments/api/help/tags.html
+- uid: pro-api-help-tracking-consignments
+  name: Tracking Consignments
+  href: pro/consignments/api/help/tracking_consignments.html
+- uid: pro-api-help-tracking-pro-consignments-using-react
+  name: Tracking PRO Consignments Using REACT
+  href: pro/consignments/api/help/tracking_consignments_using_react.html
+- uid: pro-api-help-updating-existing-consignments
+  name: Updating Existing Consignments
+  href: pro/consignments/api/help/updating_existing_consignments.html
+- uid: pro-api-help-using-delivery-and-pickup-options
+  name: Using Delivery and Pickup Options
+  href: pro/consignments/api/help/using_delivery_and_pickup_options.html
+- uid: pro-api-help-using-pros-tracking-api
+  name: Using PRO's Tracking API
+  href: pro/consignments/api/help/using_pros_tracking_api.html
+- uid: pro-api-how-to-articles
+  name: Articles Home
+  href: pro/how-to/articles.html
+- uid: pro-api-how-to-ups
+  name: Client Onboarding Guide for UPS (EU/US)
+  href: pro/how-to/ups-guide.html
+- uid: pro-api-shipments-errors-400-address-type-required
+  name: 'Error: Address Type Required'
+  href: pro/shipments/errors/address_type_required.html
+- uid: pro-api-shipments-errors-400-conflicting-properties
+  name: 400 - Conflicting Properties
+  href: pro/shipments/errors/conflicting_properties.html
+- uid: pro-api-shipments-errors-400-date-in-past
+  name: 400 - Date in Past
+  href: pro/shipments/errors/date_in_past.html
+- uid: pro-api-shipments-errors-400-duplicate-address-type
+  name: 400 - Duplicate Address Type
+  href: pro/shipments/errors/duplicate_address_type.html
+- uid: pro-api-shipments-errors-400-duplicate-metadata-key
+  name: 400 - Duplicate Metadata Key
+  href: pro/shipments/errors/duplicate_metadata_key.html
+- uid: pro-api-shipments-errors-400-duplicate-references
+  name: 400 - Duplicate References
+  href: pro/shipments/errors/duplicate_references.html
+- uid: pro-api-shipments-errors-400-duplicate-tags
+  name: 400 - Duplicate Tags
+  href: pro/shipments/errors/duplicate_tags.html
+- uid: pro-api-shipments-errors-400-duplicate-values
+  name: 400 - Duplicate Values
+  href: pro/shipments/errors/duplicate_values.html
+- uid: pro-api-shipments-errors-400-file-too-large
+  name: 400 - File Too Large
+  href: pro/shipments/errors/file_too_large.html
+- uid: pro-api-shipments-errors-400-invalid-accessibility
+  name: 400 - Invalid Accessibility
+  href: pro/shipments/errors/invalid_accessibility.html
+- uid: pro-api-shipments-errors-400-invalid-address-type
+  name: 400 - Invalid Address Type
+  href: pro/shipments/errors/invalid_address_type.html
+- uid: pro-api-shipments-errors-400-invalid-carrier-service
+  name: 400 - Invalid Carrier Service
+  href: pro/shipments/errors/invalid_carrier_service.html
+- uid: pro-api-shipments-errors-400-invalid-category-type
+  name: 400 - Invalid Category Type
+  href: pro/shipments/errors/invalid_category_type.html
+- uid: pro-api-shipments-errors-400-invalid-contents-reference
+  name: 400 - Invalid Contents Reference
+  href: pro/shipments/errors/invalid_contents_reference.html
+- uid: pro-api-shipments-errors-400-invalid-country-code
+  name: 400 - Invalid Country Code
+  href: pro/shipments/errors/invalid_country_code.html
+- uid: pro-api-shipments-errors-400-invalid-cron-expression
+  name: 400 - Invalid CRON Expression
+  href: pro/shipments/errors/invalid_cron_expression.html
+- uid: pro-api-shipments-errors-400-invalid-currency
+  name: 400 - Invalid Currency
+  href: pro/shipments/errors/invalid_currency.html
+- uid: pro-api-shipments-errors-400-invalid-date-range
+  name: 400 - Invalid Date Range
+  href: pro/shipments/errors/invalid_date_range.html
+- uid: pro-api-shipments-errors-400-invalid-dimension-unit
+  name: 400 - Invalid Dimension Unit
+  href: pro/shipments/errors/invalid_dimension_unit.html
+- uid: pro-api-shipments-errors-400-invalid-direction
+  name: 400 - Invalid Direction
+  href: pro/shipments/errors/invalid_direction.html
+- uid: pro-api-shipments-errors-400-invalid-email
+  name: 400 - Invalid Email
+  href: pro/shipments/errors/invalid_email.html
+- uid: pro-api-shipments-errors-400-invalid-format
+  name: 400 - Invalid Format
+  href: pro/shipments/errors/invalid_format.html
+- uid: pro-api-shipments-errors-400-invalid-hazard-class
+  name: 400 - Invalid Hazard Class
+  href: pro/shipments/errors/invalid_hazard_class.html
+- uid: pro-api-shipments-errors-400-invalid-metadata-type
+  name: 400 - Invalid Metadata Type
+  href: pro/shipments/errors/invalid_metadata_type.html
+- uid: pro-api-shipments-errors-400-invalid-package-size-reference
+  name: 400 - Invalid Package Size Reference
+  href: pro/shipments/errors/invalid_package_size_reference.html
+- uid: pro-api-shipments-errors-400-invalid-packing-group
+  name: 400 - Invalid Packing Group
+  href: pro/shipments/errors/invalid_packing_group.html
+- uid: pro-api-shipments-errors-400-invalid-physical-form
+  name: 400 - Invalid Physical Form
+  href: pro/shipments/errors/invalid_physical_form.html
+- uid: pro-api-shipments-errors-400-invalid-postal-code
+  name: 400 - Invalid Postal Code
+  href: pro/shipments/errors/invalid_postal_code.html
+- uid: pro-api-shipments-errors-400-invalid-radioactivity
+  name: 400 - Invalid Radioactivity
+  href: pro/shipments/errors/invalid_radioactivity.html
+- uid: pro-api-shipments-errors-400-invalid-reference-format
+  name: 400 - Invalid Reference Format
+  href: pro/shipments/errors/invalid_reference_format.html
+- uid: pro-api-shipments-errors-400-invalid-region
+  name: 400 - Invalid Region
+  href: pro/shipments/errors/invalid_region.html
+- uid: pro-api-shipments-errors-400-invalid-request
+  name: 400 - Invalid Request
+  href: pro/shipments/errors/invalid_request.html
+- uid: pro-api-shipments-errors-400-invalid-shipment-state
+  name: 400 - Invalid Shipment State
+  href: pro/shipments/errors/invalid_shipment_state.html
+- uid: pro-api-shipments-errors-400-invalid-shipment-type
+  name: 400 - Invalid Shipment Type
+  href: pro/shipments/errors/invalid_shipment_type.html
+- uid: pro-api-shipments-errors-400-invalid-shipping-terms
+  name: 400 - Invalid Shipping Terms
+  href: pro/shipments/errors/invalid_shipping_terms.html
+- uid: pro-api-shipments-errors-400-invalid-state-for-operation
+  name: 400 - Invalid State for Operation
+  href: pro/shipments/errors/invalid_state_for_operation.html
+- uid: pro-api-shipments-errors-400-invalid-value
+  name: 400 - Invalid Value
+  href: pro/shipments/errors/invalid_value.html
+- uid: pro-api-shipments-errors-400-invalid-weight-unit
+  name: 400 - Invalid Weight Unit
+  href: pro/shipments/errors/invalid_weight_unit.html
+- uid: pro-api-shipments-errors-400-non-unique-reference
+  name: 400 - Non-Unique Reference
+  href: pro/shipments/errors/non_unique_reference.html
+- uid: pro-api-shipments-errors-400-required-property-missing
+  name: 400 - Required Property Missing
+  href: pro/shipments/errors/required_property_missing.html
+- uid: pro-api-shipments-errors-400-system-shipment-state
+  name: 400 - System Shipment State
+  href: pro/shipments/errors/system_shipment_state.html
+- uid: pro-api-shipments-errors-400-system-use-only
+  name: 400 - System Use Only
+  href: pro/shipments/errors/system_use_only.html
+- uid: pro-api-shipments-errors-400-too-few-elements
+  name: 400 - Too Few Elements
+  href: pro/shipments/errors/too_few_elements.html
+- uid: pro-api-shipments-errors-400-too-many-elements
+  name: 400 - Too Many Elements
+  href: pro/shipments/errors/too_many_elements.html
+- uid: pro-api-shipments-errors-400-unit-mismatch
+  name: 400 - Unit Mismatch
+  href: pro/shipments/errors/unit_mismatch.html
+- uid: pro-api-shipments-errors-400-validation-error
+  name: 400 - Validation Error
+  href: pro/shipments/errors/validation_error.html
+- uid: pro-api-shipments-errors-400-value-too-large
+  name: 400 - Value Too Large
+  href: pro/shipments/errors/value_too_large.html
+- uid: pro-api-shipments-errors-400-value-too-long
+  name: 400 - Value Too Long
+  href: pro/shipments/errors/value_too_long.html
+- uid: pro-api-shipments-errors-400-value-too-short
+  name: 400 - Value Too Short
+  href: pro/shipments/errors/value_too_short.html
+- uid: pro-api-shipments-errors-400-value-too-small
+  name: 400 - Value Too Small
+  href: pro/shipments/errors/value_too_small.html
+- uid: pro-api-shipments-errors-400-version-header-error
+  name: 400 - Version Header Error
+  href: pro/shipments/errors/version_header_error.html
+- uid: pro-api-shipments-errors-400-version-header-missing
+  name: 400 - Version Header Missing
+  href: pro/shipments/errors/version_header_missing.html
+- uid: pro-api-shipments-errors-400-virtual-service-not-found
+  name: 400 - Virtual Service Not Found
+  href: pro/shipments/errors/virtual_service_not_found.html
+- uid: pro-api-shipments-errors-401-invalid-api-key
+  name: 401 - Invalid API Key
+  href: pro/shipments/errors/invalid_api_key.html
+- uid: pro-api-shipments-errors-401-missing-api-key-header
+  name: 401 - Missing API Key Header
+  href: pro/shipments/errors/missing_api_key_header.html
+- uid: pro-api-shipments-errors-401-unauthorised
+  name: 401 - Unauthorised
+  href: pro/shipments/errors/unauthorised.html
+- uid: pro-api-shipments-errors-404-not-found
+  name: 404 - Not Found
+  href: pro/shipments/errors/not_found.html
+- uid: pro-api-shipments-errors-404-processing
+  name: 404 - Processing
+  href: pro/shipments/errors/processing.html
+- uid: pro-api-shipments-errors-404-shipment-not-found
+  name: 404 - Shipment Not Found
+  href: pro/shipments/errors/shipment_not_found.html
+- uid: pro-api-shipments-errors-405-method-not-supported
+  name: 405 - Method Not Supported
+  href: pro/shipments/errors/method_not_supported.html
+- uid: pro-api-shipments-errors-410-resource-quarantined
+  name: 410 - Resource Quarantined
+  href: pro/shipments/errors/resource_quarantined.html
+- uid: pro-api-shipments-errors-410-resource-removed
+  name: 410 - Resource Removed
+  href: pro/shipments/errors/resource_removed.html
+- uid: pro-api-shipments-errors-429-rule-conflict
+  name: 429 - Rule Conflict
+  href: pro/shipments/errors/rule_conflict.html
+- uid: pro-api-shipments-errors-500-internal-server_error
+  name: 500 - Internal Server Error
+  href: pro/shipments/errors/internal_server_error.html
+- uid: pro-api-shipments-errors-521-allocation-failed
+  name: 521 - Allocation Failed
+  href: pro/shipments/errors/allocation_failed.html
+- uid: pro-api-shipments-errors-521-carrier-service-not-found
+  name: 521 - Carrier Service Not Found
+  href: pro/shipments/errors/carrier_service_not_found.html
+- uid: pro-api-shipments-errors-521-carrier-service-shipment-mismatch
+  name: 521 - Carrier Service Shipment Mismatch
+  href: pro/shipments/errors/carrier_service_shipment_mismatch.html
+- uid: pro-api-shipments-errors-521-shipment-invalid-state
+  name: 521 - Shipment Invalid State
+  href: pro/shipments/errors/shipment_invalid_state.html
+- uid: pro-api-shipments-errors-531-no-quotes-available
+  name: 531 - No Quotes Available
+  href: pro/shipments/errors/no_quotes_available.html
+- uid: pro-api-shipments-errors-status-code-error
+  name: Status Code Error
+  href: pro/shipments/errors/status_code_error.html
+- uid: pro-api-shipments-integration-design-guide
+  name: PRO Integration Designs
+  href: pro/shipments/api/shipments/integration_design_guide.html
+- uid: pro-api-shipments-integration-designs-3a-quote-shipment-groups
+  name: PRO Integration Designs
+  href: pro/shipments/api/shipments/integration-designs/3a_quote_with_shipment_groups.html
+- uid: pro-api-shipments-integration-designs-classic
+  name: Allocate and Manifest
+  href: pro/shipments/api/shipments/integration-designs/classic.html
+- uid: pro-api-shipments-integration-designs-shipment-groups
+  name: PRO Integration Designs
+  href: pro/shipments/api/shipments/integration-designs/shipment_groups.html
+- uid: pro-api-shipments-shipment-errors
+  name: Shipment Error Codes
+  href: pro/shipments/api/shipments/shipment_errors.html
+- uid: pro-release-notes-021120
+  name: US Regional Restrictions Release Note - 02/11/20
+  href: pro/release-notes/021120.html
+- uid: pro-release-notes-260520
+  name: Reports Release Note - 26/05/20
+  href: pro/release-notes/260520.html
+- uid: react-help-calc-events
+  name: Calculated Events
+  href: react/developer%20docs/calc-events.html
+- uid: react-help-configuring-notifications
+  name: Configuring Notifications
+  href: react/user%20guides/notifications.html
+- uid: react-help-error-codes
+  name: Error Codes
+  href: react/developer%20docs/error-codes.html
+- uid: react-help-glossary
+  name: Glossary
+  href: react/developer%20docs/glossary.html
+- uid: react-help-grouping-shipments
+  name: Grouping Shipments
+  href: react/user%20guides/grouping-shipments.html
+- uid: react-help-integration-guide
+  name: API User Guide
+  href: react/developer%20docs/integration-guide.html
+- uid: react-help-managing-webhooks
+  name: Managing Webhooks
+  href: react/user%20guides/managing-webhooks.html
+- uid: react-help-monitoring-shipments
+  name: Monitoring Shipments
+  href: react/user%20guides/monitoring-shipments.html
+- uid: react-help-overview
+  name: Overview
+  href: react/user%20guides/overview.html
+- uid: react-help-quick-start
+  name: Quick Start
+  href: react/user%20guides/quick-start.html
+- uid: react-help-registering-shipments
+  name: Registering Shipments
+  href: react/developer%20docs/registering-shipments.html
+- uid: react-help-retrieving-data
+  name: Retrieving Shipment and Event Data
+  href: react/developer%20docs/retrieving-data.html
+- uid: react-help-settings
+  name: Settings
+  href: react/user%20guides/settings.html
+- uid: react-help-shipment-states
+  name: Shipment States
+  href: react/developer%20docs/shipment-states.html
+- uid: react-help-tracking-pages
+  name: Tracking Pages
+  href: react/user%20guides/tracking-pages.html
+- uid: react-help-ui-help
+  name: UI Help
+  href: react/user%20guides/ui-help.html
+- uid: react-help-updating-shipments
+  name: Updating Shipments
+  href: react/developer%20docs/updating-shipments.html
+- uid: react-help-user-management
+  name: User Management
+  href: react/user%20guides/user-management.html
+- uid: react-help-using-simulated-tracking
+  name: Using Simulated Tracking
+  href: react/developer%20docs/using-simulated-tracking.html
+- uid: region-validation
+  name: Region Validation
+  href: pro/how-to/region-validation.html
+- uid: shipments-api-reference
+  name: Shipments API Reference
+  href: pro/shipments/api/reference/shipments.html
+- uid: tracking-api-reference
+  name: Tracking API Reference
+  href: pro/shipments/api/reference/tracking.html
